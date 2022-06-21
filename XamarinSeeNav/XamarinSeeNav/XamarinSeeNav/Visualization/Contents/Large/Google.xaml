@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Seek.Visualization.Contents.Large.Google"
+    xmlns:custom="clr-namespace:Namespace;assembly=ScrollCollectionView"
+>
+
+    <ContentView.Content>
+        <StackLayout x:Name="container" Spacing="0">
+            <!--creating an instance here in xaml makes the title dissapear on second selection made on the Visual <Label />  Text="{Binding Name}" HorizontalTextAlignment="Center"-->
+            <ScrollView>
+                <StackLayout x:Name="list" BindableLayout.ItemsSource="{Binding Photos}" Margin="0">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+                            <Image VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Source="{Binding .}"/>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

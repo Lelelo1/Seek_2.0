@@ -1,0 +1,53 @@
+
+Create nuget:
+https://docs.microsoft.com/en-us/nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli
+When updating changing nugets they have to increment their version or else vsformac never understand it should use the new NuGet Package.
+
+---
+
+https://discussions.apple.com/thread/6896719
+
+---
+
+Vector3.Transform(v, q) -> cannot == or .Equals() vector of same value
+
+https://fuchsia.dev/fuchsia-src/get-started
+
+https://makeappicon.com
+
+generate app specific password: https://appleid.apple.com/account/manage
+
+when getting archive publish error in visual studio: https://stackoverflow.com/questions/60440832/failed-to-parse-altool-output-failed-to-parse-plist-data-type
+
+need to use QuickTime with cable connected to take screen recording: https://developer.apple.com/support/app-previews/
+
+To create screenshots in app store connect use app that was bought
+To upload video in right dimensions: https://apple.stackexchange.com/questions/145336/apple-said-we-can-use-imovie-to-make-app-previews-but-i-cant-export-the-correc
+...put image right format at the start of the, export with 4k resolution.
+iMovie also needs restarting for existing projects
+.. does not seem to work anymore.
+try:
+https://stackoverflow.com/questions/57209598/why-is-my-app-store-connect-app-preview-the-wrong-size
+it can possible be so that that a screen recording needed (not quicktime) on 6.5 inch display, which should work out of the box. And then the 5.5 created like described
+create fresh project and then retry like said in comment: https://apple.stackexchange.com/questions/145336/apple-said-we-can-use-imovie-to-make-app-previews-but-i-cant-export-the-correct
+Quicktime can be used to trim/cut away previously working videos
+
+When Archive for Publishing in visual studio for mac. always do it with release! (Or else alot of weird lack of permission entries in info.plist message mail is sent from app store connect to mail)
+
+When all information about the app was given and saved successfully. In app purchase seemed to start working and became accessible from TestFlight version
+
+In app store there are two review statuses, app review and in-app purchases/namegroupreference, available after saving the last needed edited info
+
+iOS 11 and above does not need arm7 etc configurations
+
+https://developer.apple.com/account/#/overview/6ZVEHK4GJ7
+
+app store see previous versions: https://stackoverflow.com/questions/16567370/release-history-of-the-app-in-appstore-itunes-connect
+
+Polly for server and network stuff, failure handling
+
+when iPhone 6 device don't appear in visual studio for mac: https://forums.xamarin.com/discussion/179991/cant-see-my-iphone-on-the-list-of-device-in-visual-studio-2019
+
+good ml example: https://blog.elmah.io/predicting-die-hard-fans-with-ml-net-and-csharp/
+
+https://nativescript.org/blog/adding-objective-c-code-to-a-nativescript-app/

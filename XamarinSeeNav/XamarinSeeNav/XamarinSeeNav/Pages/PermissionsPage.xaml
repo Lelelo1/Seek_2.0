@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="http://xamarin.com/schemas/2020/toolkit"
+    x:Class="Seek.Pages.PermissionsPage"
+    >
+    <NavigationPage.HasNavigationBar>
+        <x:Boolean>false</x:Boolean>
+    </NavigationPage.HasNavigationBar>
+    <ContentPage.Content>
+        <AbsoluteLayout x:Name="screen">
+            <!--<Image Source="blue_citywalk_weather.PNG" Aspect="AspectFit" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" /> -->
+            
+            <StackLayout x:Name="layout" BackgroundColor="White" Opacity="0.85" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1">
+                <ImageButton x:Name="permissionImage" Source="./Icons/user_permission.png"  Opacity="0.88"/>
+                <Label x:Name="permissionLabel" HorizontalOptions="Center" Text="Permissions" FontSize="Title" />
+                <Label x:Name="descriptionLabel"  VerticalOptions="Center" HorizontalOptions="Center" FontSize="18"  Text="See in what direction places are by using gps, mobile sensors and camera" HorizontalTextAlignment="Center"/>
+
+                <StackLayout x:Name="permissionButtonsLayout" />
+
+                <!--
+                <Frame x:Name="locationButton" views:TouchEffect.NativeAnimation="True" HasShadow="False" BackgroundColor="#96eba434" CornerRadius="30" Margin="20, 165, 20, 0" Padding="20, 0, 20, 0" HeightRequest="55" Opacity="1">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="./Icons/location_map.png" WidthRequest="35" HeightRequest="35" VerticalOptions="Center" Opacity="0.85"/>
+                        <Label HorizontalOptions="Start" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16" x:Name="location" Text="Location" HeightRequest="30" Margin="10, 0, 0, 0"/>
+                        <Image x:Name="locationStatusIcon" WidthRequest="25" HeightRequest="25" VerticalOptions="Center" HorizontalOptions="EndAndExpand" Margin="0, 0, 40, 0" Opacity="0.85"/>
+                    </StackLayout>
+                </Frame>
+                
+                <Frame x:Name="cameraButton" views:TouchEffect.NativeAnimation="True" HasShadow="False" BackgroundColor="#96eba434" CornerRadius="30" Margin="20, 60, 20, 0" Padding="20, 0, 20, 0" HeightRequest="55" Opacity="1">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="./Icons/camera.png" WidthRequest="35" HeightRequest="35" VerticalOptions="Center" Opacity="0.85"/>
+                        <Label HorizontalOptions="Start" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="16" x:Name="camera" Text="Camera" HeightRequest="30" Margin="10, 0, 0, 0"/>
+                        <Image x:Name="cameraStatusIcon" WidthRequest="25" HeightRequest="25" VerticalOptions="Center" HorizontalOptions="EndAndExpand" Margin="0, 0, 40, 0" Opacity="0.85"/>
+                    </StackLayout>
+                </Frame>
+                -->
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutocompleteExtension" Version="1.0.3" />
+    <PackageReference Include="NativeObject" Version="1.0.1" />
+    <PackageReference Include="Plugin.SegmentedControl.Netstandard" Version="4.2.0" />
+    <PackageReference Include="Forms9Patch" Version="2.2.6" />
+    <PackageReference Include="Plugin.InAppBilling" Version="4.0.0-beta" />
+    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="4.0.6" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="1.1.0" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\XamarinLogic\XamarinLogic.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Visualization\Contents\" />
+    <Folder Include="Controls\Effects\" />
+    <Folder Include="Visualization\Archived\" />
+    <Folder Include="Visualization\Contents\Large\" />
+    <Folder Include="Test\" />
+    <Folder Include="Display\" />
+    <Folder Include="Display\Internal\" />
+    <Folder Include="Content\" />
+    <Folder Include="Controls\Temp\" />
+    <Folder Include="Pages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Pages\" />
+    <None Remove="Xamarin.Essentials" />
+  </ItemGroup>
+</Project>

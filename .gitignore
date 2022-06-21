@@ -1,0 +1,7 @@
+
+**/bin/*
+**/obj/*
+
+# Rem Objects elemnts solution files
+**.cache
+**.user

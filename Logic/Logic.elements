@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectGuid>{0B22413C-3276-4BC6-85AC-A3D1ACDFD743}</ProjectGuid>
+    <OutputType>StaticLibrary</OutputType>
+    <RootNamespace>Logic</RootNamespace>
+    <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
+    <DefaultUses>RemObjects.Elements.RTL</DefaultUses>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>.\Bin\Debug</OutputPath>
+    <EnableAsserts>True</EnableAsserts>
+    <Optimize>False</Optimize>
+    <GenerateDebugInfo>True</GenerateDebugInfo>
+    <ConditionalDefines>DEBUG;TRACE;</ConditionalDefines>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>.\Bin\Release</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Target)' == 'Echoes.Full' ">
+    <Mode>Echoes</Mode>
+    <TargetFramework>.NETFramework</TargetFramework>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Target)' == 'Echoes.Core' ">
+    <Mode>Echoes</Mode>
+    <TargetFramework>.NETCore</TargetFramework>
+    <ConditionalDefines>NETCORE</ConditionalDefines>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Target)' == 'Echoes.Standard' ">
+    <Mode>Echoes</Mode>
+    <TargetFramework>.NETStandard2.0</TargetFramework>
+    <ConditionalDefines>NETSTANDARD</ConditionalDefines>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Target)' == 'Cooper' ">
+    <Mode>Cooper</Mode>
+    <SubMode>Java</SubMode>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Target)' == 'Island.Windows' ">
+    <Mode>Island</Mode>
+    <SubMode>Windows</SubMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Target)' == 'Island.Linux' ">
+    <Mode>Island</Mode>
+    <SubMode>Linux</SubMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Target)' == 'Island.Darwin.macOS' ">
+    <Mode>Island</Mode>
+    <SubMode>Darwin</SubMode>
+    <SDK>macOS</SDK>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Target)' == 'Island.Darwin.iOS' ">
+    <Mode>Island</Mode>
+    <SubMode>Darwin</SubMode>
+    <SDK>iOS</SDK>
+    <SupportMacCatalyst>True</SupportMacCatalyst>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Target)' == 'Island.Darwin.tvOS' ">
+    <Mode>Island</Mode>
+    <SubMode>Darwin</SubMode>
+    <SDK>tvOS</SDK>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Target)' == 'Island.Darwin.watchOS' ">
+    <Mode>Island</Mode>
+    <SubMode>Darwin</SubMode>
+    <SDK>watchOS</SDK>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Target)' == 'Island.Android' ">
+    <Mode>Island</Mode>
+    <SubMode>Android</SubMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Target)' == 'Island.WebAssembly' ">
+    <Mode>Island</Mode>
+    <SubMode>WebAssembly</SubMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Target)' == 'Toffee.iOS' ">
+    <Mode>Toffee</Mode>
+    <SDK>iOS</SDK>
+    <SupportMacCatalyst>True</SupportMacCatalyst>
+    <DefaultUses>Foundation;RemObjects.Elements.Linq</DefaultUses>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Target)' == 'Toffee.macOS' ">
+    <Mode>Toffee</Mode>
+    <SDK>macOS</SDK>
+    <DefaultUses>Foundation;RemObjects.Elements.Linq</DefaultUses>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Target)' == 'Toffee.tvOS' ">
+    <Mode>Toffee</Mode>
+    <SDK>tvOS</SDK>
+    <DefaultUses>Foundation;RemObjects.Elements.Linq</DefaultUses>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Target)' == 'Toffee.watchOS' ">
+    <Mode>Toffee</Mode>
+    <SDK>watchOS</SDK>
+    <DefaultUses>Foundation;RemObjects.Elements.Linq</DefaultUses>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="#" />
+    <Reference Include="Elements">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstract" />
+    <Folder Include="Mobile" />
+    <Folder Include="Watch" />
+    <Folder Include="Mobile\Game" />
+    <Compile Include="Mobile\Platform.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\RemObjects Software\Elements\RemObjects.Elements.targets" />
+</Project>

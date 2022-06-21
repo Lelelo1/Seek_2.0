@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Seek.Pages.ARPage"
+             >
+
+    <NavigationPage.HasNavigationBar>
+        <x:Boolean>false</x:Boolean>
+    </NavigationPage.HasNavigationBar>
+
+    <!-- screen -->
+    <AbsoluteLayout x:Name="screen">
+
+        <!-- not put anything in here, beacuse don't use xaml and it also shows after splash screen-->
+
+        <!-- '0' x does not do anything -->
+        <!--
+        <Label
+            Text="Icons by Icons8"
+            AbsoluteLayout.LayoutFlags="All"
+            AbsoluteLayout.LayoutBounds="0, 0.96, 1, 0.04"
+            FontAttributes="Italic"
+            TextColor="#807a0a"
+            Margin="16.7, 0, 0, 0"
+            Opacity="0.68"
+            FontSize="13"
+            />
+        -->
+        <!--<lottie:AnimationView x:Name="tiltTurtorialAnimation" AbsoluteLayout.LayoutFlags="SizeProportional" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" Animation="upAnimation.json" AutoPlay="False" RepeatMode="Infinite" IsVisible="false"/> -->
+    </AbsoluteLayout>
+
+</ContentPage>
