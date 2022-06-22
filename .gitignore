@@ -5,3 +5,5 @@
 # Rem Objects elemnts solution files
 **.cache
 **.user
+
+**/.DS_Store

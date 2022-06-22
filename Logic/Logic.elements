@@ -104,8 +104,54 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Mobile" />
     <Compile Include="Mobile\Platform.cs" />
+    <Compile Include="Mobile\ITestable.cs" />
+    <Compile Include="Mobile\Logic.cs" />
+    <Compile Include="Mobile\Models\IBase.cs" />
+    <Compile Include="Mobile\Models\IBubble.cs" />
+    <Compile Include="Mobile\Models\IResult.cs" />
+    <Compile Include="Mobile\Models\Location.cs" />
+    <Compile Include="Mobile\Models\OsmPlace.cs" />
+    <Compile Include="Mobile\Models\Photon.cs" />
+    <Compile Include="Mobile\Models\Place.cs" />
+    <Compile Include="Mobile\Models\SearchTrigger.cs" />
+    <Compile Include="Mobile\Models\User.cs" />
+    <Compile Include="Mobile\Models\Analytics\AnalyticsEvent.cs" />
+    <Compile Include="Mobile\Models\Analytics\AnalyticsEvents.cs" />
+    <Compile Include="Mobile\Utils\DependencyBox.cs" />
+    <Compile Include="Mobile\Utils\EventRegistration.cs" />
+    <Compile Include="Mobile\Utils\Misc.cs" />
+    <Compile Include="Mobile\Utils\Storage.cs" />
+    <Compile Include="Mobile\ViewModels\MainViewModel.cs" />
+    <Compile Include="Mobile\ViewModels\SearchViewModel.cs" />
+    <Compile Include="Mobile\Testing\MockProvider.cs" />
+    <Compile Include="Mobile\Testing\Simulate.cs" />
+    <Compile Include="Mobile\Services\AnalyticsService.cs" />
+    <Compile Include="Mobile\Services\Azure.cs" />
+    <Compile Include="Mobile\Services\HistoryService.cs" />
+    <Compile Include="Mobile\Services\SearchService.cs" />
+    <Compile Include="Mobile\Services\PermissionRequired\LocationService.cs" />
+    <Compile Include="Mobile\Remote\Apis\Providers.cs" />
+    <Compile Include="Mobile\Remote\Apis\UrlRequestBuilder.cs" />
+    <Compile Include="Mobile\Native\IAngleOfView.cs" />
+    <Compile Include="Mobile\Native\ICompass.cs" />
+    <Compile Include="Mobile\Native\ILocationService.cs" />
+    <Compile Include="Mobile\Native\INative.cs" />
+    <Compile Include="Mobile\Native\INativeMixpanel.cs" />
+    <Compile Include="Mobile\Native\IPlacesService.cs" />
+    <Compile Include="Mobile\Native\IUtilitiesService.cs" />
+    <Compile Include="Mobile\Native\N.cs" />
+    <Compile Include="Mobile\Game\Detection.cs" />
+    <Compile Include="Mobile\Game\Gyro.cs" />
+    <Compile Include="Mobile\Game\Helpers.cs" />
+    <Compile Include="Mobile\Game\Projector.cs" />
+    <Compile Include="Mobile\Game\ProjectorConfig.cs" />
+    <Compile Include="Mobile\Game\Models\ISelectable.cs" />
+    <Compile Include="Mobile\Game\Models\Orientation.cs" />
+    <Compile Include="Mobile\Game\Models\Projection.cs" />
+    <Compile Include="Mobile\Game\Models\Rectangle.cs" />
+    <Compile Include="Mobile\Game\Models\Size.cs" />
+    <Compile Include="Mobile\Game\Models\Spatial.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\RemObjects Software\Elements\RemObjects.Elements.targets" />
 </Project>
