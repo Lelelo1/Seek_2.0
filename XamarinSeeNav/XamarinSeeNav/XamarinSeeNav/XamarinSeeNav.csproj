@@ -15,10 +15,8 @@
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.CommunityToolkit" Version="1.1.0" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\XamarinLogic\XamarinLogic.csproj" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.5.1" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.5.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -36,5 +34,13 @@
   <ItemGroup>
     <None Remove="Pages\" />
     <None Remove="Xamarin.Essentials" />
+    <None Remove="Dotnet" />
+    <None Remove="Microsoft.AppCenter.Crashes" />
+    <None Remove="Microsoft.AppCenter.Analytics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Dotnet">
+      <HintPath>..\..\..\Logic\Export\Dotnet\Bin\Debug\Dotnet.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

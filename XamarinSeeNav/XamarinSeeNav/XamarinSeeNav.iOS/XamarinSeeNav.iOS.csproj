@@ -94,9 +94,6 @@
     <Compile Include="iOS_Ahrs.cs" />
     <Compile Include="iOS_Mixpanel.cs" />
     <Compile Include="Controls\iOS_SearchBar.cs" />
-    <Compile Include="..\..\..\..\Library\CloudStorage\OneDrive-Personal\Secrets\Secrets.cs">
-      <Link>Secrets.cs</Link>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -129,6 +126,9 @@
     <Reference Include="Xamarin.iOS" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="Dotnet">
+      <HintPath>..\..\..\Logic\Export\Dotnet\Bin\Debug\Dotnet.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Plugin.InAppBilling">
@@ -149,10 +149,6 @@
     <ProjectReference Include="..\XamarinSeeNav\XamarinSeeNav.csproj">
       <Project>{8B6A7A39-D3BE-48D0-889D-C1C7A6454339}</Project>
       <Name>XamarinSeeNav</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\XamarinLogic\XamarinLogic.csproj">
-      <Project>{82CB7A2E-5150-4068-9C72-604FF72E4D0C}</Project>
-      <Name>XamarinLogic</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
