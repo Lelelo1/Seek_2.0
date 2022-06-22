@@ -1,11 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
     <HasSharedItems>true</HasSharedItems>
     <SharedGUID>7F35DE12-D290-4DA6-9063-D497E16D08F8</SharedGUID>
-  </PropertyGroup>
-  <PropertyGroup Label="Configuration">
     <Import_RootNamespace>Logic</Import_RootNamespace>
+    <ProjectGuid>{7F35DE12-D290-4DA6-9063-D497E16D08F8}</ProjectGuid>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\ITestable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Logic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\ViewModels\MainViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\ViewModels\SearchViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Utils\DependencyBox.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Utils\EventRegistration.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Utils\Misc.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Utils\Storage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Testing\MockProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Testing\Simulate.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Services\AnalyticsService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Services\Azure.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Services\HistoryService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Services\SearchService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Services\PermissionRequired\LocationService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Remote\Apis\Providers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Remote\Apis\UrlRequestBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Native\IAngleOfView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Native\ICompass.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Native\ILocationService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Native\INative.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Native\INativeMixpanel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Native\IPlacesService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Native\IUtilitiesService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Native\N.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Game\Detection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Game\Gyro.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Game\Helpers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Game\Projector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Game\ProjectorConfig.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Game\Models\ISelectable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Game\Models\Orientation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Game\Models\Projection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Game\Models\Rectangle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Game\Models\Size.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Game\Models\Spatial.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Models\IBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Models\IBubble.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Models\IResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Models\Location.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Models\OsmPlace.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Models\Photon.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Models\Place.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Models\SearchTrigger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Models\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Models\Analytics\AnalyticsEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Models\Analytics\AnalyticsEvents.cs" />
+  </ItemGroup>
 </Project>
