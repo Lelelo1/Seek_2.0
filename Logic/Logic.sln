@@ -1,18 +1,12 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # RemObjects Fire
-Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "Logic", "Logic.elements", "{0B22413C-3276-4BC6-85AC-A3D1ACDFD743}"
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "Logic", "Logic.elements", "{7F35DE12-D290-4DA6-9063-D497E16D08F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|AnyCPU = Debug|AnyCPU
-		Release|AnyCPU = Release|AnyCPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0B22413C-3276-4BC6-85AC-A3D1ACDFD743}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
-		{0B22413C-3276-4BC6-85AC-A3D1ACDFD743}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
-		{0B22413C-3276-4BC6-85AC-A3D1ACDFD743}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
-		{0B22413C-3276-4BC6-85AC-A3D1ACDFD743}.Release|AnyCPU.Build.0 = Release|AnyCPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
