@@ -1,12 +1,20 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # RemObjects Fire
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "Dotnet", "Export\Dotnet\Dotnet.elements", "{5AF864DF-69E9-4618-B2FB-1F937A840A4F}"
+EndProject
 Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "Logic", "Logic.elements", "{7F35DE12-D290-4DA6-9063-D497E16D08F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AF864DF-69E9-4618-B2FB-1F937A840A4F}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{5AF864DF-69E9-4618-B2FB-1F937A840A4F}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{5AF864DF-69E9-4618-B2FB-1F937A840A4F}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{5AF864DF-69E9-4618-B2FB-1F937A840A4F}.Release|AnyCPU.Build.0 = Release|AnyCPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
