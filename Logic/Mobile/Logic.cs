@@ -83,7 +83,7 @@ namespace XamarinLogic
             catch (Exception exc)
             {
                 Log(exc.Message);
-                Crashes.TrackError(exc, Error.Properties("When initializing Logic"));
+                Crashes.TrackError(exc, Error.Properties("When initializing Logic"), null);
 
                 if (N.Get<IUtilitiesService>().Runtime == Runtime.Debug)
                 {   // so that I can see and get the full exception

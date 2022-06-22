@@ -33,6 +33,20 @@
     <Reference Include="Elements">
       <Private>True</Private>
     </Reference>
+    <NuGetReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <NuGetReference Include="ProjNET4GeoAPI" Version="1.4.1" />
+    <NuGetReference Include="UnitsNet" Version="4.102.0" />
+    <NuGetReference Include="MathNet.Spatial" Version="0.6.0" />
+    <NuGetReference Include="MathNet.Numerics" Version="4.12.0" />
+    <NuGetReference Include="Geo" Version="1.0.0" />
+    <NuGetReference Include="Plugin.InAppBilling" Version="4.0.0-beta" />
+    <NuGetReference Include="Azure.Storage.Blobs" Version="12.7.0" />
+    <NuGetReference Include="PlayFabAllSDK" Version="1.85.201207" />
+    <NuGetReference Include="Microsoft.AppCenter.Crashes" Version="4.2.0" />
+    <NuGetReference Include="Microsoft.AppCenter.Analytics" Version="4.2.0" />
+    <NuGetReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
+    <NuGetReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <NuGetReference Include="morelinq" Version="3.3.2" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

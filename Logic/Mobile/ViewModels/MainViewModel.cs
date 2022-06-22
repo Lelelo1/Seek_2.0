@@ -104,7 +104,7 @@ namespace XamarinLogic.ViewModels
             catch(Exception exc)
             {
                 Logic.Log(exc.Message);
-                Crashes.TrackError(exc, Error.Properties("When getting distance from user location and place location in meters"));
+                Crashes.TrackError(exc, Error.Properties("When getting distance from user location and place location in meters"), null);
             }
             return meters;
         }
@@ -153,7 +153,7 @@ namespace XamarinLogic.ViewModels
 
             return length.MetricSystemToString();
         }
-        
+
     }
 
     public static class UnitExtensions

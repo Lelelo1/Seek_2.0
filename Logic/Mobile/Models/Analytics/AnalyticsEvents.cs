@@ -121,8 +121,7 @@ namespace XamarinLogic.Models.Analytics
             list.ForEach(t => sessionTextString += t + ", ");
 
             // rem extra ", "
-            sessionTextString.Remove(sessionTextString.Length - 1);
-            sessionTextString.Remove(sessionTextString.Length - 1);
+            sessionTextString.Remove(sessionTextString.Length - 2, 2);
 
             return sessionTextString;
         }
@@ -131,7 +130,7 @@ namespace XamarinLogic.Models.Analytics
     //[Serializable]
     public class AppResume : BaseAnalyticsEvent
     {
-        
+
     }
 
     //[Serializable]
