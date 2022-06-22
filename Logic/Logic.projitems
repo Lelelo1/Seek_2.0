@@ -55,5 +55,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Mobile\Models\User.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Mobile\Models\Analytics\AnalyticsEvent.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Mobile\Models\Analytics\AnalyticsEvents.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)..\..\..\Library\CloudStorage\OneDrive-Personal\Secrets\Secrets.cs" />
   </ItemGroup>
 </Project>
