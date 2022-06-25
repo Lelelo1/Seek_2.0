@@ -191,11 +191,5 @@ namespace Logic.ViewModels
     */
 
     }
-    // 1.26
-    // resturang 2112
-    public class BuildException : Exception
-    {
-        public BuildException(string message) : base(message) { }
-    }
 
-}
+

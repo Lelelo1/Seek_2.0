@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Numerics;
 using System.Threading.Tasks;
+using Logic.Mobile.Models;
 using Logic.Models;
 
 namespace Logic.Mobile
@@ -13,6 +14,9 @@ namespace Logic.Mobile
 
         string GetDistanceMetric(double meters);
         string GetDistanceImperial(double meters);
+
+        Task<PermissionStatus> GetCameraPermissionAsync();
+        Task<PermissionStatus> GetLocationWhenInUsePermissionAsync();
     }
 }
 

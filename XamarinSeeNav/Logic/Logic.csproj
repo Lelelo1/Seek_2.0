@@ -50,9 +50,6 @@
     <Compile Include="..\..\Logic\Mobile\Utils\EventRegistration.cs">
       <Link>Mobile\Utils\EventRegistration.cs</Link>
     </Compile>
-    <Compile Include="..\..\Logic\Mobile\Utils\Storage.cs">
-      <Link>Mobile\Utils\Storage.cs</Link>
-    </Compile>
     <Compile Include="..\..\Logic\Mobile\Models\IBase.cs">
       <Link>Mobile\Models\IBase.cs</Link>
     </Compile>

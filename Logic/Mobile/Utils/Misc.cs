@@ -5,7 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using Logic;
-using Xamarin.Essentials;
+using Logic.Mobile.Models;
 
 namespace Logic.Utils
 {
@@ -216,8 +216,8 @@ namespace Logic.Utils
 
     public class PermissionUtils
     {
-        public static Task<Xamarin.Essentials.PermissionStatus> GetCamera() => Xamarin.Essentials.Permissions.CheckStatusAsync<Xamarin.Essentials.Permissions.Camera>();
-        public static Task<Xamarin.Essentials.PermissionStatus> GetLocationWhenInUse() => Xamarin.Essentials.Permissions.CheckStatusAsync<Xamarin.Essentials.Permissions.LocationWhenInUse>();
+        public static Task<PermissionStatus> GetCamera() => Logic.FrameworkContext.GetCameraPermissionAsync();
+        public static Task<PermissionStatus> GetLocationWhenInUse() => Logic.FrameworkContext.GetLocationWhenInUsePermissionAsync();
 
         public static async Task<bool> HasPermissions()
         {

@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using Xamarin.Essentials;
-using Newtonsoft.Json;
 using Logic.Models.Analytics;
 using System.Threading.Tasks;
 using System.Text;
