@@ -1,22 +1,22 @@
 ﻿using System;
 using System.ComponentModel;
 using Xamarin.Forms;
-using XamarinLogic.Services.PermissionRequired;
-using XamarinLogic.Utils;
+using Logic.Services.PermissionRequired;
+using Logic.Utils;
 using Seek.Content;
 using Seek.Display;
-using XamarinLogic.Models;
+using Logic.Models;
 using System.Collections.Generic;
 using Seek.Controls;
 using Seek.Visualization;
 using Microsoft.AppCenter.Crashes;
-using XamarinLogic.ViewModels;
-using XamarinLogic;
-using XamarinLogic.Native;
-using XamarinLogic.Models.Analytics;
-using XamarinLogic.Services;
+using Logic.ViewModels;
+using Logic;
+using Logic.Native;
+using Logic.Models.Analytics;
+using Logic.Services;
 using Search = Seek.Content.Search;
-using XamarinLogic.Game;
+using Logic.Game;
 using Xamarin.Essentials;
 
 namespace Seek.Pages

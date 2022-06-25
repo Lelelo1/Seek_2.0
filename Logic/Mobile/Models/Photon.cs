@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using XamarinLogic.Utils;
+using Logic.Utils;
 using MoreLinq.Extensions;
 
 
-namespace XamarinLogic.Models
+namespace Logic.Models
 {
     public class Geometry
     {

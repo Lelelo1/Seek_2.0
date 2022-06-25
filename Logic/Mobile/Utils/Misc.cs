@@ -4,10 +4,10 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
-using XamarinLogic;
+using Logic;
 using Xamarin.Essentials;
 
-namespace XamarinLogic.Utils
+namespace Logic.Utils
 {
 
     public class Calc

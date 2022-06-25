@@ -1,7 +1,7 @@
 ﻿using System;
-using XamarinLogic.Models;
+using Logic.Models;
 
-namespace XamarinLogic.Testing
+namespace Logic.Testing
 {
     public class Simulate
     {

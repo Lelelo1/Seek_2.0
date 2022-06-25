@@ -6,8 +6,8 @@ using Xamarin.Forms.Platform.iOS;
 using AVFoundation;
 using Seek.Controls;
 using Seek.iOS.Controls;
-using XamarinLogic.Utils;
-using XamarinLogic;
+using Logic.Utils;
+using Logic;
 
 [assembly: ExportRenderer(typeof(CameraView), typeof(CameraViewRenderer))]
 namespace Seek.iOS.Controls

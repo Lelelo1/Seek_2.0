@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
-using XamarinLogic.Models;
+using Logic.Models;
 using Newtonsoft.Json;
 using System.Linq;
 
-namespace XamarinLogic.Services
+namespace Logic.Services
 {
     public class SearchService : IBase
     {

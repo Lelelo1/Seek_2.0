@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using XamarinLogic.Models;
-using XamarinLogic.Models.Analytics;
-using XamarinLogic.Native;
+using Logic.Models;
+using Logic.Models.Analytics;
+using Logic.Native;
 using Xamarin.Essentials;
 
-namespace XamarinLogic.Services
+namespace Logic.Services
 {
 
     public class AnalyticsService : IBase

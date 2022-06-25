@@ -20,7 +20,7 @@ namespace Seek.Display
             return new Size(info.Width, info.Height);
         }
 
-        public static  XamarinLogic.Game.Models.Size LogicScreen => GetScreenSize().ToPerceptualSize();
+        public static  Logic.Game.Models.Size LogicScreen => GetScreenSize().ToPerceptualSize();
 
         // can also makde safe area property, by places things below status bar etc
         protected DisplayBase()

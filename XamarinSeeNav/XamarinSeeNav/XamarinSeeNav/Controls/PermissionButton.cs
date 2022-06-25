@@ -1,5 +1,5 @@
 ﻿using System;
-using XamarinLogic.Utils;
+using Logic.Utils;
 using Xamarin.CommunityToolkit.Effects;
 using Xamarin.Essentials;
 using Xamarin.Forms;

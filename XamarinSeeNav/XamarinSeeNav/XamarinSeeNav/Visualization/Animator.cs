@@ -2,9 +2,9 @@
 using System.Numerics;
 using System.Threading;
 using System.Threading.Tasks;
-using XamarinLogic.Game;
-using XamarinLogic.Game.Models;
-using XamarinLogic.Utils;
+using Logic.Game;
+using Logic.Game.Models;
+using Logic.Utils;
 
 namespace Seek.Visualization
 {

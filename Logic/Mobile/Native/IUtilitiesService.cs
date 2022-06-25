@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
-using XamarinLogic.Models;
+using Logic.Models;
 
-namespace XamarinLogic.Native
+namespace Logic.Native
 {
     // https://stackoverflow.com/questions/43687689/keeping-screen-turned-on-for-certain-pages
     public interface IUtilitiesService : INative

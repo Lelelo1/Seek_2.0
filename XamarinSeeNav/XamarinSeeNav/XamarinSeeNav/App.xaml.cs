@@ -1,16 +1,16 @@
 ﻿using System;
 using Xamarin.Forms;
-using XamarinLogic;
-using XamarinLogic.Native;
-using XamarinLogic.Services;
+using Logic;
+using Logic.Native;
+using Logic.Services;
 using Microsoft.AppCenter.Crashes;
-using XamarinLogic.Models.Analytics;
-using XamarinLogic.ViewModels;
-using XamarinLogic.Utils;
-using XamarinLogic.Services.PermissionRequired;
+using Logic.Models.Analytics;
+using Logic.ViewModels;
+using Logic.Utils;
+using Logic.Services.PermissionRequired;
 using Seek.Visualization.Support;
 using Seek.Display;
-using XamarinLogic.Game;
+using Logic.Game;
 using Seek.Pages;
 
 namespace Seek

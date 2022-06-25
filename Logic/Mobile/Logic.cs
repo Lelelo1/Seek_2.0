@@ -1,20 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using XamarinLogic.Native;
-using XamarinLogic.Services;
-using XamarinLogic.Utils;
-using XamarinLogic.ViewModels;
+using Logic.Native;
+using Logic.Services;
+using Logic.Utils;
+using Logic.ViewModels;
 using System.Linq;
 using Microsoft.AppCenter.Crashes;
-using XamarinLogic.Models;
-using XamarinLogic.Services.PermissionRequired;
-using XamarinLogic.Game;
+using Logic.Models;
+using Logic.Services.PermissionRequired;
+using Logic.Game;
 
-namespace XamarinLogic
+namespace Logic
 {
 	public class Logic
 	{
+		public static IFrameworkContext FrameworkContext { get; private set; }
+		public static void SetFrameworkContext(IFrameworkContext frameworkContext)
+		{
+			FrameworkContext = FrameworkContext;
+		}
 		// logging
 
 		public delegate void LogDelegate(string message);
@@ -43,6 +48,7 @@ namespace XamarinLogic
 		{
 			MainThread = main;
 			MainThreadInvokeAsync = mainAsync;
+
 		}
 
 		public static void SetNativeDependencies(List<INative> nativeDependencies)

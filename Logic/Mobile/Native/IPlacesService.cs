@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using XamarinLogic.Models;
-using XamarinLogic.Remote.Apis;
+using Logic.Models;
+using Logic.Remote.Apis;
 
-namespace XamarinLogic.Native
+namespace Logic.Native
 {
     public interface IPlacesService : INative, IProvider
     {

@@ -1,12 +1,11 @@
 ﻿using System;
-using XamarinLogic.Utils;
-using XamarinLogic.Native;
-using XamarinLogic.Models;
+using Logic.Utils;
+using Logic.Native;
+using Logic.Models;
 using System.Threading.Tasks;
 using System.Threading;
-using Xamarin.Essentials;
 
-namespace XamarinLogic.Services.PermissionRequired
+namespace Logic.Services.PermissionRequired
 {
     // only access this service after it has been started, currently in 'MainViewModel'
     public class LocationService : IBase
@@ -40,7 +39,7 @@ namespace XamarinLogic.Services.PermissionRequired
 
             _ = locationUpdater.Run(async() =>
             {
-                var location = await Geolocation.GetLocationAsync();
+                var location = await Logic.FrameworkContext.GetLocationAsync();
                 if(location == null)
                 {
                     return;

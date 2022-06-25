@@ -1,7 +1,7 @@
 ﻿using System;
 using Geo;
 
-namespace XamarinLogic.Models
+namespace Logic.Models
 {
 
     public class Location

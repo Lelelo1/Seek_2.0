@@ -9,12 +9,12 @@ using Android.OS;
 using System.Linq;
 using Xamarin.Forms;
 using System.Collections.Generic;
-using XamarinLogic.Native;
+using Logic.Native;
 using Seek.Droid.Services;
-using XamarinLogic;
+using Logic;
 using Microsoft.AppCenter.Crashes;
-using XamarinLogic.Utils;
-using static XamarinLogic.Logic;
+using Logic.Utils;
+using static Logic.Logic;
 
 namespace Seek.Droid
 {

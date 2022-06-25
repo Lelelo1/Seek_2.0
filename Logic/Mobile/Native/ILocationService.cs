@@ -1,5 +1,5 @@
 ﻿using System;
-namespace XamarinLogic.Native
+namespace Logic.Native
 {
     public interface ILocationService : INative
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace XamarinLogic.Models
+namespace Logic.Models
 {
     public class OsmPlace
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace XamarinLogic.Models
+namespace Logic.Models
 {
     public interface IResult
     {

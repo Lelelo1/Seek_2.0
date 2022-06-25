@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Numerics;
 using System.Threading.Tasks;
-using XamarinLogic.Game.Models;
-using XamarinLogic.Models;
-using XamarinLogic.Native;
-using XamarinLogic.Utils;
-using XamarinLogic.ViewModels;
+using Logic.Game.Models;
+using Logic.Models;
+using Logic.Native;
+using Logic.Utils;
+using Logic.ViewModels;
 
 
-namespace XamarinLogic.Game
+namespace Logic.Game
 {
     public class Projector : IBase
     {

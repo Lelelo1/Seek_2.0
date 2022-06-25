@@ -2,16 +2,16 @@
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using System.Collections.Generic;
-using XamarinLogic.Services.PermissionRequired;
-using XamarinLogic.Testing;
-using XamarinLogic.Remote.Apis;
-using XamarinLogic.Native;
-using XamarinLogic.Services;
-using XamarinLogic.Models;
-using XamarinLogic.Utils;
+using Logic.Services.PermissionRequired;
+using Logic.Testing;
+using Logic.Remote.Apis;
+using Logic.Native;
+using Logic.Services;
+using Logic.Models;
+using Logic.Utils;
 using System.Linq;
 
-namespace XamarinLogic.ViewModels
+namespace Logic.ViewModels
 {
     public class SearchViewModel : IBase
     {

@@ -2,11 +2,11 @@
 using Foundation;
 using UIKit;
 using Xamarin.Forms;
-using XamarinLogic.Native;
+using Logic.Native;
 using System.Threading.Tasks;
 using CloudKit;
-using XamarinLogic.Utils;
-using XamarinLogic.Models;
+using Logic.Utils;
+using Logic.Models;
 
 [assembly: Dependency(typeof(Seek.iOS.Services.iOS_UtilitiesService))]
 namespace Seek.iOS.Services

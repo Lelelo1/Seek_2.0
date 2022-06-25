@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Numerics;
-using XamarinLogic.Models;
+using Logic.Models;
 
-namespace XamarinLogic.Game.Models
+namespace Logic.Game.Models
 {
     public class Spatial
     {

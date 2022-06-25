@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Numerics;
-using XamarinLogic.Game;
-using XamarinLogic.Game.Models;
-using XamarinLogic.Utils;
+using Logic.Game;
+using Logic.Game.Models;
+using Logic.Utils;
 using Seek.Visualization.Support;
 using Xamarin.Forms;
 

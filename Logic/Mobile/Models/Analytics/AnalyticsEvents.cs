@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using XamarinLogic.Utils;
-using XamarinLogic.ViewModels;
+using Logic.Utils;
+using Logic.ViewModels;
 
-namespace XamarinLogic.Models.Analytics
+namespace Logic.Models.Analytics
 {
 
     // given in the sequence of creation, 'VisualShownEvent' created first

@@ -1,7 +1,7 @@
 ﻿using System;
-using XamarinLogic.Game.Models;
+using Logic.Game.Models;
 
-namespace XamarinLogic.Game
+namespace Logic.Game
 {
     public class ProjectorConfig
     {

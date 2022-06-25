@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using Seek.Visualization;
 using System.Linq;
 using Seek.Display.Internal;
-using XamarinLogic.ViewModels;
-using XamarinLogic;
-using XamarinLogic.Utils;
+using Logic.ViewModels;
+using Logic;
+using Logic.Utils;
 using System.Numerics;
-using XamarinLogic.Game;
+using Logic.Game;
 
 namespace Seek.Display
 {

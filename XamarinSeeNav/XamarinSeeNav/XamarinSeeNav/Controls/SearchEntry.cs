@@ -3,8 +3,8 @@ using Xamarin.Forms;
 using Seek.Pages;
 using ImageButton = Xamarin.Forms.ImageButton;
 using Seek.Display;
-using XamarinLogic.ViewModels;
-using XamarinLogic;
+using Logic.ViewModels;
+using Logic;
 
 namespace Seek.Controls
 {

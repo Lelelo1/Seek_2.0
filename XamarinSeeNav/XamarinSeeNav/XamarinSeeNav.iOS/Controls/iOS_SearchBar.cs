@@ -4,7 +4,7 @@ using Xamarin.Forms.Platform.iOS;
 using UIKit;
 using System.ComponentModel;
 using Foundation;
-using XamarinLogic;
+using Logic;
 
 // needs testing testing ios lower than 13, it could cause the textfieldcolor to not be set, see 'SetTextFieldColor'
 

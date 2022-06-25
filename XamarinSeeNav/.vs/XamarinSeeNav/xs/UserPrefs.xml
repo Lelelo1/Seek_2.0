@@ -1,14 +1,47 @@
-﻿<Properties StartupConfiguration="{28726A60-F0F0-4C27-A27C-3C2AD8D2A190}|Default">
+﻿<Properties StartupConfiguration="{31FEDB67-2B76-430C-8BD8-B0B68BC55E25}|Default">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.XamarinSeeNav.Android PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.ItemProperties.XamarinSeeNav.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.00008030-001829101491802E" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="../Logic/Mobile/ViewModels/MainViewModel.cs">
+    <Files>
+      <File FileName="XamarinSeeNav/XamarinSeeNav/App.xaml.cs" Line="4" Column="7" />
+      <File FileName="XamarinSeeNav/XamarinSeeNav.iOS/AppDelegate.cs" Line="45" Column="1" />
+      <File FileName="XamarinSeeNav/XamarinSeeNav/XamarinSeeNav.csproj" Line="27" Column="31" />
+      <File FileName="XamarinSeeNav/XamarinSeeNav/Pages/PermissionsPage.xaml.cs" Line="11" Column="7" />
+      <File FileName="../Logic/Mobile/Logic.cs" Line="19" Column="31" />
+      <File FileName="../Logic/Mobile/Services/HistoryService.cs" Line="9" Column="7" />
+      <File FileName="../Logic/Mobile/ViewModels/MainViewModel.cs" Line="108" Column="14" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="XamarinSeeNav" expanded="True" selected="True" />
+          <Node name="XamarinSeeNav" expanded="True">
+            <Node name="Logic" expanded="True">
+              <Node name="Mobile" expanded="True">
+                <Node name="Models" expanded="True" />
+                <Node name="Services" expanded="True">
+                  <Node name="PermissionRequired" expanded="True" />
+                </Node>
+                <Node name="ViewModels" expanded="True">
+                  <Node name="MainViewModel.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="XamarinSeeNav" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="PermissionsPage.xaml" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+            <Node name="XamarinSeeNav.iOS" expanded="True">
+              <Node name="References" expanded="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
@@ -16,5 +49,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.XamarinSeeNav.Android PreferredExecutionTarget="Android.SelectDevice" />
   <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.SelectDevice" />
 </Properties>

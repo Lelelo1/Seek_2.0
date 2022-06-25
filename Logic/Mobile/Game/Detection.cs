@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
-using Microsoft.AppCenter.Crashes;
-using XamarinLogic.Utils;
-using XamarinLogic.Native;
-using XamarinLogic.Game.Models;
+using Logic.Utils;
+using Logic.Native;
+using Logic.Game.Models;
 
-namespace XamarinLogic.Game
+namespace Logic.Game
 {
 
     // south perceptibles don't seperate on the height for some reason only in width // <-- is still valid?
@@ -32,7 +31,8 @@ namespace XamarinLogic.Game
         {
             if(AngleOfView == null)
             {
-                Crashes.TrackError(new Exception("Detection was not initiated with a AngleOfView before calling start"));
+                Logic.Platform.ReportCrash(new Exception(), "Detection was not initiated with a AngleOfView before calling start");
+
             }
 
             EventRegistration = eventRegistration;
@@ -66,7 +66,7 @@ namespace XamarinLogic.Game
             {
                 AngleSize.Value = 1f;
             }
-            
+
         }
         List<Spatial> _trackPerceptibles = new List<Spatial>();
         public List<Spatial> TrackPerceptibles
@@ -79,7 +79,7 @@ namespace XamarinLogic.Game
         void Update()
         {
             var objects = TrackPerceptibles;
-            
+
             // https://gamedev.stackexchange.com/questions/72458/c-separating-overlapping-rectangles
             for (int i = 0; i < objects.Count; i ++)
             {
@@ -91,7 +91,7 @@ namespace XamarinLogic.Game
                         Apart(objects[i], objects[j]);
                     }
                 }
-                
+
             }
             // is below better or wuicker in any way?
             /*
@@ -102,18 +102,17 @@ namespace XamarinLogic.Game
                 Apart(p, nearest);
             }
             */
- 
-        }
-        // 
 
-        Random random = new Random();
+        }
+        //
+
         /* Note that entering text causing new visuals to apear does nor clear the cold ones */
         void Apart(Spatial p1, Spatial p2)
         {
 
             var q1 = p1.Orientation.Value;
             var q2 = p2.Orientation.Value;
-            
+
             var currentAngle = Math.Abs(Distance(q1, q2));
 
             var angleSize = AngleSize.Value;
@@ -135,7 +134,7 @@ namespace XamarinLogic.Game
                 Set(p2, q2Change);
                 // Log.Message("distance became: " + Distance(p1.Orientation.Value, p2.Orientation.Value));
             }
-            
+
         }
         void Set(Spatial p, Quaternion change)
         {
@@ -169,7 +168,7 @@ namespace XamarinLogic.Game
     {
         /* could be the collided rects size / 2 for each given collision. (If at any point decide to have different sizes on IPerceptblies)
             It is now fixed corresponding to the first given instantiated with rentangle */
-        float _max;// = 8f; 
+        float _max;// = 8f;
         float _increase = 0.5f;
         float _value = 0.01f;
         public float Value
@@ -185,7 +184,7 @@ namespace XamarinLogic.Game
             }
             set => _value = value;
         }
-        // calcuting actual angle size from 
+        // calcuting actual angle size from
         public AngleSize(Rectangle rectangle)
         {
             var fovs = Detection.AngleOfView.Value;

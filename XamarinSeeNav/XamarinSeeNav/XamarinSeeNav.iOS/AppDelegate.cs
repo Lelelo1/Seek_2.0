@@ -2,16 +2,16 @@
 using Foundation;
 using UIKit;
 using System.Threading.Tasks;
-using XamarinLogic;
-using XamarinLogic.Services;
-using XamarinLogic.Models.Analytics;
-using static XamarinLogic.Logic;
+using Logic;
+using Logic.Services;
+using Logic.Models.Analytics;
+using static Logic.Logic;
 using Xamarin.Forms;
 using Microsoft.AppCenter.Crashes;
-using XamarinLogic.Utils;
+using Logic.Utils;
 using Seek.iOS.Services;
 using System.Collections.Generic;
-using XamarinLogic.Native;
+using Logic.Native;
 using Microsoft.AppCenter;
 using Device = Xamarin.Forms.Device;
 

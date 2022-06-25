@@ -1,9 +1,9 @@
 ﻿using System;
 using Xamarin.Forms;
 using System.Linq;
-using XamarinLogic.Native;
-using XamarinLogic;
-using XamarinLogic.Services;
+using Logic.Native;
+using Logic;
+using Logic.Services;
 
 // page to see history of analtics events for testing
 

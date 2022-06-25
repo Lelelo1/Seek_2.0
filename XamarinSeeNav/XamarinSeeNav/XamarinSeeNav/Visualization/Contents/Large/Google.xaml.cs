@@ -2,8 +2,8 @@
 
 using Seek.Visualization.Support;
 using Xamarin.Forms;
-using XamarinLogic.ViewModels;
-using XamarinLogic;
+using Logic.ViewModels;
+using Logic;
 // Place, Custom, Commute/Checkpoint, Contact
 namespace Seek.Visualization.Contents.Large
 {

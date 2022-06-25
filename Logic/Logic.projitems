@@ -9,9 +9,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Mobile\ITestable.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Logic.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Mobile\ViewModels\MainViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Mobile\ViewModels\SearchViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Mobile\Utils\DependencyBox.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Mobile\Utils\EventRegistration.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Mobile\Utils\Misc.cs" />
@@ -19,7 +17,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Mobile\Testing\MockProvider.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Mobile\Testing\Simulate.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Mobile\Services\AnalyticsService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Services\Azure.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Mobile\Services\HistoryService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Mobile\Services\SearchService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Mobile\Services\PermissionRequired\LocationService.cs" />
@@ -34,7 +31,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Mobile\Native\IUtilitiesService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Mobile\Native\N.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Mobile\Game\Detection.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Game\Gyro.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Mobile\Game\Helpers.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Mobile\Game\Projector.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Mobile\Game\ProjectorConfig.cs" />
@@ -56,5 +52,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Mobile\Models\Analytics\AnalyticsEvent.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Mobile\Models\Analytics\AnalyticsEvents.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)..\..\..\Library\CloudStorage\OneDrive-Personal\Secrets\Secrets.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\IPlatform.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\Logic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Mobile\ViewModels\SearchViewModel.cs" />
   </ItemGroup>
 </Project>

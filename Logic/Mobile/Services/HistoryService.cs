@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using XamarinLogic.Services;
+using Logic.Services;
 using System.Linq;
-using XamarinLogic.Utils;
-using XamarinLogic.Models.Analytics;
+using Logic.Utils;
+using Logic.Models.Analytics;
 using System.Threading.Tasks;
-using XamarinLogic.Models;
+using Logic.Models;
 using Xamarin.Essentials;
 
-namespace XamarinLogic.Services
+namespace Logic.Services
 {
     public class HistoryService : IBase
     {

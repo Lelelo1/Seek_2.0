@@ -2,13 +2,13 @@
 using Xamarin.CommunityToolkit.UI.Views;
 using Xamarin.CommunityToolkit.Core;
 using Xamarin.Forms;
-using XamarinLogic.Native;
+using Logic.Native;
 using Seek.Controls;
 using Xamarin.Essentials;
 using Seek.Display;
-using XamarinLogic;
+using Logic;
 using System.Threading.Tasks;
-using XamarinLogic.Utils;
+using Logic.Utils;
 
 // It seems MediaElement in CommunityToolkit can't display image, source set to png
 

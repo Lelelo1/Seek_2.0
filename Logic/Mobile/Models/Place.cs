@@ -1,9 +1,9 @@
 ﻿
 using System;
-using XamarinLogic.Services.PermissionRequired;
+using Logic.Services.PermissionRequired;
 
 
-namespace XamarinLogic.Models
+namespace Logic.Models
 {
 
     // maybe also cache the responses

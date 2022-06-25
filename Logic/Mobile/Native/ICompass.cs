@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace XamarinLogic.Native
+namespace Logic.Native
 {
     public delegate void HeadingChanged();
     public interface ICompass

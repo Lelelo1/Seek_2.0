@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using XamarinLogic.Services.PermissionRequired;
+using Logic.Services.PermissionRequired;
 using System.Linq;
-using XamarinLogic.Utils;
-using XamarinLogic.Remote.Apis;
-using XamarinLogic.Models;
-using XamarinLogic.Native;
+using Logic.Utils;
+using Logic.Remote.Apis;
+using Logic.Models;
+using Logic.Native;
 
-namespace XamarinLogic.Testing
+namespace Logic.Testing
 {
 
     // previously in MockPlaces, which contained photos on azure

@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using XamarinLogic.Models;
+using Logic.Models;
 using UnitsNet;
-using XamarinLogic.Services.PermissionRequired;
+using Logic.Services.PermissionRequired;
 using Microsoft.AppCenter.Crashes;
-using XamarinLogic.Utils;
+using Logic.Utils;
 using System.Threading.Tasks;
 using System.Threading;
 using Xamarin.Essentials;
 using System.Numerics;
-using Location = XamarinLogic.Models.Location;
+using Location = Logic.Models.Location;
 
-namespace XamarinLogic.ViewModels
+namespace Logic.ViewModels
 {
 
     public class MainViewModel : IBase
@@ -104,7 +104,7 @@ namespace XamarinLogic.ViewModels
             catch(Exception exc)
             {
                 Logic.Log(exc.Message);
-                Crashes.TrackError(exc, Error.Properties("When getting distance from user location and place location in meters"), null);
+                Logic.FrameworkContext.ReportCrash(null, "When getting distance from user location and place location in meters");
             }
             return meters;
         }

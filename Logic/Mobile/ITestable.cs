@@ -1,5 +1,5 @@
 ﻿using System;
-namespace XamarinLogic
+namespace Logic
 {
 	// never mind actually, just try catch the Init methods instead..?
 	/*

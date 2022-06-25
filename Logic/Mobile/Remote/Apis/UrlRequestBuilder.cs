@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace XamarinLogic.Remote.Apis
+namespace Logic.Remote.Apis
 {
 
     // use nuget instead..?

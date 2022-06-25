@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using XamarinLogic.Models;
-using XamarinLogic.Native;
+using Logic.Models;
+using Logic.Native;
 
 
 
-namespace XamarinLogic.Remote.Apis
+namespace Logic.Remote.Apis
 {
     
     public interface IProvider

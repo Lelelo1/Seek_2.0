@@ -1,7 +1,7 @@
 ﻿using System;
-using XamarinLogic.Utils;
+using Logic.Utils;
 
-namespace XamarinLogic.Native
+namespace Logic.Native
 {
     public interface INative
     {

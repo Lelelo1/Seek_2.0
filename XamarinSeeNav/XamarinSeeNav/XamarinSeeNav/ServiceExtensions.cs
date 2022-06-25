@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Linq;
-using XamarinLogic.Models;
-using XamarinLogic.Native;
-using XamarinLogic.Services.PermissionRequired;
+using Logic.Models;
+using Logic.Native;
+using Logic.Services.PermissionRequired;
 using Xamarin.Forms;
-using XamarinLogic;
-using XamarinLogic.Game;
+using Logic;
+using Logic.Game;
 
 namespace Seek
 {

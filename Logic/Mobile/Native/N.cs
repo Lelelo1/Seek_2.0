@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using XamarinLogic.Utils;
+using Logic.Utils;
 
-namespace XamarinLogic.Native
+namespace Logic.Native
 {
     public class N
     {

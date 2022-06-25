@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.IO;
 using Xamarin.Essentials;
 using Newtonsoft.Json;
-using XamarinLogic.Models.Analytics;
+using Logic.Models.Analytics;
 using System.Threading.Tasks;
 using System.Text;
 using System.Linq;
 using System.Collections;
 using System.Collections.Concurrent;
 
-namespace XamarinLogic.Utils
+namespace Logic.Utils
 {
     /*
     public class Storage<Base>

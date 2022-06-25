@@ -1,5 +1,5 @@
 ﻿using System;
-using XamarinLogic.Native;
+using Logic.Native;
 
 namespace Seek.Display
 {

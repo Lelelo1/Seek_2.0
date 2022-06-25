@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
-using XamarinLogic.Models;
-using XamarinLogic.Native;
+using Logic.Models;
+using Logic.Native;
 
 namespace Seek.Droid
 {

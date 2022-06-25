@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Numerics;
-using XamarinLogic.Game.Models;
-using XamarinLogic.Utils;
+using Logic.Game.Models;
+using Logic.Utils;
 
-namespace XamarinLogic.Game
+namespace Logic.Game
 {
     /*
     // cpp ogre rws rectangle

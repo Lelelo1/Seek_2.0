@@ -1,19 +1,19 @@
 ﻿using System;
 using System.Numerics;
-using XamarinLogic.Services.PermissionRequired;
+using Logic.Services.PermissionRequired;
 using Xamarin.Forms;
 using Seek.Visualization.Support;
 using Seek.Visualization.Contents;
 using System.Threading.Tasks;
-using Rectangle = XamarinLogic.Game.Models.Rectangle;
+using Rectangle = Logic.Game.Models.Rectangle;
 using Seek.Content;
-using XamarinLogic.ViewModels;
-using XamarinLogic.Services;
-using XamarinLogic.Models;
-using XamarinLogic.Models.Analytics;
-using XamarinLogic;
-using XamarinLogic.Game.Models;
-using XamarinLogic.Game;
+using Logic.ViewModels;
+using Logic.Services;
+using Logic.Models;
+using Logic.Models.Analytics;
+using Logic;
+using Logic.Game.Models;
+using Logic.Game;
 using Xamarin.Essentials;
 
 namespace Seek.Visualization

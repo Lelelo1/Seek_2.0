@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using FormsGestures;
 // using System.Collections.Generic;
-using XamarinLogic;
+using Logic;
 
 namespace Seek.Visualization.Support
 {

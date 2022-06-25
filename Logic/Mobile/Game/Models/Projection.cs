@@ -1,5 +1,5 @@
 ﻿using System;
-namespace XamarinLogic.Game.Models
+namespace Logic.Game.Models
 {
     public class Projection
     {

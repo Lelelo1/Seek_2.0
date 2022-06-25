@@ -4,11 +4,11 @@ using MapKit;
 using System.Linq;
 using System.Collections.Generic;
 using Xamarin.Forms;
-using XamarinLogic.Models;
-using XamarinLogic.Utils;
+using Logic.Models;
+using Logic.Utils;
 using Microsoft.AppCenter.Crashes;
-using XamarinLogic.Native;
-using XamarinLogic;
+using Logic.Native;
+using Logic;
 using Foundation;
 
 [assembly: Dependency(typeof(Seek.iOS.Services.iOS_PlacesService))]

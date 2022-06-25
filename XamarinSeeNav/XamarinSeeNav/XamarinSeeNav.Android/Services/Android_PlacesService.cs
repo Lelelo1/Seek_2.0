@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using XamarinLogic.Models;
-using XamarinLogic.Native;
+using Logic.Models;
+using Logic.Native;
 
 namespace Seek.Droid.Services
 {

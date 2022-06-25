@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Numerics;
 using CoreMotion;
 using Foundation;
-using XamarinLogic.Utils;
+using Logic.Utils;
 using Seek.iOS;
 using Xamarin.Forms;
 /*

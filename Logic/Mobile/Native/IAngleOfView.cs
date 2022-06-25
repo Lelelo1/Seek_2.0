@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace XamarinLogic.Native
+namespace Logic.Native
 {
     public interface IAngleOfView : INative
     {

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Numerics;
-using XamarinLogic.Models;
-using XamarinLogic.Services.PermissionRequired;
-using XamarinLogic.ViewModels;
+using Logic.Models;
+using Logic.Services.PermissionRequired;
+using Logic.ViewModels;
 
-namespace XamarinLogic.Game.Models
+namespace Logic.Game.Models
 {
     public class Orientation
     {

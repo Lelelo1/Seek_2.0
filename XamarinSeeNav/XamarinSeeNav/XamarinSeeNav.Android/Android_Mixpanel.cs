@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using XamarinLogic.Models.Analytics;
-using XamarinLogic.Native;
+using Logic.Models.Analytics;
+using Logic.Native;
 
 namespace Seek.Droid
 {

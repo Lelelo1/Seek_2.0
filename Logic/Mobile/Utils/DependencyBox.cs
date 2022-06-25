@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using XamarinLogic.Native;
+using Logic.Native;
 
-namespace XamarinLogic.Utils
+namespace Logic.Utils
 {
 
     public class DependencyBox<T>

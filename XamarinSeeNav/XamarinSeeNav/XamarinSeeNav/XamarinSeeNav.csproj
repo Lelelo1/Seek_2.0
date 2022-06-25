@@ -39,8 +39,6 @@
     <None Remove="Microsoft.AppCenter.Analytics" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Dotnet">
-      <HintPath>..\..\..\Logic\Export\Dotnet\Bin\Debug\Dotnet.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\..\Logic\Logic.csproj" />
   </ItemGroup>
 </Project>

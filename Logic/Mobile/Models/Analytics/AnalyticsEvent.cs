@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace XamarinLogic.Models.Analytics
+namespace Logic.Models.Analytics
 {
     // needs to have contructor for newtonsoft serialization JsonFlatFileDataStore
     public class BaseAnalyticsEvent

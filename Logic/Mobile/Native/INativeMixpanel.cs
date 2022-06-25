@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using XamarinLogic.Models.Analytics;
+using Logic.Models.Analytics;
 
-namespace XamarinLogic.Native
+namespace Logic.Native
 {
     public interface INativeMixpanel : INative
     {

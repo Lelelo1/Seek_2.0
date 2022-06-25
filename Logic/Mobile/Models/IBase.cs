@@ -1,7 +1,7 @@
 ﻿using System;
-using XamarinLogic.Utils;
+using Logic.Utils;
 
-namespace XamarinLogic.Models
+namespace Logic.Models
 {
     // combine Logic view models and services
     public interface IBase

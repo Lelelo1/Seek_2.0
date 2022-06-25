@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Numerics;
-using XamarinLogic.Utils;
-using XamarinLogic.ViewModels;
+using Logic.Utils;
+using Logic.ViewModels;
 
-namespace XamarinLogic.Game
+namespace Logic.Game
 {
     /* Text/Labels always readable regardless of the device orientation */
     public class Gyro

@@ -1,5 +1,5 @@
 ﻿using System;
-namespace XamarinLogic.Models
+namespace Logic.Models
 {
 	public class User
 	{
