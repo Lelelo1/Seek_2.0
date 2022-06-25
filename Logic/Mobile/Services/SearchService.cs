@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Logic.Models;
-using Newtonsoft.Json;
 using System.Linq;
 
 namespace Logic.Services
@@ -40,10 +39,12 @@ namespace Logic.Services
                 return new List<Place>();
             }
 
-            var osmplaces = JsonConvert.DeserializeObject<PhotonResponse>(json)?.GetOsmPlaces();
+            throw new NotImplementedException("add json dependency to freameworkcontext");
+
+            //var osmplaces = JsonConvert.DeserializeObject<PhotonResponse>(json)?.GetOsmPlaces();
 
 
-            return ToNearestUniquePlaces(userLocation, OsmPlace.ToPlaces(phrase, osmplaces));
+            return null;//ToNearestUniquePlaces(userLocation, OsmPlace.ToPlaces(phrase, osmplaces));
         }
 
 
@@ -54,8 +55,7 @@ namespace Logic.Services
             {
                 return places;
             }
-
-            return places.OrderBy(p => userLocation.MetersTo(p.Location)).GroupBy(p => p.Name).Select(g => g.Take(uniqueBy)).SelectMany(g => g).ToList();
+            return places.OrderBy(p => Logic.FrameworkContext.MetersBetween(userLocation, p.Location)).GroupBy(p => p.Name).Select(g => g.Take(uniqueBy)).SelectMany(g => g).ToList();
 
         }
 

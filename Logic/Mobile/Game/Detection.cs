@@ -31,7 +31,7 @@ namespace Logic.Game
         {
             if(AngleOfView == null)
             {
-                Logic.Platform.ReportCrash(new Exception(), "Detection was not initiated with a AngleOfView before calling start");
+                throw new Exception("Detection was not initiated with a AngleOfView before calling start");
 
             }
 

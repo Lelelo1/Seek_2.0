@@ -37,7 +37,7 @@ namespace Logic.ViewModels
         }
         */
 
-        public Quaternion Orientaion => Logic.FrameworkContext.GetOrientation();
+        public Quaternion Orientation => Logic.FrameworkContext.GetOrientation();
 
         private Activities _currentActivity = Activities.Arrow;
         public Activities CurrentActivity
@@ -99,7 +99,9 @@ namespace Logic.ViewModels
             double meters = -1;
             try
             {
-                meters = Logic.DependencyBox.Get<LocationService>().Location.Value.MetersTo(place.Location);
+                var from = Logic.DependencyBox.Get<LocationService>().Location.Value;
+                var to = place.Location;
+                meters = Logic.FrameworkContext.MetersBetween(from, to);
             }
             catch(Exception exc)
             {

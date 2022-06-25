@@ -58,7 +58,7 @@ namespace Logic.ViewModels
 
         public Location CurrentLocation => Logic.DependencyBox.Get<LocationService>().Location.Value;
 
-        public double CrowsDistance => CurrentLocation == null ? 0 : CurrentLocation.MetersTo(SearchLocation); 
+        public double CrowsDistance => CurrentLocation == null ? 0 : Logic.FrameworkContext.MetersBetween(CurrentLocation, SearchLocation); 
 
         // could be potenially be null, and be initialized when having tapped keyboard
         // is the sessions saved input text
@@ -101,7 +101,7 @@ namespace Logic.ViewModels
 
         List<Place> NearestDistinct(List<Place> places)
         {
-            return places.OrderBy(g => CurrentLocation.MetersTo(g.Location)).GroupBy(g => g.Name).SelectMany(LocationFilter).ToList();
+            return places.OrderBy(g => Logic.FrameworkContext.MetersBetween(CurrentLocation, g.Location)).GroupBy(g => g.Name).SelectMany(LocationFilter).ToList();
         }
 
 
@@ -117,7 +117,7 @@ namespace Logic.ViewModels
 
             var nearestPlace = places[0];
 
-            places.RemoveAll(p => CurrentLocation.MetersTo(p.Location) > Radius);
+            places.RemoveAll(p => Logic.FrameworkContext.MetersBetween(CurrentLocation, p.Location) > Radius);
 
             if (places.Count == 0)
             {
@@ -129,7 +129,7 @@ namespace Logic.ViewModels
 
         List<Place> NearestTake(List<Place> places)
         {
-            return places.OrderBy(g => CurrentLocation.MetersTo(g.Location)).Take(Limit).ToList();
+            return places.OrderBy(g => Logic.FrameworkContext.MetersBetween(CurrentLocation, g.Location)).Take(Limit).ToList();
         }
 
         // Place should contain task of detailsresult

@@ -17,6 +17,8 @@ namespace Logic.Mobile
 
         Task<PermissionStatus> GetCameraPermissionAsync();
         Task<PermissionStatus> GetLocationWhenInUsePermissionAsync();
+
+        double MetersBetween(Location a, Location b);
     }
 }
 

@@ -94,10 +94,7 @@ namespace Logic.Game
 
         static Quaternion GetDeviceOrientation()
         {
-            var main = Logic.DependencyBox.Get<MainViewModel>();
-            var mobileAttitude = main.Orientation.Value;
-
-            return mobileAttitude;
+            return Logic.DependencyBox.Get<MainViewModel>().Orientation;
         }
 
         

@@ -48,11 +48,13 @@ namespace Logic.Models
         {
             // track initial and currnt distance to the place, for analtyics and maybe also rest of application
             var userLocation = Logic.DependencyBox.Get<LocationService>().Location;
-            InitialDistance = userLocation.Value.MetersTo(Location);
+            InitialDistance = Logic.FrameworkContext.MetersBetween(userLocation.Value, Location);
             userLocation.Subscribe((newUserLocation, _) =>
             {
-                CurrentDistance = newUserLocation.MetersTo(Location);
+                CurrentDistance = Logic.FrameworkContext.MetersBetween(newUserLocation, Location);
             });
+
+            
         }
     }
 

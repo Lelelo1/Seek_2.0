@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Logic.Utils;
-using MoreLinq.Extensions;
+
 
 
 namespace Logic.Models
@@ -98,7 +98,7 @@ namespace Logic.Models
             var xName = x.properties.name;
             var yName = y.properties.name;
 
-            return xLocation.MetersTo(yLocation) <= Near && xName == yName;
+            return Logic.FrameworkContext.MetersBetween(xLocation, yLocation) <= Near && xName == yName;
         }
 
         public int GetHashCode(Feature obj)

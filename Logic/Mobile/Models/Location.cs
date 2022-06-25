@@ -1,5 +1,4 @@
 ﻿using System;
-using Geo;
 
 namespace Logic.Models
 {
@@ -30,6 +29,8 @@ namespace Logic.Models
 
         // has to be static to prevent lat 0 lon 0 scenario
 
+        /*
+        // use FrameworkContext instead;
         public double MetersTo(Location to) 
         {
 
@@ -38,6 +39,7 @@ namespace Logic.Models
                 return 0;
             }
 
+            // no deps
             // what does route do in geo nuget package?
             var f = new Coordinate(Latitude, Longitude);
             var t = new Coordinate(to.Latitude, to.Longitude);
@@ -48,9 +50,11 @@ namespace Logic.Models
                 return 0;
             }
             var d = geodeticLine.Distance.Value; // unit is 'M'
+            
+
             return d;
         }
-
+        */
         public string ToHttpString() => "lat=" + Latitude + "&lon=" + Longitude;
     }
 
