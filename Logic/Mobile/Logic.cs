@@ -6,10 +6,11 @@ using Logic.Services;
 using Logic.Utils;
 using Logic.ViewModels;
 using System.Linq;
-using Microsoft.AppCenter.Crashes;
+
 using Logic.Models;
 using Logic.Services.PermissionRequired;
 using Logic.Game;
+using Logic.Mobile;
 
 namespace Logic
 {
@@ -60,11 +61,10 @@ namespace Logic
 
 		public static void Init(ProjectorConfig projectorConfig)
 		{
-			var initHistoryService = HistoryService.Init();
-			var initAnalyticsService = AnalyticsService.Init(CovariantCast<HistoryService>(initHistoryService));
+			var initAnalyticsService = AnalyticsService.Init();
 			var initLogic = new List<Task<IBase>>()
 			{
-				initHistoryService,
+
 				initAnalyticsService,
 				LocationService.Init(), // permission required - should not accessed until started in 'MainViewModel'
 				MainViewModel.Init(),

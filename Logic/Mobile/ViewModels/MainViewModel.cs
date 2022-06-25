@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using Logic.Models;
-using UnitsNet;
 using Logic.Services.PermissionRequired;
-using Microsoft.AppCenter.Crashes;
 using Logic.Utils;
 using System.Threading.Tasks;
 using System.Threading;
-using Xamarin.Essentials;
 using System.Numerics;
 using Location = Logic.Models.Location;
 
@@ -25,7 +22,7 @@ namespace Logic.ViewModels
 
             return Initializing.Task;
         }
-
+        /*
         protected MainViewModel()
         {
             OrientationSensor.ReadingChanged += UpdateOrientation;
@@ -38,6 +35,9 @@ namespace Logic.ViewModels
         {
             Orientation.Set(e.Reading.Orientation); // could set required change level needed for update here
         }
+        */
+
+        public Quaternion Orientaion => Logic.FrameworkContext.GetOrientation();
 
         private Activities _currentActivity = Activities.Arrow;
         public Activities CurrentActivity
@@ -143,19 +143,18 @@ namespace Logic.ViewModels
             }
 
             var meters = mainViewModel.GetDistance(place);
-            var length = Length.FromMeters(meters);
-
+       
             var culture = Thread.CurrentThread.CurrentUICulture.ToString();
             if(UseImperialUnits(culture))
             {
-                return length.ImperialLengthToString();
+                return Logic.FrameworkContext.GetDistanceImperial(meters);
             }
 
-            return length.MetricSystemToString();
+            return Logic.FrameworkContext.GetDistanceMetric(meters);
         }
 
     }
-
+    /*
     public static class UnitExtensions
     {
         // metric system here also
@@ -189,7 +188,7 @@ namespace Logic.ViewModels
             }
             return yards + " yd";
         }
-
+    */
 
     }
     // 1.26
