@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Logic.Native
+namespace LogicLibrary.Native
 {
     public interface ILocationService : INative
     {

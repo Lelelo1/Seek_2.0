@@ -1,11 +1,11 @@
 ﻿using System;
-using Logic.Utils;
-using Logic.Native;
-using Logic.Models;
+using LogicLibrary.Utils;
+using LogicLibrary.Native;
+using LogicLibrary.Models;
 using System.Threading.Tasks;
 using System.Threading;
 
-namespace Logic.Services.PermissionRequired
+namespace LogicLibrary.Services.PermissionRequired
 {
     // only access this service after it has been started, currently in 'MainViewModel'
     public class LocationService : IBase

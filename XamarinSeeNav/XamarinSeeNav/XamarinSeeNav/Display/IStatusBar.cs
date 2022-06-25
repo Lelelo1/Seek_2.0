@@ -1,5 +1,5 @@
 ﻿using System;
-using Logic.Native;
+using LogicLibrary.Native;
 
 namespace Seek.Display
 {

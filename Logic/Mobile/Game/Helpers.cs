@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Numerics;
-using Logic.Game.Models;
-using Logic.Utils;
+using LogicLibrary.Game.Models;
+using LogicLibrary.Utils;
 
-namespace Logic.Game
+namespace LogicLibrary.Game
 {
     /*
     // cpp ogre rws rectangle

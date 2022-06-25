@@ -1,7 +1,7 @@
 ﻿using System;
-using Logic.Utils;
+using LogicLibrary.Utils;
 
-namespace Logic.Native
+namespace LogicLibrary.Native
 {
     public interface INative
     {

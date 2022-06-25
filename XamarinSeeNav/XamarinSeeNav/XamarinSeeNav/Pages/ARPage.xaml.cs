@@ -1,22 +1,22 @@
 ﻿using System;
 using System.ComponentModel;
 using Xamarin.Forms;
-using Logic.Services.PermissionRequired;
-using Logic.Utils;
+using LogicLibrary.Services.PermissionRequired;
+using LogicLibrary.Utils;
 using Seek.Content;
 using Seek.Display;
-using Logic.Models;
+using LogicLibrary.Models;
 using System.Collections.Generic;
 using Seek.Controls;
 using Seek.Visualization;
 using Microsoft.AppCenter.Crashes;
-using Logic.ViewModels;
-using Logic;
-using Logic.Native;
-using Logic.Models.Analytics;
-using Logic.Services;
+using LogicLibrary.ViewModels;
+using LogicLibrary;
+using LogicLibrary.Native;
+using LogicLibrary.Models.Analytics;
+using LogicLibrary.Services;
 using Search = Seek.Content.Search;
-using Logic.Game;
+using LogicLibrary.Game;
 using Xamarin.Essentials;
 
 namespace Seek.Pages
@@ -63,7 +63,7 @@ namespace Seek.Pages
         }
 
 
-        // during initialization time of 'Logic' - show same image as in the splash screen
+        // during initialization time of 'LogicLibrary' - show same image as in the splash screen
         StackLayout LoadingContent { get; set; }
         void SetLoadingContent()
         {

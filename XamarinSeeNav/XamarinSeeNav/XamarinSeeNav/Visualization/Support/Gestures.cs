@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using FormsGestures;
 // using System.Collections.Generic;
-using Logic;
+using LogicLibrary;
 
 namespace Seek.Visualization.Support
 {
@@ -30,7 +30,7 @@ namespace Seek.Visualization.Support
                     iOS.Listener.Up -= iOS.EventHandler;
                 }
             }
-            Logic.Log("In Gestures.cs - missing android implementation");
+            LogicLibrary.Log("In Gestures.cs - missing android implementation");
         }
     }
 
@@ -67,7 +67,7 @@ namespace Seek.Visualization.Support
                 var listener = FormsGestures.Listener.For(view);
                 System.EventHandler<FormsGestures.DownUpEventArgs> handler = (object sender, DownUpEventArgs e) => gesture.Action.Invoke();
                 listener.Up += handler;
-                // Logic.Utils.Log.Message("gesture was added on " + view);
+                // LogicLibrary.Utils.Log.Message("gesture was added on " + view);
             }
         }
     }

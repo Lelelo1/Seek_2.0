@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using Seek.Visualization;
 using System.Linq;
 using Seek.Display.Internal;
-using Logic.ViewModels;
-using Logic;
-using Logic.Utils;
+using LogicLibrary.ViewModels;
+using LogicLibrary;
+using LogicLibrary.Utils;
 using System.Numerics;
-using Logic.Game;
+using LogicLibrary.Game;
 
 namespace Seek.Display
 {

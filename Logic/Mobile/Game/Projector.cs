@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Numerics;
 using System.Threading.Tasks;
-using Logic.Game.Models;
-using Logic.Models;
-using Logic.Native;
-using Logic.Utils;
-using Logic.ViewModels;
+using LogicLibrary.Game.Models;
+using LogicLibrary.Models;
+using LogicLibrary.Native;
+using LogicLibrary.Utils;
+using LogicLibrary.ViewModels;
 
 
-namespace Logic.Game
+namespace LogicLibrary.Game
 {
     public class Projector : IBase
     {
@@ -94,7 +94,7 @@ namespace Logic.Game
 
         static Quaternion GetDeviceOrientation()
         {
-            return Logic.DependencyBox.Get<MainViewModel>().Orientation;
+            return Logic.DependencyBox.Get<MainViewModel>().Orientation.Value;
         }
 
         

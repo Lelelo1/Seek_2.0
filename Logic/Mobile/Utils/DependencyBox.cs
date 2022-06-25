@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Logic.Native;
+using LogicLibrary.Native;
 
-namespace Logic.Utils
+namespace LogicLibrary.Utils
 {
 
     public class DependencyBox<T>

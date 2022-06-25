@@ -137,5 +137,11 @@
     <Compile Include="..\..\Logic\Mobile\Remote\Apis\Providers.cs">
       <Link>Mobile\Remote\Apis\Providers.cs</Link>
     </Compile>
+    <Compile Include="..\XamarinLogic\Models\PermissionStatus.cs">
+      <Link>Mobile\Models\PermissionStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\XamarinLogic\IFrameworkContext.cs">
+      <Link>Mobile\IFrameworkContext.cs</Link>
+    </Compile>
   </ItemGroup>
 </Project>

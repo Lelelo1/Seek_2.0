@@ -1,7 +1,7 @@
 ﻿using System;
-using Logic;
-using Logic.Models;
-using Logic.ViewModels;
+using LogicLibrary;
+using LogicLibrary.Models;
+using LogicLibrary.ViewModels;
 using Seek.Visualization.Support;
 using Xamarin.Forms;
 

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Logic.Models
+namespace LogicLibrary.Models
 {
     public interface IResult
     {

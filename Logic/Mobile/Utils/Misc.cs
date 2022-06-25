@@ -4,10 +4,10 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
-using Logic;
-using Logic.Mobile.Models;
+using LogicLibrary;
+using LogicLibrary.Models;
 
-namespace Logic.Utils
+namespace LogicLibrary.Utils
 {
 
     public class Calc

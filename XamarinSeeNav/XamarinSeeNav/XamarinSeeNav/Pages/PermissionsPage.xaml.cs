@@ -2,13 +2,14 @@
 using Xamarin.CommunityToolkit.UI.Views;
 using Xamarin.CommunityToolkit.Core;
 using Xamarin.Forms;
-using Logic.Native;
+using LogicLibrary.Native;
 using Seek.Controls;
-using Xamarin.Essentials;
+//using Xamarin.Essentials;
 using Seek.Display;
-using Logic;
+using LogicLibrary;
 using System.Threading.Tasks;
-using Logic.Utils;
+using LogicLibrary.Utils;
+using LogicLibrary.Models;
 
 // It seems MediaElement in CommunityToolkit can't display image, source set to png
 
@@ -62,7 +63,7 @@ namespace Seek.Pages
             Image.Opacity = opacity;
         }
 
-        DisplayInfo DisplayInfo = DeviceDisplay.MainDisplayInfo;
+        Xamarin.Essentials.DisplayInfo DisplayInfo = Xamarin.Essentials.DeviceDisplay.MainDisplayInfo;
 
         Rectangle Full { get; } = new Rectangle(0, 0, 1, 1);
 
@@ -133,12 +134,13 @@ namespace Seek.Pages
 
                 if (camera == PermissionStatus.Denied)
                 {
-                    AppInfo.ShowSettingsUI();
+                    Xamarin.Essentials.AppInfo.ShowSettingsUI();
                     return;
                 }
 
-                var status = await Permissions.RequestAsync<Permissions.Camera>();
-                HandlePermissionRequestResponse(status, statusImage);
+                var status = await Xamarin.Essentials.Permissions.RequestAsync<Xamarin.Essentials.Permissions.Camera>();
+
+                HandlePermissionRequestResponse(status.ToLogicPermission(), statusImage);
 
             }, await PermissionUtils.GetCamera());
 
@@ -155,12 +157,12 @@ namespace Seek.Pages
                 if (locationWhenInUse == PermissionStatus.Denied)
                 {
                     Logic.Log("location" + " can't be asked more than once on iOS");
-                    AppInfo.ShowSettingsUI();
+                    Xamarin.Essentials.AppInfo.ShowSettingsUI();
                     return;
                 }
 
-                var status = await Permissions.RequestAsync<Permissions.LocationWhenInUse>();
-                HandlePermissionRequestResponse(status, statusImage);
+                var status = await Xamarin.Essentials.Permissions.RequestAsync<Xamarin.Essentials.Permissions.LocationWhenInUse>();
+                HandlePermissionRequestResponse(status.ToLogicPermission(), statusImage);
 
             }, await PermissionUtils.GetLocationWhenInUse());
 
@@ -172,7 +174,8 @@ namespace Seek.Pages
         {
             if (status == PermissionStatus.Granted)
             {
-                MainThread.BeginInvokeOnMainThread(() =>
+
+                Logic.MainThread.Invoke(() =>
                 {
                     statusImage.Source = PermissionButton.GetStatusImage(PermissionStatus.Granted).Source;
                 });

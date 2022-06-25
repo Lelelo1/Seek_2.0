@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Logic.Models
+namespace LogicLibrary.Models
 {
     public enum SearchTrigger
     {

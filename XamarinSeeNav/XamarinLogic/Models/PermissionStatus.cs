@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Logic.Mobile.Models
+namespace LogicLibrary.Models
 {
     // https://docs.microsoft.com/en-us/xamarin/essentials/permissions?tabs=android
     public enum PermissionStatus

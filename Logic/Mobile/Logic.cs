@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Logic.Native;
-using Logic.Services;
-using Logic.Utils;
-using Logic.ViewModels;
+using LogicLibrary.Native;
+using LogicLibrary.Services;
+using LogicLibrary.Utils;
+using LogicLibrary.ViewModels;
 using System.Linq;
 
-using Logic.Models;
-using Logic.Services.PermissionRequired;
-using Logic.Game;
-using Logic.Mobile;
+using LogicLibrary.Models;
+using LogicLibrary.Services.PermissionRequired;
+using LogicLibrary.Game;
+using LogicLibrary.Mobile;
 
-namespace Logic
+namespace LogicLibrary
 {
 	public class Logic
 	{
@@ -62,7 +62,7 @@ namespace Logic
 		public static void Init(ProjectorConfig projectorConfig)
 		{
 			var initAnalyticsService = AnalyticsService.Init();
-			var initLogic = new List<Task<IBase>>()
+			var initLogicLibrary = new List<Task<IBase>>()
 			{
 
 				initAnalyticsService,
@@ -72,7 +72,7 @@ namespace Logic
 				Projector.Init(projectorConfig)
 			};
 
-			var initialization = Task.WhenAll(initLogic);
+			var initialization = Task.WhenAll(initLogicLibrary);
 			CatchInitializationErrors(initialization);
 		}
 
@@ -80,7 +80,7 @@ namespace Logic
 		{
 			try
 			{
-				var bases = await initialization; // wait for logic services to become available
+				var bases = await initialization; // wait for LogicLibrary services to become available
 				DependencyBox.AddRange(bases.ToList());
 				// returning bool so that there is better indication that bases should be accessed from 'L.Get<AnalyticsService>' eg
 				SafeInitialization.SetResult(true);
@@ -89,7 +89,7 @@ namespace Logic
 			catch (Exception exc)
 			{
 				Log(exc.Message);
-				//Crashes.TrackError(exc, Error.Properties("When initializing Logic"), null);
+				//Crashes.TrackError(exc, Error.Properties("When initializing LogicLibrary"), null);
 
 				if (N.Get<IUtilitiesService>().Runtime == Runtime.Debug)
 				{   // so that I can see and get the full exception

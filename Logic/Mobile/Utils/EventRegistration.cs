@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Logic.Utils;
+using LogicLibrary.Utils;
 
-namespace Logic.Utils
+namespace LogicLibrary.Utils
 {
     /* Works like a listener which updates for every milliseconds specified.
      * OnReadingChanged has no otherwise typical Xamarin sender and event args.

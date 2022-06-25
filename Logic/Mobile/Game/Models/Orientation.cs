@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Numerics;
-using Logic.Models;
-using Logic.Services.PermissionRequired;
-using Logic.ViewModels;
+using LogicLibrary.Models;
+using LogicLibrary.Services.PermissionRequired;
+using LogicLibrary.ViewModels;
 
-namespace Logic.Game.Models
+namespace LogicLibrary.Game.Models
 {
     public class Orientation
     {

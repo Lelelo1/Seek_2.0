@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Numerics;
 using System.Threading.Tasks;
-using Logic.Mobile.Models;
-using Logic.Models;
+using LogicLibrary.Models;
 
-namespace Logic.Mobile
+namespace LogicLibrary.Mobile
 {
     public interface IFrameworkContext
     {

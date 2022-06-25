@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
-using Logic.Utils;
-using Logic.Native;
-using Logic.Game.Models;
+using LogicLibrary.Utils;
+using LogicLibrary.Native;
+using LogicLibrary.Game.Models;
 
-namespace Logic.Game
+namespace LogicLibrary.Game
 {
 
     // south perceptibles don't seperate on the height for some reason only in width // <-- is still valid?

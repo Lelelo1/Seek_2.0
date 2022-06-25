@@ -2,16 +2,15 @@
 using Foundation;
 using UIKit;
 using System.Threading.Tasks;
-using Logic;
-using Logic.Services;
-using Logic.Models.Analytics;
-using static Logic.Logic;
+using LogicLibrary;
+using LogicLibrary.Services;
+using LogicLibrary.Models.Analytics;
 using Xamarin.Forms;
 using Microsoft.AppCenter.Crashes;
-using Logic.Utils;
+using LogicLibrary.Utils;
 using Seek.iOS.Services;
 using System.Collections.Generic;
-using Logic.Native;
+using LogicLibrary.Native;
 using Microsoft.AppCenter;
 using Device = Xamarin.Forms.Device;
 
@@ -70,7 +69,7 @@ namespace Seek.iOS
 
         static void SetLogger()
         {
-            LogDelegate logger = Logic.iOSLogger;
+            Logic.LogDelegate logger = Logic.iOSLogger;
 
             if (Device.RuntimePlatform == Device.Android)
             {

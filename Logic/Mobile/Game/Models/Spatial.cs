@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Numerics;
-using Logic.Models;
+using LogicLibrary.Models;
 
-namespace Logic.Game.Models
+namespace LogicLibrary.Game.Models
 {
     public class Spatial
     {

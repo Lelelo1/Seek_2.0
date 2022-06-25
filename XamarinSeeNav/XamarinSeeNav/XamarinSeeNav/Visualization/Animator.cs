@@ -2,9 +2,9 @@
 using System.Numerics;
 using System.Threading;
 using System.Threading.Tasks;
-using Logic.Game;
-using Logic.Game.Models;
-using Logic.Utils;
+using LogicLibrary.Game;
+using LogicLibrary.Game.Models;
+using LogicLibrary.Utils;
 
 namespace Seek.Visualization
 {

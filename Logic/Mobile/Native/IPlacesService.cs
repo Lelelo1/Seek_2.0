@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Logic.Models;
-using Logic.Remote.Apis;
+using LogicLibrary.Models;
+using LogicLibrary.Remote.Apis;
 
-namespace Logic.Native
+namespace LogicLibrary.Native
 {
     public interface IPlacesService : INative, IProvider
     {

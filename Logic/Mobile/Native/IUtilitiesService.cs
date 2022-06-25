@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Logic.Models;
+using LogicLibrary.Models;
 
-namespace Logic.Native
+namespace LogicLibrary.Native
 {
     // https://stackoverflow.com/questions/43687689/keeping-screen-turned-on-for-certain-pages
     public interface IUtilitiesService : INative

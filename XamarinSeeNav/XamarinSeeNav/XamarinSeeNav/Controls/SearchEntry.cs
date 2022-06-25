@@ -3,8 +3,8 @@ using Xamarin.Forms;
 using Seek.Pages;
 using ImageButton = Xamarin.Forms.ImageButton;
 using Seek.Display;
-using Logic.ViewModels;
-using Logic;
+using LogicLibrary.ViewModels;
+using LogicLibrary;
 
 namespace Seek.Controls
 {
@@ -56,7 +56,7 @@ namespace Seek.Controls
         public void SetBounds (Rectangle bounds)
         {
             // on android all content, camera view and mainContent are not placed under the statusbar. only on ios.
-            //Logic.Utils.Log.Message("screen bounds was: " + bounds);
+            //LogicLibrary.Utils.Log.Message("screen bounds was: " + bounds);
 
             var statusBarHeight = ARPage.Instance.StatusBarHeight;
             AbsoluteLayout.SetLayoutBounds(Entry, new Rectangle(Margin.Left + 0, Margin.Top + statusBarHeight, GetInputTextWidthLimit(bounds.Width - Margin.Right), Size - Margin.Bottom));

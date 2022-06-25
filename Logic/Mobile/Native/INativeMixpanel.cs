@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Logic.Models.Analytics;
+using LogicLibrary.Models.Analytics;
 
-namespace Logic.Native
+namespace LogicLibrary.Native
 {
     public interface INativeMixpanel : INative
     {

@@ -1,7 +1,7 @@
 ﻿using System;
-using Logic.Game.Models;
+using LogicLibrary.Game.Models;
 
-namespace Logic.Models
+namespace LogicLibrary.Models
 {
     public interface IBubble
     {

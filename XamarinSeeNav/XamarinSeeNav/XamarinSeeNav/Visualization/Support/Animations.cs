@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using Xamarin.Forms;
 using System.Linq;
 using Seek.Visualization.Contents.Large;
-using Rectangle = Logic.Game.Models.Rectangle;
-using Size = Logic.Game.Models.Size;
-using Logic;
-using Logic.Game;
+using Rectangle = LogicLibrary.Game.Models.Rectangle;
+using Size = LogicLibrary.Game.Models.Size;
+using LogicLibrary;
+using LogicLibrary.Game;
 
 namespace Seek.Visualization.Support
 {

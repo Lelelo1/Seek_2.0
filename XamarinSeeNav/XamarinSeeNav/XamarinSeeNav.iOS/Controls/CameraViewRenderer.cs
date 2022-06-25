@@ -6,8 +6,8 @@ using Xamarin.Forms.Platform.iOS;
 using AVFoundation;
 using Seek.Controls;
 using Seek.iOS.Controls;
-using Logic.Utils;
-using Logic;
+using LogicLibrary.Utils;
+using LogicLibrary;
 
 [assembly: ExportRenderer(typeof(CameraView), typeof(CameraViewRenderer))]
 namespace Seek.iOS.Controls
@@ -28,7 +28,7 @@ namespace Seek.iOS.Controls
             if(Ext.HasValue(CameraView))
             {
                 // could happen if using 'CameraView' in two places..?
-                Logic.Log("warning, attempting to creating a new iOSCameraView was ignored");
+                LogicLibrary.Log("warning, attempting to creating a new iOSCameraView was ignored");
                 return;
             }
 

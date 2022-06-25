@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-//using Logic.Search.Models;
+//using LogicLibrary.Search.Models;
 
 /* old visual items used by old projection and Extenions class*/
 namespace Seek.Visualization.VisualItems.Archived

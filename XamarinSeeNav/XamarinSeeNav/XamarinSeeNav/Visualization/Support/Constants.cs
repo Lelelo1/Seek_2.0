@@ -1,5 +1,5 @@
 ﻿using System;
-using Logic.Game.Models;
+using LogicLibrary.Game.Models;
 
 //using Xamarin.Forms;
 

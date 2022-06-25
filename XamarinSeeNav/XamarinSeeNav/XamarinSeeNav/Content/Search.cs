@@ -1,20 +1,20 @@
 ﻿using System;
 using Seek.Display;
 using Xamarin.Forms;
-using Logic.Utils;
-using Logic.ViewModels;
-using Logic;
-using Logic.Services;
-using Logic.Models.Analytics;
+using LogicLibrary.Utils;
+using LogicLibrary.ViewModels;
+using LogicLibrary;
+using LogicLibrary.Services;
+using LogicLibrary.Models.Analytics;
 using Color = Xamarin.Forms.Color;
 //using Seek.Main;
 using Xamarin.Forms.PlatformConfiguration;
 using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
-using Logic.Services.PermissionRequired;
+using LogicLibrary.Services.PermissionRequired;
 using System.Collections.Generic;
 using Seek.Controls; 
 using System.Linq;
-using Logic.Models;
+using LogicLibrary.Models;
 using Seek.Pages;
 // for dumb reasons SearcBar needs to be both manualy sized and positioned to use it inside a AbsoluteLayout
 // this means I have to know the size of SearchBar before using 'AbsoluteLayout.SetLayoutBounds'
@@ -175,7 +175,7 @@ namespace Seek.Content
             // null places indicates failture in the. it will show up as -1 int in analytics 
             int count = Ext.HasValue(results) ? results.Count : -1;
             var location = Logic.DependencyBox.Get<LocationService>().Location.Value;
-            var analyticsEvent = new Logic.Models.Analytics.Search(inputText, count, location.ToString(), searchType.ToString());
+            var analyticsEvent = new LogicLibrary.Models.Analytics.Search(inputText, count, location.ToString(), searchType.ToString());
 
             Logic.DependencyBox.Get<AnalyticsService>().Track(analyticsEvent);
         }

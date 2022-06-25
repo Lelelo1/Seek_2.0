@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Seek.Display;
-using Logic;
+using LogicLibrary;
 
 namespace Seek.Content
 {

@@ -1,16 +1,16 @@
 ﻿using System;
 using Xamarin.Forms;
-using Logic;
-using Logic.Native;
-using Logic.Services;
+using LogicLibrary;
+using LogicLibrary.Native;
+using LogicLibrary.Services;
 using Microsoft.AppCenter.Crashes;
-using Logic.Models.Analytics;
-using Logic.ViewModels;
-using Logic.Utils;
-using Logic.Services.PermissionRequired;
+using LogicLibrary.Models.Analytics;
+using LogicLibrary.ViewModels;
+using LogicLibrary.Utils;
+using LogicLibrary.Services.PermissionRequired;
 using Seek.Visualization.Support;
 using Seek.Display;
-using Logic.Game;
+using LogicLibrary.Game;
 using Seek.Pages;
 
 namespace Seek
@@ -22,7 +22,7 @@ namespace Seek
         {
             InitializeComponent();
             
-            var projectionConfig = new ProjectorConfig(Constants.Size, DisplayBase.LogicScreen);
+            var projectionConfig = new ProjectorConfig(Constants.Size, DisplayBase.LogicLibraryScreen);
             Logic.Init(projectionConfig); // possibly put in thread.. I don't get exceptions then though..?
             Xamarin.Essentials.DeviceDisplay.KeepScreenOn = true;
             MainPage = new NavigationPage(ARPage.Instance);

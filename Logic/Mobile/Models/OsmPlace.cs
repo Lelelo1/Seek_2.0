@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Logic.Models
+namespace LogicLibrary.Models
 {
     public class OsmPlace
     {

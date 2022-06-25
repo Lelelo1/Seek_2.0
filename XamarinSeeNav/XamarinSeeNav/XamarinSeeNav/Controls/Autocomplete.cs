@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Logic;
-using Logic.Utils;
-using Logic.ViewModels;
+using LogicLibrary;
+using LogicLibrary.Utils;
+using LogicLibrary.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Essentials;
 using Seek.Content;
@@ -10,7 +10,7 @@ using Seek.Content;
 using Xamarin.Forms.PlatformConfiguration;
 using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 using ScrollView = Xamarin.Forms.ScrollView;
-using Logic.Services;
+using LogicLibrary.Services;
 using System.Linq;
 using System.Threading.Tasks;
 

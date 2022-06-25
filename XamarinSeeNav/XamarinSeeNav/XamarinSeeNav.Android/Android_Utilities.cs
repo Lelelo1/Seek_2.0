@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Logic.Models;
-using Logic.Native;
+using LogicLibrary.Models;
+using LogicLibrary.Native;
 
 namespace Seek.Droid
 {

@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Linq;
-using Logic.Models;
-using Logic.Native;
-using Logic.Services.PermissionRequired;
+using LogicLibrary.Models;
+using LogicLibrary.Native;
+using LogicLibrary.Services.PermissionRequired;
 using Xamarin.Forms;
-using Logic;
-using Logic.Game;
+using LogicLibrary;
+using LogicLibrary.Game;
 
 namespace Seek
 {
 
-    // methods to handle the logic project's services and use 'Xamarin.Forms' package only in this (forms) project
+    // methods to handle the LogicLibrary project's services and use 'Xamarin.Forms' package only in this (forms) project
 
     public static class ServiceExtensions
     {
@@ -24,20 +24,7 @@ namespace Seek
             return detection;
         }
 
-        
-        // previsouly UtilitiesExtensions in Logic project
-        static string ShownTurtorial { get; set; } = "ShownTurtorial";
 
-        public static bool HasShownTurtotial()
-        {
-            var keys = Application.Current.Properties.Keys.ToList().Find((key) => key == ShownTurtorial);
-            return keys != null;
-        }
-        public static void SetHasShownTurtorial()
-        {
-            Application.Current.Properties.Add(ShownTurtorial, true);
-        }
-        
         static LocationService LocationService = Logic.DependencyBox.Get<LocationService>();
         // LocationService tests..
         // test switching to different locations by tapping a button. also disables underlaying location updated made per second
@@ -48,7 +35,7 @@ namespace Seek
         {
             get
             {
-                if(LocationService.IsActive)
+                if (LocationService.IsActive)
                 {
                     LocationService.Stop();
                 }
@@ -93,16 +80,15 @@ namespace Seek
                 FadeLocation(LocationService, partTime, false);
             });
         }
-    
+
+        // refactor this file
+
+        public static PermissionStatus ToLogicPermission(this Xamarin.Essentials.PermissionStatus status)
+        {
+            return (PermissionStatus)Enum.Parse(typeof(PermissionStatus), status.ToString());
+        }
     }
 
 
-    // Put all in IBase dependencies into
-    /*
-    public class T<A> where A : class
-    {
-        public static A Instance => DependencyService.Get<A>();
-    }
-    */
 }
 

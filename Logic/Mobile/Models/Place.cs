@@ -1,9 +1,9 @@
 ﻿
 using System;
-using Logic.Services.PermissionRequired;
+using LogicLibrary.Services.PermissionRequired;
 
 
-namespace Logic.Models
+namespace LogicLibrary.Models
 {
 
     // maybe also cache the responses

@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Logic.Utils;
-using Logic.ViewModels;
+using LogicLibrary.Utils;
+using LogicLibrary.ViewModels;
 
-namespace Logic.Models.Analytics
+namespace LogicLibrary.Models.Analytics
 {
 
     // given in the sequence of creation, 'VisualShownEvent' created first

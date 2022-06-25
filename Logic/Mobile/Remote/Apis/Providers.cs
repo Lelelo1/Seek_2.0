@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using Logic.Models;
-using Logic.Native;
+using LogicLibrary.Models;
+using LogicLibrary.Native;
 
 
 
-namespace Logic.Remote.Apis
+namespace LogicLibrary.Remote.Apis
 {
     
     public interface IProvider

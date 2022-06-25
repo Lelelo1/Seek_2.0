@@ -2,16 +2,16 @@
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using System.Collections.Generic;
-using Logic.Services.PermissionRequired;
-using Logic.Testing;
-using Logic.Remote.Apis;
-using Logic.Native;
-using Logic.Services;
-using Logic.Models;
-using Logic.Utils;
+using LogicLibrary.Services.PermissionRequired;
+using LogicLibrary.Testing;
+using LogicLibrary.Remote.Apis;
+using LogicLibrary.Native;
+using LogicLibrary.Services;
+using LogicLibrary.Models;
+using LogicLibrary.Utils;
 using System.Linq;
 
-namespace Logic.ViewModels
+namespace LogicLibrary.ViewModels
 {
     public class SearchViewModel : IBase
     {

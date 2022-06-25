@@ -65,7 +65,7 @@ namespace Seek.Visualization.Contents
         DataTemplate DataTemplate { get; set; }
         public Template(Templates templates)
         {
-            // Logic.Utils.Log.Message("new datatemplate");
+            // LogicLibrary.Utils.Log.Message("new datatemplate");
             DataTemplate = new DataTemplate(() =>
             {
                 var content = (IContent)new T();

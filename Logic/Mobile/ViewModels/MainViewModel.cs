@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using Logic.Models;
-using Logic.Services.PermissionRequired;
-using Logic.Utils;
+using LogicLibrary.Models;
+using LogicLibrary.Services.PermissionRequired;
+using LogicLibrary.Utils;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Numerics;
-using Location = Logic.Models.Location;
+using Location = LogicLibrary.Models.Location;
 
-namespace Logic.ViewModels
+namespace LogicLibrary.ViewModels
 {
 
     public class MainViewModel : IBase
@@ -37,7 +37,12 @@ namespace Logic.ViewModels
         }
         */
 
-        public Quaternion Orientation => Logic.FrameworkContext.GetOrientation();
+        public Observable<Quaternion> Orientation { get; } = new Observable<Quaternion>(Quaternion.Identity);
+
+        public void UpdateOrientation(Quaternion quaternion)
+        {
+            Orientation.Set(quaternion);
+        }
 
         private Activities _currentActivity = Activities.Arrow;
         public Activities CurrentActivity
@@ -164,7 +169,7 @@ namespace Logic.ViewModels
         public static string MetricSystemToString(this Length length)
         {
             var meters = Math.Round(length.Meters);
-            Logic.Log(""+meters);
+            LogicLibrary.Log(""+meters);
             if (meters > 1000 + 200)
             {
                 length = Length.FromKilometers(meters / 1000);

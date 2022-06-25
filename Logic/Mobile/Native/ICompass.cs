@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Logic.Native
+namespace LogicLibrary.Native
 {
     public delegate void HeadingChanged();
     public interface ICompass

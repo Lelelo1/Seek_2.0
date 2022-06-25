@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using Logic.Models.Analytics;
-using Logic.Native;
+using LogicLibrary.Models.Analytics;
+using LogicLibrary.Native;
 
 namespace Seek.Droid
 {

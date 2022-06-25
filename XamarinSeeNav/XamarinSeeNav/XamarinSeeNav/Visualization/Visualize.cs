@@ -5,18 +5,18 @@ using System.Linq;
 //using Seek.Controls;
 using System.Collections.Concurrent;
 using System.Numerics;
-using Logic.Utils;
+using LogicLibrary.Utils;
 using Seek.Visualization.Support;
 using Seek.Content;
 using Microsoft.AppCenter.Crashes;
-using Logic.ViewModels;
-using Logic;
-using Logic.Models;
-using Logic.Native;
+using LogicLibrary.ViewModels;
+using LogicLibrary;
+using LogicLibrary.Models;
+using LogicLibrary.Native;
 using Constants = Seek.Visualization.Support.Constants;
-using Logic.Game;
+using LogicLibrary.Game;
 using System.Threading.Tasks;
-using Logic.Game.Models;
+using LogicLibrary.Game.Models;
 using Xamarin.CommunityToolkit.UI.Views;
 using Seek.Display;
 
@@ -41,7 +41,7 @@ namespace Seek.Visualization
 
         static Xamarin.Forms.Size CameraViewSize { get; set; } = new Xamarin.Forms.Size(0, 0);
 
-        static Logic.Game.Models.Rectangle CameraBounds => CameraLayout.Bounds.ToPerceptualRectangle();
+        static LogicLibrary.Game.Models.Rectangle CameraBounds => CameraLayout.Bounds.ToPerceptualRectangle();
 
         public static void Init()
         {

@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using Logic.Services.PermissionRequired;
+using LogicLibrary.Services.PermissionRequired;
 using System.Linq;
-using Logic.Utils;
-using Logic.Remote.Apis;
-using Logic.Models;
-using Logic.Native;
+using LogicLibrary.Utils;
+using LogicLibrary.Remote.Apis;
+using LogicLibrary.Models;
+using LogicLibrary.Native;
 
-namespace Logic.Testing
+namespace LogicLibrary.Testing
 {
 
     // previously in MockPlaces, which contained photos on azure

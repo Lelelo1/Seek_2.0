@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Logic.Models;
-using Logic.Models.Analytics;
-using Logic.Native;
+using LogicLibrary.Models;
+using LogicLibrary.Models.Analytics;
+using LogicLibrary.Native;
 
 
-namespace Logic.Services
+namespace LogicLibrary.Services
 {
 
     public class AnalyticsService : IBase

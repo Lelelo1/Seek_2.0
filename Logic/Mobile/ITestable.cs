@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Logic
+namespace LogicLibrary
 {
 	// never mind actually, just try catch the Init methods instead..?
 	/*

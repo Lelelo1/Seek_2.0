@@ -4,7 +4,7 @@ using Android.Hardware.Camera2;
 using Xamarin.Forms;
 using Java.Lang.Reflect;
 using Seek.Droid.Controls.Camera2Forms.Camera2;
-using Logic.Native;
+using LogicLibrary.Native;
 
 [assembly: Dependency(typeof(Seek.Droid.Android_AngleOfView))]
 namespace Seek.Droid

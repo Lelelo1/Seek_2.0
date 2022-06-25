@@ -1,9 +1,9 @@
 ﻿using System;
 using Xamarin.Forms;
 using System.Linq;
-using Logic.Native;
-using Logic;
-using Logic.Services;
+using LogicLibrary.Native;
+using LogicLibrary;
+using LogicLibrary.Services;
 
 // page to see history of analtics events for testing
 
@@ -27,7 +27,7 @@ namespace Seek.Test
         {
             base.OnAppearing();
             /*
-            var list = Logic.DependencyBox.Get<HistoryService>().Read();
+            var list = LogicLibrary.DependencyBox.Get<HistoryService>().Read();
             list.ToList().ForEach(e =>
             {
                 listA.Children.Add(ToLabel(e.ToString()));

@@ -1,6 +1,6 @@
 ﻿using UIKit;
 using Xamarin.Forms;
-using Logic.Native;
+using LogicLibrary.Native;
 [assembly: Dependency(typeof(Seek.iOS.iOS_AngleOfView))]
 namespace Seek.iOS
 {

@@ -1,11 +1,11 @@
 ﻿using System;
-using Logic;
-using Logic.Services;
+using LogicLibrary;
+using LogicLibrary.Services;
 //using Seek.Controls;
 using Seek.Display;
 using Xamarin.Forms;
 using Color = Xamarin.Forms.Color;
-using Logic.Native;
+using LogicLibrary.Native;
 using Seek.Pages;
 using Seek.Test;
 using Xamarin.CommunityToolkit.UI.Views;

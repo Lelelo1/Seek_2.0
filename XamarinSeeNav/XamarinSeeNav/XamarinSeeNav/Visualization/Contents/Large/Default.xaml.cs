@@ -1,6 +1,6 @@
 ﻿using System;
-using Logic;
-using Logic.ViewModels;
+using LogicLibrary;
+using LogicLibrary.ViewModels;
 using Seek.Visualization.Support;
 using Xamarin.Forms;
 

@@ -1,7 +1,7 @@
 ﻿using System;
-using Logic.Game.Models;
+using LogicLibrary.Game.Models;
 
-namespace Logic.Game
+namespace LogicLibrary.Game
 {
     public class ProjectorConfig
     {

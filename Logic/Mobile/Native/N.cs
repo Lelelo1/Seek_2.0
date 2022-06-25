@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Logic.Utils;
+using LogicLibrary.Utils;
 
-namespace Logic.Native
+namespace LogicLibrary.Native
 {
     public class N
     {

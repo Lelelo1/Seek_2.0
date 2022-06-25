@@ -1,7 +1,7 @@
 ﻿using System;
-using Logic;
-using Logic.Services.PermissionRequired;
-using Logic.ViewModels;
+using LogicLibrary;
+using LogicLibrary.Services.PermissionRequired;
+using LogicLibrary.ViewModels;
 using Xamarin.Forms;
 
 namespace Seek.Visualization.Support

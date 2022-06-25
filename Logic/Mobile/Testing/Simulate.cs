@@ -1,7 +1,7 @@
 ﻿using System;
-using Logic.Models;
+using LogicLibrary.Models;
 
-namespace Logic.Testing
+namespace LogicLibrary.Testing
 {
     public class Simulate
     {

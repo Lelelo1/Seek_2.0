@@ -1,9 +1,9 @@
 ﻿using System;
-using Logic.Utils;
+using LogicLibrary.Utils;
 
-namespace Logic.Models
+namespace LogicLibrary.Models
 {
-    // combine Logic view models and services
+    // combine LogicLibrary view models and services
     public interface IBase
     {
 

@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Logic.Utils;
+using LogicLibrary.Utils;
 
 
 
-namespace Logic.Models
+namespace LogicLibrary.Models
 {
     public class Geometry
     {

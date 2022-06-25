@@ -4,11 +4,11 @@ using MapKit;
 using System.Linq;
 using System.Collections.Generic;
 using Xamarin.Forms;
-using Logic.Models;
-using Logic.Utils;
+using LogicLibrary.Models;
+using LogicLibrary.Utils;
 using Microsoft.AppCenter.Crashes;
-using Logic.Native;
-using Logic;
+using LogicLibrary.Native;
+using LogicLibrary;
 using Foundation;
 
 [assembly: Dependency(typeof(Seek.iOS.Services.iOS_PlacesService))]
@@ -80,7 +80,7 @@ namespace Seek.iOS.Services
             catch(Exception exc)
             {
                 var msg = "problem occued in ios native places service when creating list of places from list of MKMapItems";
-                Logic.Log(msg);
+                LogicLibrary.Log(msg);
                 var errorProperties = Error.Properties("Creating Places");
                 errorProperties.Add("message", msg);
                 Crashes.TrackError(exc, errorProperties);

@@ -4,10 +4,10 @@ using Xam.Plugin.Mixpanel.iOS;
 using System.Linq;
 using System.Collections.Generic;
 using Xamarin.Forms;
-using Logic.Native;
-using Logic.Models.Analytics;
+using LogicLibrary.Native;
+using LogicLibrary.Models.Analytics;
 using Seek.iOS.Services;
-using Logic.Utils;
+using LogicLibrary.Utils;
 [assembly: Dependency(typeof(Seek.iOS.iOS_Mixpanel))]
 namespace Seek.iOS
 {

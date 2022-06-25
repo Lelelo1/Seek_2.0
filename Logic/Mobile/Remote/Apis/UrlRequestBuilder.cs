@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Logic.Remote.Apis
+namespace LogicLibrary.Remote.Apis
 {
 
     // use nuget instead..?

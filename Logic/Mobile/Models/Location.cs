@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Logic.Models
+namespace LogicLibrary.Models
 {
 
     public class Location

@@ -9,12 +9,12 @@ using Android.OS;
 using System.Linq;
 using Xamarin.Forms;
 using System.Collections.Generic;
-using Logic.Native;
+using LogicLibrary.Native;
 using Seek.Droid.Services;
-using Logic;
+using LogicLibrary;
 using Microsoft.AppCenter.Crashes;
-using Logic.Utils;
-using static Logic.Logic;
+using LogicLibrary.Utils;
+using static LogicLibrary.LogicLibrary;
 
 namespace Seek.Droid
 {
@@ -34,8 +34,8 @@ namespace Seek.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
 
             SetLogger();
-            Logic.SetThreading(Device.BeginInvokeOnMainThread, Device.InvokeOnMainThreadAsync);
-            Logic.SetNativeDependencies(GetNativeDependencies());
+            LogicLibrary.SetThreading(Device.BeginInvokeOnMainThread, Device.InvokeOnMainThreadAsync);
+            LogicLibrary.SetNativeDependencies(GetNativeDependencies());
 
             Forms9Patch.Droid.Settings.Initialize(this);
             TouchEffect.Android.TouchEffectPreserver.Preserve();
@@ -52,14 +52,14 @@ namespace Seek.Droid
 
         static void SetLogger()
         {
-            LogDelegate logger = Logic.iOSLogger;
+            LogDelegate logger = LogicLibrary.iOSLogger;
 
             if (Device.RuntimePlatform == Device.Android)
             {
-                logger = Logic.AndroidLogger; // needed for logs to get to 'application output'
+                logger = LogicLibrary.AndroidLogger; // needed for logs to get to 'application output'
             }
 
-            Logic.SetLogger(logger);
+            LogicLibrary.SetLogger(logger);
         }
 
         // ...
@@ -76,7 +76,7 @@ namespace Seek.Droid
             }
             catch (Exception exc)
             {
-                Logic.Log("could not start AppCenter: " + exc.Message);
+                LogicLibrary.Log("could not start AppCenter: " + exc.Message);
             }
         }
         */
@@ -106,7 +106,7 @@ namespace Seek.Droid
             }
             catch (Exception exc)
             {
-                Logic.Log("failed to initialize native dependencies");
+                LogicLibrary.Log("failed to initialize native dependencies");
                 Crashes.TrackError(exc, Error.Properties("When initialising native dependencies of the iOS project"));
                 // can native dependencies fail production when they don't in debug, should I account for it..?
                 throw exc;
