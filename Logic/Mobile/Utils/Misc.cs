@@ -216,15 +216,15 @@ namespace LogicLibrary.Utils
 
     public class PermissionUtils
     {
-        public static Task<PermissionStatus> GetCamera() => Logic.FrameworkContext.GetCameraPermissionAsync();
-        public static Task<PermissionStatus> GetLocationWhenInUse() => Logic.FrameworkContext.GetLocationWhenInUsePermissionAsync();
+        //public static Task<PermissionStatus> GetCamera() => Logic.FrameworkContext.GetCameraPermissionAsync();
+        //public static Task<PermissionStatus> GetLocationWhenInUse() => Logic.FrameworkContext.GetLocationWhenInUsePermissionAsync();
 
         public static async Task<bool> HasPermissions()
         {
-            var camera = await GetCamera();
-            var locationWhenInUse = await GetLocationWhenInUse();
+            //var camera = await GetCamera();
+            //var locationWhenInUse = await GetLocationWhenInUse();
 
-            return camera == PermissionStatus.Granted && locationWhenInUse == PermissionStatus.Granted;
+            return true;// camera == PermissionStatus.Granted && locationWhenInUse == PermissionStatus.Granted;
         }
     }
 

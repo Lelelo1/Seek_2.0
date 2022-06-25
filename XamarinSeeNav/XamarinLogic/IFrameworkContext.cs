@@ -3,7 +3,7 @@ using System.Numerics;
 using System.Threading.Tasks;
 using LogicLibrary.Models;
 
-namespace LogicLibrary.Mobile
+namespace LogicLibrary
 {
     public interface IFrameworkContext
     {

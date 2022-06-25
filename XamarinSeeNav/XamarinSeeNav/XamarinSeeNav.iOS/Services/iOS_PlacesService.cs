@@ -80,7 +80,7 @@ namespace Seek.iOS.Services
             catch(Exception exc)
             {
                 var msg = "problem occued in ios native places service when creating list of places from list of MKMapItems";
-                LogicLibrary.Log(msg);
+                Logic.Log(msg);
                 var errorProperties = Error.Properties("Creating Places");
                 errorProperties.Add("message", msg);
                 Crashes.TrackError(exc, errorProperties);
@@ -94,7 +94,7 @@ namespace Seek.iOS.Services
             return items.Where((item) => // manual filter, as some places showing outside given radius as mentioned
             {
                 var placeLocation = new Location(item.Placemark.Location.Coordinate.Latitude, item.Placemark.Location.Coordinate.Longitude);
-                var metersDistance = location.MetersTo(placeLocation);
+                var metersDistance = Logic.FrameworkContext.MetersBetween(location, placeLocation);
                 return metersDistance < radius;
             }).ToList();
         }

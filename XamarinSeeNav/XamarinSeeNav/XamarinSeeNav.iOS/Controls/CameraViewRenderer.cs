@@ -28,7 +28,7 @@ namespace Seek.iOS.Controls
             if(Ext.HasValue(CameraView))
             {
                 // could happen if using 'CameraView' in two places..?
-                LogicLibrary.Log("warning, attempting to creating a new iOSCameraView was ignored");
+                Logic.Log("warning, attempting to creating a new iOSCameraView was ignored");
                 return;
             }
 
