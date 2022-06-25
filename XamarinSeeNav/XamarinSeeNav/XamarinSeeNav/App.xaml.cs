@@ -12,6 +12,7 @@ using Seek.Visualization.Support;
 using Seek.Display;
 using LogicLibrary.Game;
 using Seek.Pages;
+using XamarinSeeNav;
 
 namespace Seek
 {
@@ -23,7 +24,7 @@ namespace Seek
             InitializeComponent();
             
             var projectionConfig = new ProjectorConfig(Constants.Size, DisplayBase.LogicLibraryScreen);
-            Logic.Init(projectionConfig); // possibly put in thread.. I don't get exceptions then though..?
+            Logic.Init(new FrameworkContext(), projectionConfig); // possibly put in thread.. I don't get exceptions then though..?
             Xamarin.Essentials.DeviceDisplay.KeepScreenOn = true;
             MainPage = new NavigationPage(ARPage.Instance);
             

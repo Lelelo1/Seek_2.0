@@ -16,10 +16,7 @@ namespace LogicLibrary
 	public class Logic
 	{
 		public static IFrameworkContext FrameworkContext { get; private set; }
-		public static void SetFrameworkContext(IFrameworkContext frameworkContext)
-		{
-			FrameworkContext = FrameworkContext;
-		}
+
 		// logging
 
 		public delegate void LogDelegate(string message);
@@ -58,8 +55,10 @@ namespace LogicLibrary
 
 		public static TaskCompletionSource<bool> SafeInitialization = new TaskCompletionSource<bool>();
 
-		public static void Init(ProjectorConfig projectorConfig)
+		public static void Init(IFrameworkContext frameworkContext, ProjectorConfig projectorConfig)
 		{
+			FrameworkContext = frameworkContext;
+
 			var initAnalyticsService = AnalyticsService.Init();
 			var initLogicLibrary = new List<Task<IBase>>()
 			{
