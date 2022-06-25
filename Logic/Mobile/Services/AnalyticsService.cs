@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Logic.Models;
 using Logic.Models.Analytics;
 using Logic.Native;
-using Xamarin.Essentials;
+
 
 namespace Logic.Services
 {
@@ -14,21 +14,20 @@ namespace Logic.Services
 
         static TaskCompletionSource<IBase> Initializing { get; } = new TaskCompletionSource<IBase>();
 
-        public static async Task<IBase> Init(Task<HistoryService> initHistoryService)
+        public static async Task<IBase> Init()
         {
             var nativeMixpanel = N.Get<INativeMixpanel>();
             var utilitiesService = N.Get<IUtilitiesService>();
             var user = utilitiesService.GetUser();
             var runtime = utilitiesService.Runtime;
-            var historyService = await initHistoryService;
-            Initializing.SetResult(new AnalyticsService(nativeMixpanel, runtime, user, historyService));
+            Initializing.SetResult(new AnalyticsService(nativeMixpanel, runtime, user));
             return await Initializing.Task;
         }
 
         INativeMixpanel NativeMixpanel { get; }
-        HistoryService HistoryService { get; }
 
-        protected AnalyticsService(INativeMixpanel nativeMixpanel, Runtime runtime, User user, HistoryService historyService)
+
+        protected AnalyticsService(INativeMixpanel nativeMixpanel, Runtime runtime, User user)
         {   
             NativeMixpanel = nativeMixpanel;
             NativeMixpanel.Identify(user.Id);
@@ -37,8 +36,6 @@ namespace Logic.Services
                 { "Runtime", runtime.ToString()},
                 { "LoggedIn", user.IsLoggedIn }
             });
-
-            HistoryService = historyService;
  
         }
 
@@ -55,33 +52,7 @@ namespace Logic.Services
             // previous default flush interval was used before, meaning sending each 60 seconds
             NativeMixpanel.Flush();
 
-            /*
-            Logic.MainThread.Invoke(() =>
-            {
-                HistoryService.Set(analyticsEvent);
-            });
-            */
-
-            SetUserHistoryFlags(analyticsEvent);
         }
-
-        public string BubbleShownFlag { get; } = "BubbleShownFlag";
-
-        void SetUserHistoryFlags(BaseAnalyticsEvent analyticsEvent)
-        {
-            var bubbleShown = analyticsEvent as BubbleShown;
-            if (bubbleShown == null)
-            {
-                return;
-            }
-            Logic.Log("Set bubble shown: " + bubbleShown.Name);
-            if(!Preferences.ContainsKey(BubbleShownFlag))
-            {
-                Preferences.Set(BubbleShownFlag, true);
-            }
-
-        }
-
 
         // user properties in mixpanel
         // potentially this call overwrites all
