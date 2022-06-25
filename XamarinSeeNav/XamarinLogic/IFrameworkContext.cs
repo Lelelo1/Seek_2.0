@@ -14,9 +14,6 @@ namespace LogicLibrary
         string GetDistanceMetric(double meters);
         string GetDistanceImperial(double meters);
 
-        Task<PermissionStatus> GetCameraPermissionAsync();
-        Task<PermissionStatus> GetLocationWhenInUsePermissionAsync();
-
         double MetersBetween(Location a, Location b);
     }
 }

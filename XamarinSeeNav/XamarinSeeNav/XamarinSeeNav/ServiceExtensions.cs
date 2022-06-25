@@ -6,6 +6,10 @@ using LogicLibrary.Services.PermissionRequired;
 using Xamarin.Forms;
 using LogicLibrary;
 using LogicLibrary.Game;
+using System.Threading.Tasks;
+using Xamarin.Essentials;
+using static Xamarin.Essentials.Permissions;
+using Location = LogicLibrary.Models.Location;
 
 namespace Seek
 {
@@ -83,12 +87,21 @@ namespace Seek
 
         // refactor this file
 
-        public static PermissionStatus ToLogicPermission(this Xamarin.Essentials.PermissionStatus status)
-        {
-            return (PermissionStatus)Enum.Parse(typeof(PermissionStatus), status.ToString());
-        }
     }
 
+    public class PermissionUtils
+    {
+        public static Task<PermissionStatus> GetCamera() => Permissions.CheckStatusAsync<Camera>();
+        public static Task<PermissionStatus> GetLocationWhenInUse() => Permissions.CheckStatusAsync<LocationWhenInUse>();
+
+        public static async Task<bool> HasPermissions()
+        {
+            var camera = await GetCamera();
+            var locationWhenInUse = await GetLocationWhenInUse();
+
+            return camera == PermissionStatus.Granted && locationWhenInUse == PermissionStatus.Granted;
+        }
+    }
 
 }
 

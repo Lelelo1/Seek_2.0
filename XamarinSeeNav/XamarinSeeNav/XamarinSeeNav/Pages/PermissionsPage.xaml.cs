@@ -10,6 +10,7 @@ using LogicLibrary;
 using System.Threading.Tasks;
 using LogicLibrary.Utils;
 using LogicLibrary.Models;
+using Xamarin.Essentials;
 
 // It seems MediaElement in CommunityToolkit can't display image, source set to png
 
@@ -140,7 +141,7 @@ namespace Seek.Pages
 
                 var status = await Xamarin.Essentials.Permissions.RequestAsync<Xamarin.Essentials.Permissions.Camera>();
 
-                HandlePermissionRequestResponse(status.ToLogicPermission(), statusImage);
+                HandlePermissionRequestResponse(status, statusImage);
 
             }, await PermissionUtils.GetCamera());
 
@@ -162,7 +163,7 @@ namespace Seek.Pages
                 }
 
                 var status = await Xamarin.Essentials.Permissions.RequestAsync<Xamarin.Essentials.Permissions.LocationWhenInUse>();
-                HandlePermissionRequestResponse(status.ToLogicPermission(), statusImage);
+                HandlePermissionRequestResponse(status, statusImage);
 
             }, await PermissionUtils.GetLocationWhenInUse());
 

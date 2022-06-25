@@ -10,11 +10,7 @@ namespace XamarinSeeNav
     {
         public FrameworkContext()
         {
-        }
 
-        public Task<PermissionStatus> GetCameraPermissionAsync()
-        {
-            throw new NotImplementedException();
         }
 
         public string GetDistanceImperial(double meters)
@@ -28,11 +24,6 @@ namespace XamarinSeeNav
         }
 
         public Task<Location> GetLocationAsync()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<PermissionStatus> GetLocationWhenInUsePermissionAsync()
         {
             throw new NotImplementedException();
         }
