@@ -42,7 +42,7 @@ namespace Seek.iOS.Services
 
         string GetLoggedInId()
         {
-            return NSFileManager.DefaultManager.UbiquityIdentityToken.DebugDescription;
+            return NSFileManager.DefaultManager.UbiquityIdentityToken?.DebugDescription;
         }
 
 
