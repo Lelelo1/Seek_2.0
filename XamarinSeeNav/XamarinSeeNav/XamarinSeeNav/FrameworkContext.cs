@@ -41,12 +41,11 @@ namespace XamarinSeeNav
                 }
 
                 var milesString = miles + " mi";
-                Logic.Log("GetDistanceImperial: " + milesString);
+
                 return milesString;
             }
 
             var yardsString = yards + " yd";
-            Logic.Log("GetDistanceImperial: " + yardsString);
 
             return yardsString;
         }
@@ -57,7 +56,6 @@ namespace XamarinSeeNav
             
             var length = meters > 1000 + 200 ? Length.FromKilometers(meters / 1000) : Length.FromMeters(meters);
 
-            Logic.Log("GetDistanceMetric: " + length.ToString());
             return length.ToString();
         }
 
@@ -73,8 +71,6 @@ namespace XamarinSeeNav
             var essentialsLocationB = new Xamarin.Essentials.Location(b.Latitude, b.Longitude);
 
             var meters = Xamarin.Essentials.Location.CalculateDistance(essentialsLocationA, essentialsLocationB, Xamarin.Essentials.DistanceUnits.Kilometers) * 1000;
-
-            Logic.Log(essentialsLocationA + " and " + essentialsLocationB + " distance meters: " + meters);
 
             return meters;
         }
