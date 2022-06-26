@@ -39,32 +39,32 @@ namespace XamarinSeeNav
                 {
                     miles = Math.Round(miles);
                 }
-                return miles + " mi";
+
+                var milesString = miles + " mi";
+                Logic.Log("GetDistanceImperial: " + milesString);
+                return milesString;
             }
-            return yards + " yd";
+
+            var yardsString = yards + " yd";
+            Logic.Log("GetDistanceImperial: " + yardsString);
+
+            return yardsString;
         }
 
         public string GetDistanceMetric(double meters)
         {
             meters = Math.Round(meters);
-            Logic.Log("" + meters);
-            if (meters > 1000 + 200)
-            {
-                return Length.FromKilometers(meters / 1000).ToString();
-            }
+            
+            var length = meters > 1000 + 200 ? Length.FromKilometers(meters / 1000) : Length.FromMeters(meters);
 
-            return Length.FromMeters(meters).ToString();
+            Logic.Log("GetDistanceMetric: " + length.ToString());
+            return length.ToString();
         }
 
         public async Task<Location> GetLocationAsync()
         {
             var location = await Xamarin.Essentials.Geolocation.GetLocationAsync();
-            return new Location(location.Latitude, location.Latitude);
-        }
-
-        public Quaternion GetOrientation()
-        {
-            throw new NotImplementedException();
+            return new Location(location.Latitude, location.Longitude);
         }
 
         public double MetersBetween(Location a, Location b)
@@ -72,7 +72,11 @@ namespace XamarinSeeNav
             var essentialsLocationA = new Xamarin.Essentials.Location(a.Latitude, a.Longitude);
             var essentialsLocationB = new Xamarin.Essentials.Location(b.Latitude, b.Longitude);
 
-            return Xamarin.Essentials.Location.CalculateDistance(essentialsLocationA, essentialsLocationB, Xamarin.Essentials.DistanceUnits.Kilometers) * 1000;
+            var meters = Xamarin.Essentials.Location.CalculateDistance(essentialsLocationA, essentialsLocationB, Xamarin.Essentials.DistanceUnits.Kilometers) * 1000;
+
+            Logic.Log(essentialsLocationA + " and " + essentialsLocationB + " distance meters: " + meters);
+
+            return meters;
         }
 
         public void ReportCrash(Exception exc, string message)
