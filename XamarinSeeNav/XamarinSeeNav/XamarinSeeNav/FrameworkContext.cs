@@ -3,8 +3,11 @@ using System.Numerics;
 using System.Threading.Tasks;
 using LogicLibrary;
 using LogicLibrary.Models;
+using LogicLibrary.Native;
 using LogicLibrary.Utils;
 using LogicLibrary.ViewModels;
+using Seek.Display;
+using Seek.Visualization.Support;
 using UnitsNet;
 
 
@@ -12,6 +15,13 @@ namespace XamarinSeeNav
 {
     public class FrameworkContext : IFrameworkContext
     {
+        public Size BubbleProjectionSize { get; } = new Size(Constants.Size.Width, Constants.Size.Height);
+
+        public Size ProjectionArea { get; } = Display.DisplayUtils.GetDisplaySize(); // wrong: "Width: 828, Height: 1792" new Size(DisplayBase.LogicLibraryScreen.Width, DisplayBase.LogicLibraryScreen.Height);
+
+        public IProjectionAngle ProjectionAngle { get; } = N.Get<IProjectionAngle>();
+
+        // camera sets: 414f, 896f after two renders, th eabsolute layout in Visualize
 
         public FrameworkContext()
         {

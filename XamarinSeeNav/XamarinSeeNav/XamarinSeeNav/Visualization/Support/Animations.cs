@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using Xamarin.Forms;
 using System.Linq;
 using Seek.Visualization.Contents.Large;
-using Rectangle = LogicLibrary.Game.Models.Rectangle;
-using Size = LogicLibrary.Game.Models.Size;
 using LogicLibrary;
 using LogicLibrary.Game;
 
@@ -36,10 +34,10 @@ namespace Seek.Visualization.Support
             var small = Constants.Size;
             var smallColor = bubble.BackgroundColor;
             var diffAlfa = 0.92 - 0.80;
-            var view = Logic.DependencyBox.Get<Projector>().ProjectorConfig.ViewSize;
+            var projectionArea = Logic.FrameworkContext.ProjectionArea;
 
-            var width = view.Width * 0.80;
-            var height = view.Height * 0.80;
+            var width = projectionArea.Width * 0.80;
+            var height = projectionArea.Height * 0.80;
 
             var diffW = (width - small.Width);
             var diffH = (height - small.Height);
@@ -59,7 +57,7 @@ namespace Seek.Visualization.Support
             var increaseHeight = Values.Small.Height + Values.DiffH * ratio;
 
             var pos = bubble.Spatial.Rectangle;
-            bubble.Spatial.Rectangle = new Rectangle(pos.X, pos.Y, increaseWidth, increaseHeight);
+            bubble.Spatial.Rectangle = new LogicLibrary.Models.Rectangle(pos.X, pos.Y, increaseWidth, increaseHeight);
 
             var cornerRadius = Constants.CornerRadius_Normal - (45 * (float)ratio);
             bubble.CornerRadius = cornerRadius;
@@ -81,7 +79,7 @@ namespace Seek.Visualization.Support
 
             var pos = bubble.Spatial.Rectangle;
 
-            bubble.Spatial.Rectangle = new Rectangle(pos.X, pos.Y, changeWidth, changeHeight);
+            bubble.Spatial.Rectangle = new LogicLibrary.Models.Rectangle(pos.X, pos.Y, changeWidth, changeHeight);
 
             // increasing / resetting transparency
             var c = Values.SmallColor;
@@ -149,13 +147,13 @@ namespace Seek.Visualization.Support
     }
     public class Values
     {
-        public Size Small { get; set; }
+        public LogicLibrary.Models.Size Small { get; set; }
         public Color SmallColor { get; set; }
         public double DiffAlfa { get; set; }
         public double DiffW { get; set; }
         public double DiffH { get; set; }
         public double ShiftPortion { get; set; }
-        public Values(Size small, Color smallColor, double diffAlfa, double diffW, double diffH, double shiftPortion )
+        public Values(LogicLibrary.Models.Size small, Color smallColor, double diffAlfa, double diffW, double diffH, double shiftPortion )
         {
             Small = small;
             SmallColor = smallColor;

@@ -22,9 +22,7 @@ namespace Seek
         public App()
         {
             InitializeComponent();
-            
-            var projectionConfig = new ProjectorConfig(Constants.Size, DisplayBase.LogicLibraryScreen);
-            Logic.Init(new FrameworkContext(), projectionConfig); // possibly put in thread.. I don't get exceptions then though..?
+            Logic.Init(new FrameworkContext());
             Xamarin.Essentials.DeviceDisplay.KeepScreenOn = true;
             MainPage = new NavigationPage(ARPage.Instance);
             

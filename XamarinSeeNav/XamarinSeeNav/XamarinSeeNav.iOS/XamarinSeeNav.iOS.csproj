@@ -80,7 +80,7 @@
     <MtouchFloat32>true</MtouchFloat32>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="iOS_AngleOfView.cs" />
+    <Compile Include="iOS_ProjectionAngle.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="iOS_StatusBar.cs" />

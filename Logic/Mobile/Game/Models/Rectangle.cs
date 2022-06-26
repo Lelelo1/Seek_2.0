@@ -1,5 +1,5 @@
 ﻿using System;
-namespace LogicLibrary.Game.Models
+namespace LogicLibrary.Models
 {
     public class Rectangle
     {

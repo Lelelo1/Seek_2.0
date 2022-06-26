@@ -30,18 +30,11 @@ namespace Seek.Visualization
         public static ConcurrentDictionary<int, Bubble> VisualsMap { get; } = new ConcurrentDictionary<int, Bubble>();
 
         static AbsoluteLayout CameraLayout => Camera.Instance.Layout;
-        static CameraView CameraView => Camera.Instance.View;
-
-        static EventRegistration AhrsListener = new EventRegistration(80);
 
 
         static Projector Projector { get; set; }
         static MainViewModel MainViewModel { get; set; }
         static SearchViewModel SearchViewModel { get; set; }
-
-        static Xamarin.Forms.Size CameraViewSize { get; set; } = new Xamarin.Forms.Size(0, 0);
-
-        static LogicLibrary.Game.Models.Rectangle CameraBounds => CameraLayout.Bounds.ToPerceptualRectangle();
 
         public static void Init()
         {
@@ -50,10 +43,6 @@ namespace Seek.Visualization
 
             MainViewModel.Orientation.Subscribe(Visualization_OnReadingChanged);
 
-            CameraLayout.PropertyChanged += (object sender, System.ComponentModel.PropertyChangedEventArgs e) =>
-            {
-                CameraViewSize = CameraLayout.Bounds.Size;
-            };
             SearchViewModel.Places.Subscribe(AddVisualsSafely);
             
             Projector = Logic.DependencyBox.Get<Projector>();
@@ -127,7 +116,8 @@ namespace Seek.Visualization
             bubble.Spatial.IgnoreCollision = false;
             bubble.Spatial.Orientation.Origin = Source.Bearing;
             bubble.Animator.IsAnimating = false;
-            bubble.SetBubbleShown(CameraBounds);
+            var bounds = CameraLayout.Bounds;
+            bubble.SetBubbleShown(new LogicLibrary.Models.Rectangle(bounds.X, bounds.Y, bounds.Width, bounds.Height));
         }
 
 
@@ -144,7 +134,7 @@ namespace Seek.Visualization
 
         static void SafeProject(Bubble bubble)
         {
-            var projection = Projector.Project(bubble.Spatial, new ProjectorConfig(Constants.Size, CameraViewSize.ToPerceptualSize()));
+            var projection = Projector.Project(bubble.Spatial);
 
             bubble.Spatial.Rectangle = projection.Rectangle;
 
@@ -175,12 +165,14 @@ namespace Seek.Visualization
 
             if(!bubble.Animator.IsAnimating)
             {
-                bubble.SetBubbleShown(CameraBounds);
+                var bounds = CameraLayout.Bounds;
+                bubble.SetBubbleShown(new LogicLibrary.Models.Rectangle(bounds.X, bounds.Y, bounds.Width, bounds.Height));
             }
 
             CameraLayout.AddWhenNotExist(bubble);
 
-            AbsoluteLayout.SetLayoutBounds(bubble, bubble.Spatial.Rectangle.ToFormsRectangle());
+            var rectangle = bubble.Spatial.Rectangle;
+            AbsoluteLayout.SetLayoutBounds(bubble, new Xamarin.Forms.Rectangle(rectangle.X, rectangle.Y, rectangle.Width, rectangle.Height));
 
         }
 

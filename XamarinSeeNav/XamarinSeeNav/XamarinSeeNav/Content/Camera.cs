@@ -9,10 +9,11 @@ using LogicLibrary.Native;
 using Seek.Pages;
 using Seek.Test;
 using Xamarin.CommunityToolkit.UI.Views;
+using XamarinSeeNav.Display;
 
 namespace Seek.Content
 {
-    public class Camera : DisplayBase, IContent
+    public class Camera : IContent
     {
         static Camera instance;
         public static Camera Instance
@@ -46,7 +47,14 @@ namespace Seek.Content
         protected Camera()
         {
 
-            Layout.Fill(AbsoluteLayoutFlags.All, 0, 0, 1, 1);
+            // Layout.Fill(AbsoluteLayoutFlags.All, 0, 0, 1, 1);
+            // Has to set bounds once for the view and match it with th  size set in logic game projection
+            // With LayoutFlags it has to gotten out from 3 renders. So better to sett definte size on once init
+
+            var displaySize = DisplayUtils.GetDisplaySize();
+            Layout.WidthRequest = displaySize.Width;
+            Layout.HeightRequest = displaySize.Height;
+
             Layout.BackgroundColor = PlaceholderColor; // when debugging shows black screen instead of white to make a better distinction to 'Arrow' content
 
             View = new CameraView();

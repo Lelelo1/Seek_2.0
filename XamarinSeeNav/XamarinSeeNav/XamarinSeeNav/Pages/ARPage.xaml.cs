@@ -75,7 +75,7 @@ namespace Seek.Pages
             LoadingContent.Add(loadingImage);
 
             AbsoluteLayout.SetLayoutFlags(LoadingContent, AbsoluteLayoutFlags.All);
-            AbsoluteLayout.SetLayoutBounds(LoadingContent, new Rectangle(0, 0, 1, 1));
+            AbsoluteLayout.SetLayoutBounds(LoadingContent, new Xamarin.Forms.Rectangle(0, 0, 1, 1));
             Screen.Children.Add(LoadingContent);
         }
 
@@ -99,7 +99,7 @@ namespace Seek.Pages
             BindingContext = MainViewModel;
             Visualize.Init();
 
-            Detection.Get().Init().Start(new EventRegistration(20));
+            Detection.Get().Start(new EventRegistration(20));
 
             if(await PermissionUtils.HasPermissions())
             {

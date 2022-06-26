@@ -19,16 +19,6 @@ namespace Seek
     public static class ServiceExtensions
     {
 
-
-        // potentially add the rectangle conversions from constants, in here
-
-        public static Detection Init(this Detection detection)
-        {
-            Detection.AngleOfView = DependencyService.Get<IAngleOfView>();
-            return detection;
-        }
-
-
         static LocationService LocationService = Logic.DependencyBox.Get<LocationService>();
         // LocationService tests..
         // test switching to different locations by tapping a button. also disables underlaying location updated made per second

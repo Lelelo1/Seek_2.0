@@ -3,7 +3,6 @@ using System.Numerics;
 using System.Threading.Tasks;
 using LogicLibrary.Game.Models;
 using LogicLibrary.Models;
-using LogicLibrary.Native;
 using LogicLibrary.Utils;
 using LogicLibrary.ViewModels;
 
@@ -15,37 +14,35 @@ namespace LogicLibrary.Game
 
         static TaskCompletionSource<IBase> Initializing { get; } = new TaskCompletionSource<IBase>();
 
-        public static Task<IBase> Init(ProjectorConfig projectorConfig)
+        public static Task<IBase> Init()
         {
-            var angleOfView = N.Get<IAngleOfView>();
 
-            Initializing.SetResult(new Projector(angleOfView, projectorConfig));
+            Initializing.SetResult(new Projector());
 
             return Initializing.Task;
         }
 
-        protected Projector(IAngleOfView angleOfView, ProjectorConfig projectorConfig)
+        protected Projector()
         {
-            ProjectorConfig = projectorConfig;
-            ProjectionMatrix = CreateProjectionMatrix(angleOfView);
+            ProjectionMatrix = CreateProjectionMatrix();
         }
 
 
-        Matrix4x4 CreateProjectionMatrix(IAngleOfView angleOfView)
+        Matrix4x4 CreateProjectionMatrix()
         {
-            var fovRads = (float)(Calc.ToRad(angleOfView.Value.Vertical));
-            return Matrix4x4.CreatePerspectiveFieldOfView(fovRads, (float)ProjectorConfig.ViewSize.AspectRatio(), 0.1f, 1000f);
+            var fovRads = Calc.ToRad(Logic.FrameworkContext.ProjectionAngle.Vertical);
+            var projectionArea = Logic.FrameworkContext.ProjectionArea;
+            return Matrix4x4.CreatePerspectiveFieldOfView(fovRads, projectionArea.AspectRatio(), 0.1f, 1000f);
         }
 
         Matrix4x4 ProjectionMatrix { get; }
 
         public Quaternion DeviceOrientation { get; set;}
 
-        public ProjectorConfig ProjectorConfig { get; }
 
-        public Projection Project(Spatial spatial, ProjectorConfig projectorConfig)
+        public Projection Project(Spatial spatial)
         {
-            var view = projectorConfig.ViewSize;
+            var view = Logic.FrameworkContext.ProjectionArea;
 
             var spatialDirection = Vector3.Transform(Vector3.UnitZ, spatial.Orientation.Value);
 
@@ -53,8 +50,9 @@ namespace LogicLibrary.Game
 
             var position = Vector3.Transform(-spatialDirectionRelativeCamera, ProjectionMatrix);
 
-            var pos = PositionInView(To2D(position),
+            var pos = PositionInProjectionArea(To2D(position),
                 spatial.Rectangle.Width, spatial.Rectangle.Height, view);
+
             var size = spatial.Rectangle;
 
             var projectedRect = new Rectangle(pos.X, pos.Y, size.Width, size.Height);
@@ -84,7 +82,7 @@ namespace LogicLibrary.Game
             return tmp2DPos;// + _position2D;
         }
 
-        Vector2 PositionInView(Vector2 position, double width, double height, Size view) 
+        Vector2 PositionInProjectionArea(Vector2 position, double width, double height, Size view) 
         {
             var viewX = (view.Width * position.X) - (width * 0.5);
             var viewY = (view.Height * position.Y) - (height * 0.5);

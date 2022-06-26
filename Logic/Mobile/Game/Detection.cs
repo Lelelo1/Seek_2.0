@@ -5,6 +5,7 @@ using System.Numerics;
 using LogicLibrary.Utils;
 using LogicLibrary.Native;
 using LogicLibrary.Game.Models;
+using LogicLibrary.Models;
 
 namespace LogicLibrary.Game
 {
@@ -23,18 +24,10 @@ namespace LogicLibrary.Game
             return instance;
         }
 
-        public static IAngleOfView AngleOfView { get; set; }
-
         public bool HasStarted { get; set; }
         EventRegistration EventRegistration { get; set; }
         public void Start(EventRegistration eventRegistration)
         {
-            if(AngleOfView == null)
-            {
-                throw new Exception("Detection was not initiated with a AngleOfView before calling start");
-
-            }
-
             EventRegistration = eventRegistration;
             _ = EventRegistration.PeriodicTask.Run(() =>
             {
@@ -56,17 +49,19 @@ namespace LogicLibrary.Game
                 return;
             }
 
+            // what is below?
             if(AngleSize == null)
             {
                 var rectangle = TrackPerceptibles.First().Rectangle;
                 AngleSize = new AngleSize(rectangle);
-            }
 
+            }
+            /*
             if(AngleSize != null)
             {
                 AngleSize.Value = 1f;
             }
-
+            */
         }
         List<Spatial> _trackPerceptibles = new List<Spatial>();
         public List<Spatial> TrackPerceptibles
@@ -175,7 +170,8 @@ namespace LogicLibrary.Game
         {
             get
             {
-                bool shouldIncrease = _value < _max * 1.75f;//0.75;
+                // with Seek_1 it was 1.75f. Now it looks superb (in Seek_2.0) with 0.75
+                bool shouldIncrease = _value < _max * 0.75f;//1.75f;//0.75;
                 if(shouldIncrease)
                 {
                     _value += _increase;
@@ -187,16 +183,13 @@ namespace LogicLibrary.Game
         // calcuting actual angle size from
         public AngleSize(Rectangle rectangle)
         {
-            var fovs = Detection.AngleOfView.Value;
+            var fovs = Logic.FrameworkContext.ProjectionAngle;
             // is mobile
-            var view = Logic.DependencyBox.Get<Projector>().ProjectorConfig.ViewSize;
-            if(view == null)
-            {
-                throw new Exception("Exception view was not ready in AngleSize, Detection.cs when taken from Detection.cs");
-            }
+            var projectionArea = Logic.FrameworkContext.ProjectionArea;
+
             var p = rectangle;
-            var x = p.Width / view.Width;
-            var y = p.Height / view.Height;
+            var x = p.Width / projectionArea.Width;
+            var y = p.Height / projectionArea.Height;
 
             var fromSmallest = Math.Min(fovs.Horizontal * x, fovs.Vertical * y);
             _max = (float)fromSmallest;

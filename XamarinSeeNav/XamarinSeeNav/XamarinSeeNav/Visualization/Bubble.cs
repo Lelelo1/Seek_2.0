@@ -5,7 +5,6 @@ using Xamarin.Forms;
 using Seek.Visualization.Support;
 using Seek.Visualization.Contents;
 using System.Threading.Tasks;
-using Rectangle = LogicLibrary.Game.Models.Rectangle;
 using Seek.Content;
 using LogicLibrary.ViewModels;
 using LogicLibrary.Services;
@@ -15,6 +14,7 @@ using LogicLibrary;
 using LogicLibrary.Game.Models;
 using LogicLibrary.Game;
 using Xamarin.Essentials;
+using Rectangle = LogicLibrary.Models.Rectangle;
 
 namespace Seek.Visualization
 {
@@ -103,7 +103,7 @@ namespace Seek.Visualization
 
             Padding = 0; // all style handled inside the specific contents
 
-            Spatial.Rectangle = new Rectangle(-1, -1, Constants.Size.Width, Constants.Size.Height); // could give a size here
+            Spatial.Rectangle = new LogicLibrary.Models.Rectangle(-1, -1, Constants.Size.Width, Constants.Size.Height); // could give a size here
 
             CornerRadius = 45;
 
@@ -161,7 +161,7 @@ namespace Seek.Visualization
 
         bool IsShown {
             get; set; }
-        public void SetBubbleShown(Rectangle cameraView)
+        public void SetBubbleShown(LogicLibrary.Models.Rectangle cameraView)
         {
             var isShown = Spatial.GetIsSeen(cameraView);
             if (isShown != IsShown && isShown)

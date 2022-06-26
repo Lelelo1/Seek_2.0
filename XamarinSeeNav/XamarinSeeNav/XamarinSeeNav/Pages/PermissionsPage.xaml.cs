@@ -49,7 +49,7 @@ namespace Seek.Pages
             screen.Children.Insert(0, videoElement);
         }
 
-        void SetDimension(BindableObject control, AbsoluteLayoutFlags flag, Rectangle rectangle)
+        void SetDimension(BindableObject control, AbsoluteLayoutFlags flag, Xamarin.Forms.Rectangle rectangle)
         {
             AbsoluteLayout.SetLayoutFlags(control, flag);
             AbsoluteLayout.SetLayoutBounds(control, rectangle);
@@ -66,7 +66,7 @@ namespace Seek.Pages
 
         Xamarin.Essentials.DisplayInfo DisplayInfo = Xamarin.Essentials.DeviceDisplay.MainDisplayInfo;
 
-        Rectangle Full { get; } = new Rectangle(0, 0, 1, 1);
+        Xamarin.Forms.Rectangle Full { get; } = new Xamarin.Forms.Rectangle(0, 0, 1, 1);
 
         Action StartARWithPermissions { get; }
 

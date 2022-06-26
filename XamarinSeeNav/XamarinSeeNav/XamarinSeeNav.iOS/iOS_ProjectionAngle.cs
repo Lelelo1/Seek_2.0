@@ -1,29 +1,32 @@
 ﻿using UIKit;
 using Xamarin.Forms;
 using LogicLibrary.Native;
-[assembly: Dependency(typeof(Seek.iOS.iOS_AngleOfView))]
+using System;
+using LogicLibrary.Models;
+
+[assembly: Dependency(typeof(Seek.iOS.iOS_ProjectionAngle))]
 namespace Seek.iOS
 {
-    public class iOS_AngleOfView : IAngleOfView
+    public class iOS_ProjectionAngle : IProjectionAngle
     {
-        /*
+
         // https://developer.apple.com/documentation/scenekit/scncamera/2867510-fieldofview?language=objc
-        // when phone is vertical in portrait...
-        public double Horizontal { get; private set; }
-        public double Vertical { get; private set; }
-        */
 
-        public AngleOfView Value { get; } = new AngleOfView();
+        public float Vertical { get;  }
 
-        public iOS_AngleOfView()
+        public float Horizontal { get; }
+
+        public iOS_ProjectionAngle()
         {
+            // try to understand this code better at ome point
+      
             var camera = new SceneKit.SCNCamera();
             // Seek.iOS.AngleOfView
-            Value.Vertical = camera.FieldOfView;
+            Vertical = (float)camera.FieldOfView;
             // screen: https://stackoverflow.com/questions/38891654/get-current-screen-width-in-xamarin-forms
             var w = UIScreen.MainScreen.Bounds.Width;
             var h = UIScreen.MainScreen.Bounds.Height;
-            Value.Horizontal = Value.Vertical * (w / h);
+            Horizontal = (float)(Vertical * (w / h));
 
             // both vertical and horizontal is correct
         }

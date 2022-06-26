@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Numerics;
 using System.Threading.Tasks;
+
 using LogicLibrary.Models;
 
 namespace LogicLibrary
@@ -14,6 +15,11 @@ namespace LogicLibrary
         string GetDistanceImperial(double meters);
 
         double MetersBetween(Location a, Location b);
+
+        Size BubbleProjectionSize { get; }
+        Size ProjectionArea { get; }
+
+        IProjectionAngle ProjectionAngle { get; }
     }
 }
 

@@ -55,7 +55,7 @@ namespace Seek.Visualization.Contents
                     var v = Constants.Size.Width;
                     AbsoluteLayout.SetLayoutFlags(navigateSymbol, AbsoluteLayoutFlags.All); // note this en enlarged
                     // .. but absolute layout has to be justed to elements get centered from their middle 
-                    AbsoluteLayout.SetLayoutBounds(navigateSymbol, new Rectangle(0.5, 0.1, 0.2, 0.2));
+                    AbsoluteLayout.SetLayoutBounds(navigateSymbol, new Xamarin.Forms.Rectangle(0.5, 0.1, 0.2, 0.2));
 
                     if (!absoluteLayout.Children.Contains(navigateSymbol))
                     {

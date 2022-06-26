@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Numerics;
 using LogicLibrary.Game.Models;
+using LogicLibrary.Models;
 using LogicLibrary.Utils;
 
 namespace LogicLibrary.Game
@@ -64,7 +65,7 @@ namespace LogicLibrary.Game
     */
     public static class Extras
     {
-        public static double AspectRatio(this Size size)
+        public static float AspectRatio(this Size size)
         {
             return size.Width / size.Height;
         }

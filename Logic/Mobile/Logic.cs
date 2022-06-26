@@ -55,7 +55,7 @@ namespace LogicLibrary
 
 		public static TaskCompletionSource<bool> SafeInitialization = new TaskCompletionSource<bool>();
 
-		public static void Init(IFrameworkContext frameworkContext, ProjectorConfig projectorConfig)
+		public static void Init(IFrameworkContext frameworkContext)
 		{
 			FrameworkContext = frameworkContext;
 
@@ -67,7 +67,7 @@ namespace LogicLibrary
 				LocationService.Init(), // permission required - should not accessed until started in 'MainViewModel'
 				MainViewModel.Init(),
 				SearchViewModel.Init(CovariantCast<AnalyticsService>(initAnalyticsService), CovariantCast<SearchService>(SearchService.Init())),
-				Projector.Init(projectorConfig)
+				Projector.Init()
 			};
 
 			var initialization = Task.WhenAll(initLogicLibrary);

@@ -44,7 +44,7 @@ namespace LogicLibrary.Services.PermissionRequired
                 {
                     return;
                 }
-                Console.WriteLine(location);
+                //Logic.Log(location.ToString());
                 Location.Set(new Models.Location(location.Latitude, location.Longitude));
             });
         }

@@ -110,7 +110,7 @@ namespace Seek.iOS
                 {
                     new iOS_Mixpanel(),
                     searchProvider,
-                    new iOS_AngleOfView(),
+                    new iOS_ProjectionAngle(),
                     new iOS_StatusBar()
                 };
 

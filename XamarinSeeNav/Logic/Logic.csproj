@@ -29,9 +29,6 @@
     <Compile Include="..\..\Logic\Mobile\Native\N.cs">
       <Link>Mobile\Native\N.cs</Link>
     </Compile>
-    <Compile Include="..\..\Logic\Mobile\Native\IAngleOfView.cs">
-      <Link>Mobile\Native\IAngleOfView.cs</Link>
-    </Compile>
     <Compile Include="..\..\Logic\Mobile\Native\IPlacesService.cs">
       <Link>Mobile\Native\IPlacesService.cs</Link>
     </Compile>
@@ -86,9 +83,6 @@
     <Compile Include="..\..\Logic\Mobile\Game\Detection.cs">
       <Link>Mobile\Game\Detection.cs</Link>
     </Compile>
-    <Compile Include="..\..\Logic\Mobile\Game\ProjectorConfig.cs">
-      <Link>Mobile\Game\ProjectorConfig.cs</Link>
-    </Compile>
     <Compile Include="..\..\Logic\Mobile\Game\Helpers.cs">
       <Link>Mobile\Game\Helpers.cs</Link>
     </Compile>
@@ -98,9 +92,6 @@
     <Compile Include="..\..\Logic\Mobile\Game\Projector.cs">
       <Link>Mobile\Game\Projector.cs</Link>
     </Compile>
-    <Compile Include="..\..\Logic\Mobile\Game\Models\Size.cs">
-      <Link>Mobile\Game\Models\Size.cs</Link>
-    </Compile>
     <Compile Include="..\..\Logic\Mobile\Game\Models\Spatial.cs">
       <Link>Mobile\Game\Models\Spatial.cs</Link>
     </Compile>
@@ -109,9 +100,6 @@
     </Compile>
     <Compile Include="..\..\Logic\Mobile\Game\Models\Projection.cs">
       <Link>Mobile\Game\Models\Projection.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Logic\Mobile\Game\Models\Rectangle.cs">
-      <Link>Mobile\Game\Models\Rectangle.cs</Link>
     </Compile>
     <Compile Include="..\..\Logic\Mobile\Game\Models\ISelectable.cs">
       <Link>Mobile\Game\Models\ISelectable.cs</Link>
@@ -139,6 +127,9 @@
     </Compile>
     <Compile Include="..\XamarinLogic\IFrameworkContext.cs">
       <Link>Mobile\IFrameworkContext.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Logic\Mobile\Game\Models\Rectangle.cs">
+      <Link>Mobile\Models\Rectangle.cs</Link>
     </Compile>
   </ItemGroup>
 </Project>

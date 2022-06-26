@@ -107,7 +107,7 @@ namespace Seek.Content
             //switch between the colors when search! looks nice
 
             SearchBar.On<iOS>().SetShadowColor(Color.Black);
-            SearchBar.On<iOS>().SetShadowOffset(new Size(5, 5));
+            SearchBar.On<iOS>().SetShadowOffset(new Xamarin.Forms.Size(5, 5));
             SearchBar.On<iOS>().SetShadowRadius(7); // higher values waters it out
 
             SearchBar.On<iOS>().SetIsShadowEnabled(true);

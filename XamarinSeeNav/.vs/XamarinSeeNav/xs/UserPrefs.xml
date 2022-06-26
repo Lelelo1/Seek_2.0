@@ -6,11 +6,13 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinSeeNav/XamarinSeeNav/App.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinSeeNav/XamarinSeeNav/FrameworkContext.cs">
     <Files>
-      <File FileName="XamarinSeeNav/XamarinSeeNav/FrameworkContext.cs" Line="15" Column="1" />
-      <File FileName="../Logic/Mobile/Services/PermissionRequired/LocationService.cs" Line="42" Column="65" />
-      <File FileName="XamarinSeeNav/XamarinSeeNav/App.xaml.cs" Line="27" Column="36" />
+      <File FileName="../Logic/Mobile/Game/Detection.cs" Line="27" Column="24" />
+      <File FileName="XamarinSeeNav/XamarinSeeNav/Visualization/Visualize.cs" Line="52" Column="14" />
+      <File FileName="XamarinSeeNav/XamarinSeeNav/FrameworkContext.cs" Line="27" Column="1" />
+      <File FileName="Logic/Mobile/Models/Size.cs" Line="24" Column="26" />
+      <File FileName="XamarinSeeNav/XamarinSeeNav.iOS/iOS_AngleOfView.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,6 +20,9 @@
           <Node name="XamarinSeeNav" expanded="True">
             <Node name="Logic" expanded="True">
               <Node name="Mobile" expanded="True">
+                <Node name="Game" expanded="True">
+                  <Node name="Models" expanded="True" />
+                </Node>
                 <Node name="Models" expanded="True" />
                 <Node name="Services" expanded="True">
                   <Node name="PermissionRequired" expanded="True" />
@@ -26,7 +31,20 @@
               </Node>
             </Node>
             <Node name="XamarinSeeNav" expanded="True">
+              <Node name="Content" expanded="True" />
+              <Node name="Display" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="ARPage.xaml" expanded="True" />
+                <Node name="PermissionsPage.xaml" expanded="True" />
+              </Node>
+              <Node name="Visualization" expanded="True">
+                <Node name="Contents" expanded="True">
+                  <Node name="Small.xaml" expanded="True" />
+                </Node>
+                <Node name="Support" expanded="True" />
+              </Node>
               <Node name="App.xaml" expanded="True" />
+              <Node name="FrameworkContext.cs" selected="True" />
             </Node>
             <Node name="XamarinSeeNav.iOS" expanded="True" />
           </Node>

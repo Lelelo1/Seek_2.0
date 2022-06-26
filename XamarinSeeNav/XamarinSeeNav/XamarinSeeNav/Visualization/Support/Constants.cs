@@ -1,5 +1,6 @@
 ﻿using System;
 using LogicLibrary.Game.Models;
+using LogicLibrary.Models;
 
 //using Xamarin.Forms;
 
@@ -29,21 +30,4 @@ namespace Seek.Visualization.Support
 
     }
 
-    public static class RectangleExtensions
-    {
-        public static Rectangle ToPerceptualRectangle(this Xamarin.Forms.Rectangle rectangle)
-        {
-            return new Rectangle(rectangle.X, rectangle.Y, rectangle.Width, rectangle.Height);
-        }
-
-        public static Size ToPerceptualSize(this Xamarin.Forms.Size size)
-        {
-            return new Size(size.Width, size.Height);
-        }
-
-        public static Xamarin.Forms.Rectangle ToFormsRectangle(this Rectangle rectangle)
-        {
-            return new Xamarin.Forms.Rectangle(rectangle.X, rectangle.Y, rectangle.Width, rectangle.Height);
-        }
-    }
 }

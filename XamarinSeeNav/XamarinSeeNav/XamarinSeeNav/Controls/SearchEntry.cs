@@ -5,10 +5,11 @@ using ImageButton = Xamarin.Forms.ImageButton;
 using Seek.Display;
 using LogicLibrary.ViewModels;
 using LogicLibrary;
+using XamarinSeeNav.Display;
 
 namespace Seek.Controls
 {
-    public class SearchEntry : DisplayBase
+    public class SearchEntry
     { 
         /* (It looks nicer if alfa is 0 though) */
         public Color Color { get; set; }
@@ -49,7 +50,8 @@ namespace Seek.Controls
                 //CornerRadius = 15f;
             }
 
-            SetBounds(Screen);
+            var displaySize = DisplayUtils.GetDisplaySize();
+            SetBounds(new Rectangle(0, 0, displaySize.Width, displaySize.Height));
 
         }
 

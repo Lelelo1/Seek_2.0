@@ -17042,7 +17042,7 @@ namespace Seek.Droid
 			public const int dialogCornerRadius = 2130903347;
 			
 			// aapt resource value: 0x7F030134
-			public const int diaLogicLibraryon = 2130903348;
+			public const int dialogIcon = 2130903348;
 			
 			// aapt resource value: 0x7F030135
 			public const int dialogLayout = 2130903349;
@@ -31616,7 +31616,7 @@ namespace Seek.Droid
 					2130903821};
 			
 			// aapt resource value: 2
-			public const int DialogPreference_android_diaLogicLibraryon = 2;
+			public const int DialogPreference_android_dialogIcon = 2;
 			
 			// aapt resource value: 5
 			public const int DialogPreference_android_dialogLayout = 5;
@@ -31634,7 +31634,7 @@ namespace Seek.Droid
 			public const int DialogPreference_android_positiveButtonText = 3;
 			
 			// aapt resource value: 6
-			public const int DialogPreference_diaLogicLibraryon = 6;
+			public const int DialogPreference_dialogIcon = 6;
 			
 			// aapt resource value: 7
 			public const int DialogPreference_dialogLayout = 7;
