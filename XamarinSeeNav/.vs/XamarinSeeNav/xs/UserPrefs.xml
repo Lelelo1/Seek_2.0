@@ -7,26 +7,13 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.ItemProperties.XamarinSeeNav.Android PreferredExecutionTarget="Android.SelectDevice" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Logic/Logic.csproj">
-    <Files>
-      <File FileName="XamarinSeeNav/XamarinSeeNav.iOS/iOS_ProjectionAngle.cs" Line="29" Column="1" />
-      <File FileName="../Logic/Mobile/Models/User.cs" Line="10" Column="10" />
-      <File FileName="XamarinSeeNav/XamarinSeeNav.iOS/Services/iOS_UtilitiesServies.cs" Line="45" Column="13" />
-      <File FileName="XamarinSeeNav/XamarinSeeNav.iOS/Main.cs" Line="15" Column="1" />
-      <File FileName="Logic/IFrameworkContext.cs" Line="1" Column="1" />
-      <File FileName="Logic/Logic.csproj" Line="134" Column="8" />
-      <File FileName="XamarinSeeNav/XamarinSeeNav/FrameworkContext.cs" Line="83" Column="23" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="XamarinSeeNav" expanded="True">
             <Node name="Logic" expanded="True">
-              <Node name="Mobile" expanded="True">
-                <Node name="Models" expanded="True">
-                  <Node name="IProjectionAngle.cs" selected="True" />
-                </Node>
-              </Node>
+              <Node name="IFrameworkContext.cs" selected="True" />
             </Node>
             <Node name="XamarinSeeNav" expanded="True" />
             <Node name="XamarinSeeNav.iOS" expanded="True">
