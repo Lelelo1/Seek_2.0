@@ -9,8 +9,7 @@
     </NavigationPage.HasNavigationBar>
     <ContentPage.Content>
         <AbsoluteLayout x:Name="screen">
-            <!--<Image Source="blue_citywalk_weather.PNG" Aspect="AspectFit" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" /> -->
-            
+
             <StackLayout x:Name="layout" BackgroundColor="White" Opacity="0.85" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1">
                 <ImageButton x:Name="permissionImage" Source="./Icons/user_permission.png"  Opacity="0.88"/>
                 <Label x:Name="permissionLabel" HorizontalOptions="Center" Text="Permissions" FontSize="Title" />

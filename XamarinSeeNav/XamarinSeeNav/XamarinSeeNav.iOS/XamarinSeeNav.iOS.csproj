@@ -152,9 +152,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\arrow.png" />
-    <BundleResource Include="Resources\arrow_background.jpg" />
-    <BundleResource Include="Resources\app_icon.jpeg" />
     <BundleResource Include="Resources\Icons\abort.png" />
     <BundleResource Include="Resources\Icons\clear.png" />
     <BundleResource Include="Resources\Icons\navigate.png" />
@@ -176,5 +173,19 @@
     <Folder Include="Assets.xcassets\SplashImage.imageset\" />
     <Folder Include="Resources\Icons\" />
     <Folder Include="Resources\Videos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\app_icon.jpeg">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\arrow.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\arrow_background.jpg">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
   </ItemGroup>
 </Project>

@@ -19,12 +19,6 @@ namespace Seek.Pages
     public partial class PermissionsPage : ContentPage
     {
 
-        Image Image { get; set; } = new Image()
-        {
-            Source = ImageSource.FromFile("blue_citywalk_weather.PNG"),
-            Aspect = Aspect.AspectFill
-        };
-
         // try embedd the video on android
         
         // MediaSource.FromUri("https://storageaccountseekr9a43.blob.core.windows.net/seek-resources/AppPreview6.5.mp4")
@@ -55,15 +49,6 @@ namespace Seek.Pages
             AbsoluteLayout.SetLayoutBounds(control, rectangle);
         }
 
-        bool ImageIsDisplayed { get; set; } // rename is video footage, image footage etc or background
-
-        void SetImageIsDisplayed(bool isDisplayed)
-        {
-            ImageIsDisplayed = isDisplayed;
-            var opacity = ImageIsDisplayed ? 1 : 0;
-            Image.Opacity = opacity;
-        }
-
         Xamarin.Essentials.DisplayInfo DisplayInfo = Xamarin.Essentials.DeviceDisplay.MainDisplayInfo;
 
         Xamarin.Forms.Rectangle Full { get; } = new Xamarin.Forms.Rectangle(0, 0, 1, 1);
@@ -75,12 +60,6 @@ namespace Seek.Pages
             InitializeComponent();
 
             StartARWithPermissions = startARWithPermissions;
-
-            SetImageIsDisplayed(false); // display video default
- 
-
-            SetDimension(Image, AbsoluteLayoutFlags.All, Full);
-            screen.Children.Insert(0, Image);
 
             SetVideoPlayer(CreateVideoPlayer());
 
