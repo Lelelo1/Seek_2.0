@@ -34,7 +34,7 @@ namespace Seek.iOS
             PreventLinkerFromStrippingCommonLocalizationReferences();
             global::Xamarin.Forms.Forms.Init();
 
-            SetLogger();
+            Logic.SetLogger(Console.WriteLine);
 
             // pre init, in which error and crashed can't be tracked by app center
             var utilities = new iOS_UtilitiesService();
@@ -66,19 +66,6 @@ namespace Seek.iOS
 
 
         // native init!
-
-        static void SetLogger()
-        {
-            Logic.LogDelegate logger = Logic.iOSLogger;
-
-            if (Device.RuntimePlatform == Device.Android)
-            {
-                logger = Logic.AndroidLogger; // needed for logs to get to 'application output'
-            }
-
-            Logic.SetLogger(logger);
-        }
-
 
         static void SetAppCenter()
         {

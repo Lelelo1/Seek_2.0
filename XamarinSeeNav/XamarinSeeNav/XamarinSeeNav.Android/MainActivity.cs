@@ -1,20 +1,13 @@
 ﻿using System;
-
 using Android.App;
 using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
-using System.Linq;
 using Xamarin.Forms;
 using System.Collections.Generic;
 using LogicLibrary.Native;
 using Seek.Droid.Services;
 using LogicLibrary;
-using Microsoft.AppCenter.Crashes;
-using LogicLibrary.Utils;
-using static LogicLibrary.LogicLibrary;
+
 
 namespace Seek.Droid
 {
@@ -32,17 +25,18 @@ namespace Seek.Droid
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            
+            Logic.SetLogger((string message) => System.Diagnostics.Debug.WriteLine(message));
+            Logic.SetThreading(Device.BeginInvokeOnMainThread, Device.InvokeOnMainThreadAsync);
+            Logic.SetNativeDependencies(GetNativeDependencies());
 
-            SetLogger();
-            LogicLibrary.SetThreading(Device.BeginInvokeOnMainThread, Device.InvokeOnMainThreadAsync);
-            LogicLibrary.SetNativeDependencies(GetNativeDependencies());
-
-            Forms9Patch.Droid.Settings.Initialize(this);
+            //Forms9Patch.Droid.Settings.Initialize(this);
             TouchEffect.Android.TouchEffectPreserver.Preserve();
             Android_StatusBar.Activity = this;
             LoadApplication(new App());
         }
 
+        // possibly needed for permissions with android
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -50,67 +44,24 @@ namespace Seek.Droid
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
 
-        static void SetLogger()
-        {
-            LogDelegate logger = LogicLibrary.iOSLogger;
 
-            if (Device.RuntimePlatform == Device.Android)
-            {
-                logger = LogicLibrary.AndroidLogger; // needed for logs to get to 'application output'
-            }
-
-            LogicLibrary.SetLogger(logger);
-        }
-
-        // ...
-        /*
-        static void SetAppCenter()
-        {
-            var runtime = N.Get<iOS_UtilitiesService>().Runtime;
-
-            var appcenterSecret = runtime == Runtime.Production ? Secret.Secrets.Seek.APPCENTER_PRODCUCTION_iOS : Secret.Secrets.Seek.APPCENTER_DEVELOPMENT_iOS;
-
-            try
-            {
-                AppCenter.Start("ios=" + appcenterSecret, typeof(Crashes), typeof(Microsoft.AppCenter.Analytics.Analytics));
-            }
-            catch (Exception exc)
-            {
-                LogicLibrary.Log("could not start AppCenter: " + exc.Message);
-            }
-        }
-        */
 
         static List<INative> GetNativeDependencies()
         {
-            // there should be a try catch gettings all native deps!
+            var searchProvider = new Android_PlacesService();// new MockProvider();
 
-            // needs to call XamarinForms.Init before using the DependencyService
-            // .. but it might not we needed..
-            try
-            {
-                var searchProvider = new Android_PlacesService();// new MockProvider();
-
-                var nativeDependencies = new List<INative>()
+            var nativeDependencies = new List<INative>()
                 {
                     new Android_Mixpanel(),
                     searchProvider,
-                    new Android_AngleOfView(),
+                    new Android_ProjectionAngle(),
                     new Android_StatusBar(),
 
                     // later to async get/fetch a user id
                     new Android_Utilities()
                 };
 
-                return nativeDependencies;
-            }
-            catch (Exception exc)
-            {
-                LogicLibrary.Log("failed to initialize native dependencies");
-                Crashes.TrackError(exc, Error.Properties("When initialising native dependencies of the iOS project"));
-                // can native dependencies fail production when they don't in debug, should I account for it..?
-                throw exc;
-            }
+            return nativeDependencies;
         }
     }
 }

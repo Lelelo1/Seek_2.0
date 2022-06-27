@@ -13,9 +13,9 @@ namespace Seek.Droid
 
         public Runtime Runtime => Runtime.Debug;
 
-        public Task<User> GetUserAsync()
+        public User GetUser()
         {
-            return Task.FromResult(new User(true, "Android_Utilities id"));
+            return new User(true, "Android_Utilities id");
         }
     }
 }

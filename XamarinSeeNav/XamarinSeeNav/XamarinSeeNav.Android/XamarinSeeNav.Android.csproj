@@ -81,23 +81,19 @@
     <PackageReference Include="Xamarin.AndroidX.Palette">
       <Version>1.0.0.6</Version>
     </PackageReference>
+    <PackageReference Include="Xamarin.CommunityToolkit">
+      <Version>2.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Essentials">
+      <Version>1.7.3</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Android_StatusBar.cs" />
-    <Compile Include="Android_AngleOfView.cs" />
-    <Compile Include="Controls\Android_Entry.cs" />
-    <Compile Include="Controls\Camera2\CameraCaptureListener.cs" />
-    <Compile Include="Controls\Camera2\CameraCaptureStateListener.cs" />
-    <Compile Include="Controls\Camera2\CameraCaptureStillPictureSessionCallback.cs" />
-    <Compile Include="Controls\Camera2\CameraDroid.cs" />
-    <Compile Include="Controls\Camera2\CameraStateListener.cs" />
-    <Compile Include="Controls\Camera2\CameraViewRenderer.cs" />
-    <Compile Include="Controls\Camera2\ImageAvailableListener.cs" />
-    <Compile Include="Controls\Effects\Android_TintImageEffect.cs" />
-    <Compile Include="Controls\Android_ColoredArea.cs" />
+    <Compile Include="Android_ProjectionAngle.cs" />
     <Compile Include="Android_Mixpanel.cs" />
     <Compile Include="Android_Utilities.cs" />
     <Compile Include="Services\Android_PlacesService.cs" />
@@ -175,13 +171,20 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
-    <Folder Include="Controls\" />
-    <Folder Include="Controls\Camera2\" />
-    <Folder Include="Controls\Effects\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\CameraLayout.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Logic\Logic.csproj">
+      <Project>{CB3F9E38-8F3C-4CE1-9A33-9F734F5C1776}</Project>
+      <Name>Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XamarinSeeNav\XamarinSeeNav.csproj">
+      <Project>{8B6A7A39-D3BE-48D0-889D-C1C7A6454339}</Project>
+      <Name>XamarinSeeNav</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

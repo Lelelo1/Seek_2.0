@@ -17,19 +17,12 @@ namespace LogicLibrary
 	{
 		public static IFrameworkContext FrameworkContext { get; private set; }
 
-		// logging
+		public static Action<string> Log { get; private set; }
 
-		public delegate void LogDelegate(string message);
-		public static LogDelegate Log { get; set; }
-
-		public static void SetLogger(LogDelegate logger)
+		public static void SetLogger(Action<string> logger)
 		{
 			Log = logger;
 		}
-
-		public static void iOSLogger(string msg) => Console.WriteLine(msg);
-		public static void AndroidLogger(string msg) => System.Diagnostics.Debug.WriteLine(msg);
-
 
 		// threading
 
