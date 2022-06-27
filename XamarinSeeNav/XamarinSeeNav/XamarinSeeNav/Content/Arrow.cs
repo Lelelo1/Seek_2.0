@@ -71,7 +71,7 @@ namespace Seek.Content
 
         ImageButton AbortButton { get; } = new ImageButton()
         {
-            Source = ImageSource.FromFile("./Icons/abort.png"),
+            Source = ImageSource.FromFile("icon_abort.png"),
             BackgroundColor = Color.Transparent,
             Opacity = 0.60
         };

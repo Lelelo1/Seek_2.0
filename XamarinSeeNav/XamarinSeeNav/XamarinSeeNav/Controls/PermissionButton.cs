@@ -24,8 +24,8 @@ namespace Seek.Controls
             Margin = new Thickness(10, 0, 0, 0)
         };
 
-        static string StatusImageKey { get; set; } = "./Icons/key.png";
-        static string StatusImageCheck { get; set; } = "./Icons/check.png";
+        static string StatusImageKey { get; set; } = "icon_key.png";
+        static string StatusImageCheck { get; set; } = "icon_check.png";
 
         public static Image GetStatusImage(PermissionStatus status)
         {

@@ -152,38 +152,36 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Icons\abort.png" />
-    <BundleResource Include="Resources\Icons\clear.png" />
-    <BundleResource Include="Resources\Icons\navigate.png" />
-    <BundleResource Include="Resources\Icons\user_permission.png" />
-    <BundleResource Include="Resources\Icons\location.png" />
-    <BundleResource Include="Resources\Icons\location_map.png" />
-    <BundleResource Include="Resources\Icons\camera.png" />
-    <BundleResource Include="Resources\Icons\key.png" />
-    <BundleResource Include="Resources\Videos\AppPreview6.5.mp4" />
-    <BundleResource Include="Resources\Icons\check.png" />
-    <BundleResource Include="Resources\Icons\home.png" />
-    <BundleResource Include="Resources\Icons\minus_delete.png" />
-    <BundleResource Include="Resources\Icons\plus.png" />
+    <BundleResource Include="Resources\icon_abort.png" />
+    <BundleResource Include="Resources\icon_camera.png" />
+    <BundleResource Include="Resources\icon_check.png" />
+    <BundleResource Include="Resources\icon_clear.png" />
+    <BundleResource Include="Resources\icon_home.png" />
+    <BundleResource Include="Resources\icon_key.png" />
+    <BundleResource Include="Resources\icon_location.png" />
+    <BundleResource Include="Resources\icon_location_map.png" />
+    <BundleResource Include="Resources\icon_minus_delete.png" />
+    <BundleResource Include="Resources\icon_navigate.png" />
+    <BundleResource Include="Resources\icon_plus.png" />
+    <BundleResource Include="Resources\icon_user_permission.png" />
+    <BundleResource Include="Resources\AppPreview6.5.mp4" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controls\" />
     <Folder Include="Controls\Effects\" />
     <Folder Include="Services\" />
     <Folder Include="Assets.xcassets\SplashImage.imageset\" />
-    <Folder Include="Resources\Icons\" />
-    <Folder Include="Resources\Videos\" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\app_icon.jpeg">
+    <AndroidResource Include="Resources\splash.jpeg">
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
-    <AndroidResource Include="Resources\arrow.png">
+    <AndroidResource Include="Resources\image_arrow.png">
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
-    <AndroidResource Include="Resources\arrow_background.jpg">
+    <AndroidResource Include="Resources\image_arrow_background.jpg">
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>

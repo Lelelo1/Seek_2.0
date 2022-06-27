@@ -85,7 +85,7 @@ namespace Seek.Pages
             // is still triggered when having left permission page
             // don't seem to be a problem but should be fixed for slight performence if not
 
-            SetVideoPlayer(CreateVideoPlayer());
+            //SetVideoPlayer(CreateVideoPlayer());
         }
 
         async void TryToPoceedToARPage ()
@@ -103,7 +103,7 @@ namespace Seek.Pages
         async void SetPermissionButtons()
         {
 
-            var cameraPermissionButton = new PermissionButton("Camera", "./Icons/camera.png", async (Image statusImage) =>
+            var cameraPermissionButton = new PermissionButton("Camera", "icon_camera.png", async (Image statusImage) =>
             {
                 var camera = await PermissionUtils.GetCamera();
 
@@ -126,7 +126,7 @@ namespace Seek.Pages
 
             permissionButtonsLayout.Children.Add(cameraPermissionButton);
 
-            var locationPermissionButton = new PermissionButton("Location", "./Icons/location_map.png", async (Image statusImage) =>
+            var locationPermissionButton = new PermissionButton("Location", "icon_location_map.png", async (Image statusImage) =>
             {
                 var locationWhenInUse = await PermissionUtils.GetLocationWhenInUse();
                 if (locationWhenInUse == PermissionStatus.Granted)

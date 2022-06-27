@@ -67,7 +67,7 @@ namespace Seek.Visualization.Support
             {
                 if(_navigateSymbol == null)
                 {
-                    return new DataTemplate(() => new Image() { Source = "./Icons/navigate.png", Opacity = 0.58 }); 
+                    return new DataTemplate(() => new Image() { Source = "icon_navigate.png", Opacity = 0.58 }); 
                 }
                 return _navigateSymbol;
             }
@@ -182,7 +182,7 @@ namespace Seek.Visualization.Support
                 {
                     _close = new DataTemplate(() =>
                     {
-                        var close = new ImageButton() { Source = "./Icons/abort.png", Margin = new Thickness(0, 0, 0, 0), Opacity = 0.62, BackgroundColor = Color.Transparent};
+                        var close = new ImageButton() { Source = "icon_abort.png", Margin = new Thickness(0, 0, 0, 0), Opacity = 0.62, BackgroundColor = Color.Transparent};
                         return close;
                     });
                 }
