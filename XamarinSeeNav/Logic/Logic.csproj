@@ -131,5 +131,11 @@
     <Compile Include="..\..\Logic\Mobile\IFrameworkContext.cs">
       <Link>Mobile\IFrameworkContext.cs</Link>
     </Compile>
+    <Compile Include="..\..\Logic\Mobile\Models\IProjectionAngle.cs">
+      <Link>Mobile\Models\IProjectionAngle.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Logic\Mobile\Models\Size.cs">
+      <Link>Mobile\Models\Size.cs</Link>
+    </Compile>
   </ItemGroup>
 </Project>
