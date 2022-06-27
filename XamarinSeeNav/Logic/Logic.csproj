@@ -125,11 +125,11 @@
     <Compile Include="..\..\Logic\Mobile\Remote\Apis\Providers.cs">
       <Link>Mobile\Remote\Apis\Providers.cs</Link>
     </Compile>
-    <Compile Include="..\XamarinLogic\IFrameworkContext.cs">
-      <Link>Mobile\IFrameworkContext.cs</Link>
-    </Compile>
     <Compile Include="..\..\Logic\Mobile\Game\Models\Rectangle.cs">
       <Link>Mobile\Models\Rectangle.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Logic\Mobile\IFrameworkContext.cs">
+      <Link>Mobile\IFrameworkContext.cs</Link>
     </Compile>
   </ItemGroup>
 </Project>

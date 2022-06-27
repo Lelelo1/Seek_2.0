@@ -1,12 +1,25 @@
 ﻿using System;
+using System.Numerics;
 using System.Threading.Tasks;
-using Logic.Models;
 
-namespace Logic
+using LogicLibrary.Models;
+
+namespace LogicLibrary
 {
-	public interface IFrameworkContext
-	{
-		void ReportCrash(Exception exc, string message);
-		Task<Location> GetLocationAsync();
-	}
+    public interface IFrameworkContext
+    {
+        void ReportCrash(Exception exc, string message);
+        Task<Location> GetLocationAsync();
+
+        string GetDistanceMetric(double meters);
+        string GetDistanceImperial(double meters);
+
+        double MetersBetween(Location a, Location b);
+
+        Size BubbleProjectionSize { get; }
+        Size ProjectionArea { get; }
+
+        IProjectionAngle ProjectionAngle { get; }
+    }
 }
+
