@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeeNav.iOS", "SeeNav\SeeNav
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeeNav", "SeeNav\SeeNav\SeeNav.csproj", "{3D4494D8-64B8-4EF9-88BF-FFC8A1B9F911}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{4C4605DB-9C71-46B2-A449-13F753FEB197}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{3D4494D8-64B8-4EF9-88BF-FFC8A1B9F911}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{3D4494D8-64B8-4EF9-88BF-FFC8A1B9F911}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{3D4494D8-64B8-4EF9-88BF-FFC8A1B9F911}.Release|iPhone.Build.0 = Release|Any CPU
+		{4C4605DB-9C71-46B2-A449-13F753FEB197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C4605DB-9C71-46B2-A449-13F753FEB197}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C4605DB-9C71-46B2-A449-13F753FEB197}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C4605DB-9C71-46B2-A449-13F753FEB197}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C4605DB-9C71-46B2-A449-13F753FEB197}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{4C4605DB-9C71-46B2-A449-13F753FEB197}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{4C4605DB-9C71-46B2-A449-13F753FEB197}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{4C4605DB-9C71-46B2-A449-13F753FEB197}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{4C4605DB-9C71-46B2-A449-13F753FEB197}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{4C4605DB-9C71-46B2-A449-13F753FEB197}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{4C4605DB-9C71-46B2-A449-13F753FEB197}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{4C4605DB-9C71-46B2-A449-13F753FEB197}.Release|iPhone.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

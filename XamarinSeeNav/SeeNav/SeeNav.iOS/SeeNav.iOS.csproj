@@ -132,5 +132,9 @@
       <Project>{3D4494D8-64B8-4EF9-88BF-FFC8A1B9F911}</Project>
       <Name>SeeNav</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Logic\Logic.csproj">
+      <Project>{4C4605DB-9C71-46B2-A449-13F753FEB197}</Project>
+      <Name>Logic</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
