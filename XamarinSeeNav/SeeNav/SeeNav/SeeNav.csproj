@@ -13,8 +13,23 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="AutocompleteExtension" Version="1.0.3" />
+    <PackageReference Include="NativeObject" Version="1.0.1" />
+    <PackageReference Include="Plugin.SegmentedControl.Netstandard" Version="4.2.0" />
+    <PackageReference Include="Forms9Patch" Version="2.2.6" />
+    <PackageReference Include="Plugin.InAppBilling" Version="4.0.0-beta" />
+    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="4.0.6" />
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.5.1" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.5.1" />
+    <PackageReference Include="UnitsNet" Version="4.134.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Logic\Logic.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\..\Library\CloudStorage\OneDrive-Personal\Secrets\Secrets.cs">
+      <Link>Secrets.cs</Link>
+    </Compile>
   </ItemGroup>
 </Project>

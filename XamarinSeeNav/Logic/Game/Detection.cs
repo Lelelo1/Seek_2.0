@@ -170,7 +170,7 @@ namespace LogicLibrary.Game
         {
             get
             {
-                // with Seek_1 it was 1.75f. Now it looks superb (in Seek_2.0) with 0.75
+                // with SeeNav_1 it was 1.75f. Now it looks superb (in SeeNav_2.0) with 0.75
                 bool shouldIncrease = _value < _max * 0.75f;//1.75f;//0.75;
                 if(shouldIncrease)
                 {

@@ -14,7 +14,7 @@ namespace LogicLibrary.Remote.Apis
     }
 
     // provider is not needed anymore, and it is better to use existing url builder, as a nuget. But try to fuse upcoming
-    // seek-search with INative (and the existing apple mapkit native implementation)
+    // SeeNav-search with INative (and the existing apple mapkit native implementation)
 
     /*
     // for google and foursquare

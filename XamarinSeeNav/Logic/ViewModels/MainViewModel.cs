@@ -54,8 +54,8 @@ namespace LogicLibrary.ViewModels
         public delegate void ActivityChanging(object sender, Activities toActivity);
         public event ActivityChanging OnActivityChanged;
 
-        public string CurrentSeekImageDisplayed { get; set; } = "man_middle_lantern.jpg";
-        public List<string> SeekImages { get; set; } =
+        public string CurrentSeeNavImageDisplayed { get; set; } = "man_middle_lantern.jpg";
+        public List<string> SeeNavImages { get; set; } =
             new List<string>() { "man_middle_lantern.jpg", "victorian_woman_lantern.png", "man_lamp.png" };
         public double Radius { get; set; } = 1000;
 

@@ -1056,7 +1056,7 @@ namespace SeeNav.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.searchHintIcon = global::SeeNav.Droid.Resource.Attribute.searchHintIcon;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.searchIcon = global::SeeNav.Droid.Resource.Attribute.searchIcon;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.searchViewStyle = global::SeeNav.Droid.Resource.Attribute.searchViewStyle;
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.seekBarStyle = global::SeeNav.Droid.Resource.Attribute.seekBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.SeeNavBarStyle = global::SeeNav.Droid.Resource.Attribute.SeeNavBarStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.selectableItemBackground = global::SeeNav.Droid.Resource.Attribute.selectableItemBackground;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.selectableItemBackgroundBorderless = global::SeeNav.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.selectionRequired = global::SeeNav.Droid.Resource.Attribute.selectionRequired;
@@ -1329,7 +1329,7 @@ namespace SeeNav.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_btn_checkable = global::SeeNav.Droid.Resource.Color.abc_tint_btn_checkable;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_default = global::SeeNav.Droid.Resource.Color.abc_tint_default;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_edittext = global::SeeNav.Droid.Resource.Color.abc_tint_edittext;
-			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_seek_thumb = global::SeeNav.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_SeeNav_thumb = global::SeeNav.Droid.Resource.Color.abc_tint_SeeNav_thumb;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_spinner = global::SeeNav.Droid.Resource.Color.abc_tint_spinner;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_switch_track = global::SeeNav.Droid.Resource.Color.abc_tint_switch_track;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.accent_material_dark = global::SeeNav.Droid.Resource.Color.accent_material_dark;
@@ -1570,8 +1570,8 @@ namespace SeeNav.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_progress_bar_height_material = global::SeeNav.Droid.Resource.Dimension.abc_progress_bar_height_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_search_view_preferred_height = global::SeeNav.Droid.Resource.Dimension.abc_search_view_preferred_height;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_search_view_preferred_width = global::SeeNav.Droid.Resource.Dimension.abc_search_view_preferred_width;
-			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_seekbar_track_background_height_material = global::SeeNav.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
-			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_seekbar_track_progress_height_material = global::SeeNav.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_SeeNavbar_track_background_height_material = global::SeeNav.Droid.Resource.Dimension.abc_SeeNavbar_track_background_height_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_SeeNavbar_track_progress_height_material = global::SeeNav.Droid.Resource.Dimension.abc_SeeNavbar_track_progress_height_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_select_dialog_padding_start_material = global::SeeNav.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_star_big = global::SeeNav.Droid.Resource.Dimension.abc_star_big;
 			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_star_medium = global::SeeNav.Droid.Resource.Dimension.abc_star_medium;
@@ -1995,9 +1995,9 @@ namespace SeeNav.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::SeeNav.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::SeeNav.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::SeeNav.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_seekbar_thumb_material = global::SeeNav.Droid.Resource.Drawable.abc_seekbar_thumb_material;
-			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_seekbar_tick_mark_material = global::SeeNav.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
-			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_seekbar_track_material = global::SeeNav.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_SeeNavbar_thumb_material = global::SeeNav.Droid.Resource.Drawable.abc_SeeNavbar_thumb_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_SeeNavbar_tick_mark_material = global::SeeNav.Droid.Resource.Drawable.abc_SeeNavbar_tick_mark_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_SeeNavbar_track_material = global::SeeNav.Droid.Resource.Drawable.abc_SeeNavbar_track_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::SeeNav.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_spinner_textfield_background_material = global::SeeNav.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_star_black_48dp = global::SeeNav.Droid.Resource.Drawable.abc_star_black_48dp;
@@ -3041,8 +3041,8 @@ namespace SeeNav.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::SeeNav.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SearchView = global::SeeNav.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::SeeNav.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SeekBar = global::SeeNav.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::SeeNav.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SeeNavBar = global::SeeNav.Droid.Resource.Style.Base_Widget_AppCompat_SeeNavBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SeeNavBar_Discrete = global::SeeNav.Droid.Resource.Style.Base_Widget_AppCompat_SeeNavBar_Discrete;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Spinner = global::SeeNav.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::SeeNav.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_TextView = global::SeeNav.Droid.Resource.Style.Base_Widget_AppCompat_TextView;
@@ -3423,8 +3423,8 @@ namespace SeeNav.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_RatingBar_Small = global::SeeNav.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_SearchView = global::SeeNav.Droid.Resource.Style.Widget_AppCompat_SearchView;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::SeeNav.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_SeekBar = global::SeeNav.Droid.Resource.Style.Widget_AppCompat_SeekBar;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::SeeNav.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_SeeNavBar = global::SeeNav.Droid.Resource.Style.Widget_AppCompat_SeeNavBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_SeeNavBar_Discrete = global::SeeNav.Droid.Resource.Style.Widget_AppCompat_SeeNavBar_Discrete;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner = global::SeeNav.Droid.Resource.Style.Widget_AppCompat_Spinner;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::SeeNav.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::SeeNav.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
@@ -3663,11 +3663,11 @@ namespace SeeNav.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView_srcCompat = global::SeeNav.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView_tint = global::SeeNav.Droid.Resource.Styleable.AppCompatImageView_tint;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView_tintMode = global::SeeNav.Droid.Resource.Styleable.AppCompatImageView_tintMode;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar = global::SeeNav.Droid.Resource.Styleable.AppCompatSeekBar;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar_android_thumb = global::SeeNav.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar_tickMark = global::SeeNav.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::SeeNav.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::SeeNav.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeeNavBar = global::SeeNav.Droid.Resource.Styleable.AppCompatSeeNavBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeeNavBar_android_thumb = global::SeeNav.Droid.Resource.Styleable.AppCompatSeeNavBar_android_thumb;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeeNavBar_tickMark = global::SeeNav.Droid.Resource.Styleable.AppCompatSeeNavBar_tickMark;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeeNavBar_tickMarkTint = global::SeeNav.Droid.Resource.Styleable.AppCompatSeeNavBar_tickMarkTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeeNavBar_tickMarkTintMode = global::SeeNav.Droid.Resource.Styleable.AppCompatSeeNavBar_tickMarkTintMode;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper = global::SeeNav.Droid.Resource.Styleable.AppCompatTextHelper;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::SeeNav.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::SeeNav.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
@@ -3795,7 +3795,7 @@ namespace SeeNav.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::SeeNav.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::SeeNav.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_searchViewStyle = global::SeeNav.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
-			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_seekBarStyle = global::SeeNav.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_SeeNavBarStyle = global::SeeNav.Droid.Resource.Styleable.AppCompatTheme_SeeNavBarStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::SeeNav.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::SeeNav.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::SeeNav.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
@@ -6343,7 +6343,7 @@ namespace SeeNav.Droid
 			global::Xamarin.Forms.Platform.Resource.Attribute.searchHintIcon = global::SeeNav.Droid.Resource.Attribute.searchHintIcon;
 			global::Xamarin.Forms.Platform.Resource.Attribute.searchIcon = global::SeeNav.Droid.Resource.Attribute.searchIcon;
 			global::Xamarin.Forms.Platform.Resource.Attribute.searchViewStyle = global::SeeNav.Droid.Resource.Attribute.searchViewStyle;
-			global::Xamarin.Forms.Platform.Resource.Attribute.seekBarStyle = global::SeeNav.Droid.Resource.Attribute.seekBarStyle;
+			global::Xamarin.Forms.Platform.Resource.Attribute.SeeNavBarStyle = global::SeeNav.Droid.Resource.Attribute.SeeNavBarStyle;
 			global::Xamarin.Forms.Platform.Resource.Attribute.selectableItemBackground = global::SeeNav.Droid.Resource.Attribute.selectableItemBackground;
 			global::Xamarin.Forms.Platform.Resource.Attribute.selectableItemBackgroundBorderless = global::SeeNav.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
 			global::Xamarin.Forms.Platform.Resource.Attribute.selectionRequired = global::SeeNav.Droid.Resource.Attribute.selectionRequired;
@@ -6616,7 +6616,7 @@ namespace SeeNav.Droid
 			global::Xamarin.Forms.Platform.Resource.Color.abc_tint_btn_checkable = global::SeeNav.Droid.Resource.Color.abc_tint_btn_checkable;
 			global::Xamarin.Forms.Platform.Resource.Color.abc_tint_default = global::SeeNav.Droid.Resource.Color.abc_tint_default;
 			global::Xamarin.Forms.Platform.Resource.Color.abc_tint_edittext = global::SeeNav.Droid.Resource.Color.abc_tint_edittext;
-			global::Xamarin.Forms.Platform.Resource.Color.abc_tint_seek_thumb = global::SeeNav.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::Xamarin.Forms.Platform.Resource.Color.abc_tint_SeeNav_thumb = global::SeeNav.Droid.Resource.Color.abc_tint_SeeNav_thumb;
 			global::Xamarin.Forms.Platform.Resource.Color.abc_tint_spinner = global::SeeNav.Droid.Resource.Color.abc_tint_spinner;
 			global::Xamarin.Forms.Platform.Resource.Color.abc_tint_switch_track = global::SeeNav.Droid.Resource.Color.abc_tint_switch_track;
 			global::Xamarin.Forms.Platform.Resource.Color.accent_material_dark = global::SeeNav.Droid.Resource.Color.accent_material_dark;
@@ -6857,8 +6857,8 @@ namespace SeeNav.Droid
 			global::Xamarin.Forms.Platform.Resource.Dimension.abc_progress_bar_height_material = global::SeeNav.Droid.Resource.Dimension.abc_progress_bar_height_material;
 			global::Xamarin.Forms.Platform.Resource.Dimension.abc_search_view_preferred_height = global::SeeNav.Droid.Resource.Dimension.abc_search_view_preferred_height;
 			global::Xamarin.Forms.Platform.Resource.Dimension.abc_search_view_preferred_width = global::SeeNav.Droid.Resource.Dimension.abc_search_view_preferred_width;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_seekbar_track_background_height_material = global::SeeNav.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
-			global::Xamarin.Forms.Platform.Resource.Dimension.abc_seekbar_track_progress_height_material = global::SeeNav.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Xamarin.Forms.Platform.Resource.Dimension.abc_SeeNavbar_track_background_height_material = global::SeeNav.Droid.Resource.Dimension.abc_SeeNavbar_track_background_height_material;
+			global::Xamarin.Forms.Platform.Resource.Dimension.abc_SeeNavbar_track_progress_height_material = global::SeeNav.Droid.Resource.Dimension.abc_SeeNavbar_track_progress_height_material;
 			global::Xamarin.Forms.Platform.Resource.Dimension.abc_select_dialog_padding_start_material = global::SeeNav.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
 			global::Xamarin.Forms.Platform.Resource.Dimension.abc_star_big = global::SeeNav.Droid.Resource.Dimension.abc_star_big;
 			global::Xamarin.Forms.Platform.Resource.Dimension.abc_star_medium = global::SeeNav.Droid.Resource.Dimension.abc_star_medium;
@@ -7282,9 +7282,9 @@ namespace SeeNav.Droid
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::SeeNav.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::SeeNav.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::SeeNav.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_seekbar_thumb_material = global::SeeNav.Droid.Resource.Drawable.abc_seekbar_thumb_material;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_seekbar_tick_mark_material = global::SeeNav.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
-			global::Xamarin.Forms.Platform.Resource.Drawable.abc_seekbar_track_material = global::SeeNav.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::Xamarin.Forms.Platform.Resource.Drawable.abc_SeeNavbar_thumb_material = global::SeeNav.Droid.Resource.Drawable.abc_SeeNavbar_thumb_material;
+			global::Xamarin.Forms.Platform.Resource.Drawable.abc_SeeNavbar_tick_mark_material = global::SeeNav.Droid.Resource.Drawable.abc_SeeNavbar_tick_mark_material;
+			global::Xamarin.Forms.Platform.Resource.Drawable.abc_SeeNavbar_track_material = global::SeeNav.Droid.Resource.Drawable.abc_SeeNavbar_track_material;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::SeeNav.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_spinner_textfield_background_material = global::SeeNav.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
 			global::Xamarin.Forms.Platform.Resource.Drawable.abc_star_black_48dp = global::SeeNav.Droid.Resource.Drawable.abc_star_black_48dp;
@@ -8328,8 +8328,8 @@ namespace SeeNav.Droid
 			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::SeeNav.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
 			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_SearchView = global::SeeNav.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
 			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::SeeNav.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_SeekBar = global::SeeNav.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::SeeNav.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_SeeNavBar = global::SeeNav.Droid.Resource.Style.Base_Widget_AppCompat_SeeNavBar;
+			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_SeeNavBar_Discrete = global::SeeNav.Droid.Resource.Style.Base_Widget_AppCompat_SeeNavBar_Discrete;
 			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Spinner = global::SeeNav.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
 			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::SeeNav.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
 			global::Xamarin.Forms.Platform.Resource.Style.Base_Widget_AppCompat_TextView = global::SeeNav.Droid.Resource.Style.Base_Widget_AppCompat_TextView;
@@ -8710,8 +8710,8 @@ namespace SeeNav.Droid
 			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_RatingBar_Small = global::SeeNav.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
 			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_SearchView = global::SeeNav.Droid.Resource.Style.Widget_AppCompat_SearchView;
 			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::SeeNav.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_SeekBar = global::SeeNav.Droid.Resource.Style.Widget_AppCompat_SeekBar;
-			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::SeeNav.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_SeeNavBar = global::SeeNav.Droid.Resource.Style.Widget_AppCompat_SeeNavBar;
+			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_SeeNavBar_Discrete = global::SeeNav.Droid.Resource.Style.Widget_AppCompat_SeeNavBar_Discrete;
 			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Spinner = global::SeeNav.Droid.Resource.Style.Widget_AppCompat_Spinner;
 			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::SeeNav.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
 			global::Xamarin.Forms.Platform.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::SeeNav.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
@@ -8950,11 +8950,11 @@ namespace SeeNav.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatImageView_srcCompat = global::SeeNav.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatImageView_tint = global::SeeNav.Droid.Resource.Styleable.AppCompatImageView_tint;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatImageView_tintMode = global::SeeNav.Droid.Resource.Styleable.AppCompatImageView_tintMode;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatSeekBar = global::SeeNav.Droid.Resource.Styleable.AppCompatSeekBar;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatSeekBar_android_thumb = global::SeeNav.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatSeekBar_tickMark = global::SeeNav.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::SeeNav.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::SeeNav.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatSeeNavBar = global::SeeNav.Droid.Resource.Styleable.AppCompatSeeNavBar;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatSeeNavBar_android_thumb = global::SeeNav.Droid.Resource.Styleable.AppCompatSeeNavBar_android_thumb;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatSeeNavBar_tickMark = global::SeeNav.Droid.Resource.Styleable.AppCompatSeeNavBar_tickMark;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatSeeNavBar_tickMarkTint = global::SeeNav.Droid.Resource.Styleable.AppCompatSeeNavBar_tickMarkTint;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatSeeNavBar_tickMarkTintMode = global::SeeNav.Droid.Resource.Styleable.AppCompatSeeNavBar_tickMarkTintMode;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextHelper = global::SeeNav.Droid.Resource.Styleable.AppCompatTextHelper;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::SeeNav.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::SeeNav.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
@@ -9082,7 +9082,7 @@ namespace SeeNav.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::SeeNav.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::SeeNav.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_searchViewStyle = global::SeeNav.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
-			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_seekBarStyle = global::SeeNav.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_SeeNavBarStyle = global::SeeNav.Droid.Resource.Styleable.AppCompatTheme_SeeNavBarStyle;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::SeeNav.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::SeeNav.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
 			global::Xamarin.Forms.Platform.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::SeeNav.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
@@ -13457,13 +13457,13 @@ namespace SeeNav.Droid
 			public const int searchViewStyle = 2130903849;
 			
 			// aapt resource value: 0x7F03032A
-			public const int seekBarIncrement = 2130903850;
+			public const int SeeNavBarIncrement = 2130903850;
 			
 			// aapt resource value: 0x7F03032B
-			public const int seekBarPreferenceStyle = 2130903851;
+			public const int SeeNavBarPreferenceStyle = 2130903851;
 			
 			// aapt resource value: 0x7F03032C
-			public const int seekBarStyle = 2130903852;
+			public const int SeeNavBarStyle = 2130903852;
 			
 			// aapt resource value: 0x7F03032D
 			public const int selectable = 2130903853;
@@ -13529,7 +13529,7 @@ namespace SeeNav.Droid
 			public const int showPaths = 2130903871;
 			
 			// aapt resource value: 0x7F030340
-			public const int showSeekBarValue = 2130903872;
+			public const int showSeeNavBarValue = 2130903872;
 			
 			// aapt resource value: 0x7F030341
 			public const int showText = 2130903873;
@@ -14353,7 +14353,7 @@ namespace SeeNav.Droid
 			public const int abc_tint_edittext = 2131034133;
 			
 			// aapt resource value: 0x7F050016
-			public const int abc_tint_seek_thumb = 2131034134;
+			public const int abc_tint_SeeNav_thumb = 2131034134;
 			
 			// aapt resource value: 0x7F050017
 			public const int abc_tint_spinner = 2131034135;
@@ -15116,10 +15116,10 @@ namespace SeeNav.Droid
 			public const int abc_search_view_preferred_width = 2131099703;
 			
 			// aapt resource value: 0x7F060038
-			public const int abc_seekbar_track_background_height_material = 2131099704;
+			public const int abc_SeeNavbar_track_background_height_material = 2131099704;
 			
 			// aapt resource value: 0x7F060039
-			public const int abc_seekbar_track_progress_height_material = 2131099705;
+			public const int abc_SeeNavbar_track_progress_height_material = 2131099705;
 			
 			// aapt resource value: 0x7F06003A
 			public const int abc_select_dialog_padding_start_material = 2131099706;
@@ -16169,13 +16169,13 @@ namespace SeeNav.Droid
 			public const int preference_icon_minWidth = 2131100054;
 			
 			// aapt resource value: 0x7F060197
-			public const int preference_seekbar_padding_horizontal = 2131100055;
+			public const int preference_SeeNavbar_padding_horizontal = 2131100055;
 			
 			// aapt resource value: 0x7F060198
-			public const int preference_seekbar_padding_vertical = 2131100056;
+			public const int preference_SeeNavbar_padding_vertical = 2131100056;
 			
 			// aapt resource value: 0x7F060199
-			public const int preference_seekbar_value_minWidth = 2131100057;
+			public const int preference_SeeNavbar_value_minWidth = 2131100057;
 			
 			// aapt resource value: 0x7F06019A
 			public const int test_mtrl_calendar_day_cornerSize = 2131100058;
@@ -16425,13 +16425,13 @@ namespace SeeNav.Droid
 			public const int abc_scrubber_track_mtrl_alpha = 2131165247;
 			
 			// aapt resource value: 0x7F070040
-			public const int abc_seekbar_thumb_material = 2131165248;
+			public const int abc_SeeNavbar_thumb_material = 2131165248;
 			
 			// aapt resource value: 0x7F070041
-			public const int abc_seekbar_tick_mark_material = 2131165249;
+			public const int abc_SeeNavbar_tick_mark_material = 2131165249;
 			
 			// aapt resource value: 0x7F070042
-			public const int abc_seekbar_track_material = 2131165250;
+			public const int abc_SeeNavbar_track_material = 2131165250;
 			
 			// aapt resource value: 0x7F070043
 			public const int abc_spinner_mtrl_am_alpha = 2131165251;
@@ -17776,10 +17776,10 @@ namespace SeeNav.Droid
 			public const int search_voice_btn = 2131231092;
 			
 			// aapt resource value: 0x7F080175
-			public const int seekbar = 2131231093;
+			public const int SeeNavbar = 2131231093;
 			
 			// aapt resource value: 0x7F080176
-			public const int seekbar_value = 2131231094;
+			public const int SeeNavbar_value = 2131231094;
 			
 			// aapt resource value: 0x7F080178
 			public const int selected = 2131231096;
@@ -18688,10 +18688,10 @@ namespace SeeNav.Droid
 			public const int preference_widget_checkbox = 2131427449;
 			
 			// aapt resource value: 0x7F0B007A
-			public const int preference_widget_seekbar = 2131427450;
+			public const int preference_widget_SeeNavbar = 2131427450;
 			
 			// aapt resource value: 0x7F0B007B
-			public const int preference_widget_seekbar_material = 2131427451;
+			public const int preference_widget_SeeNavbar_material = 2131427451;
 			
 			// aapt resource value: 0x7F0B007C
 			public const int preference_widget_switch = 2131427452;
@@ -19808,10 +19808,10 @@ namespace SeeNav.Droid
 			public const int Base_Widget_AppCompat_SearchView_ActionBar = 2131689678;
 			
 			// aapt resource value: 0x7F0F00CF
-			public const int Base_Widget_AppCompat_SeekBar = 2131689679;
+			public const int Base_Widget_AppCompat_SeeNavBar = 2131689679;
 			
 			// aapt resource value: 0x7F0F00D0
-			public const int Base_Widget_AppCompat_SeekBar_Discrete = 2131689680;
+			public const int Base_Widget_AppCompat_SeeNavBar_Discrete = 2131689680;
 			
 			// aapt resource value: 0x7F0F00D1
 			public const int Base_Widget_AppCompat_Spinner = 2131689681;
@@ -20042,10 +20042,10 @@ namespace SeeNav.Droid
 			public const int Preference_PreferenceScreen_Material = 2131689746;
 			
 			// aapt resource value: 0x7F0F0113
-			public const int Preference_SeekBarPreference = 2131689747;
+			public const int Preference_SeeNavBarPreference = 2131689747;
 			
 			// aapt resource value: 0x7F0F0114
-			public const int Preference_SeekBarPreference_Material = 2131689748;
+			public const int Preference_SeeNavBarPreference_Material = 2131689748;
 			
 			// aapt resource value: 0x7F0F0115
 			public const int Preference_SwitchPreference = 2131689749;
@@ -21047,10 +21047,10 @@ namespace SeeNav.Droid
 			public const int Widget_AppCompat_SearchView_ActionBar = 2131690088;
 			
 			// aapt resource value: 0x7F0F0269
-			public const int Widget_AppCompat_SeekBar = 2131690089;
+			public const int Widget_AppCompat_SeeNavBar = 2131690089;
 			
 			// aapt resource value: 0x7F0F026A
-			public const int Widget_AppCompat_SeekBar_Discrete = 2131690090;
+			public const int Widget_AppCompat_SeeNavBar_Discrete = 2131690090;
 			
 			// aapt resource value: 0x7F0F026B
 			public const int Widget_AppCompat_Spinner = 2131690091;
@@ -21863,23 +21863,23 @@ namespace SeeNav.Droid
 			public const int AppCompatImageView_tintMode = 3;
 			
 			// aapt resource value: { 0x1010142,0x7F0303DC,0x7F0303DD,0x7F0303DE }
-			public static int[] AppCompatSeekBar = new int[] {
+			public static int[] AppCompatSeeNavBar = new int[] {
 					16843074,
 					2130904028,
 					2130904029,
 					2130904030};
 			
 			// aapt resource value: 0
-			public const int AppCompatSeekBar_android_thumb = 0;
+			public const int AppCompatSeeNavBar_android_thumb = 0;
 			
 			// aapt resource value: 1
-			public const int AppCompatSeekBar_tickMark = 1;
+			public const int AppCompatSeeNavBar_tickMark = 1;
 			
 			// aapt resource value: 2
-			public const int AppCompatSeekBar_tickMarkTint = 2;
+			public const int AppCompatSeeNavBar_tickMarkTint = 2;
 			
 			// aapt resource value: 3
-			public const int AppCompatSeekBar_tickMarkTintMode = 3;
+			public const int AppCompatSeeNavBar_tickMarkTintMode = 3;
 			
 			// aapt resource value: { 0x1010034,0x101016D,0x101016E,0x101016F,0x1010170,0x1010392,0x1010393 }
 			public static int[] AppCompatTextHelper = new int[] {
@@ -22418,7 +22418,7 @@ namespace SeeNav.Droid
 			public const int AppCompatTheme_searchViewStyle = 95;
 			
 			// aapt resource value: 96
-			public const int AppCompatTheme_seekBarStyle = 96;
+			public const int AppCompatTheme_SeeNavBarStyle = 96;
 			
 			// aapt resource value: 97
 			public const int AppCompatTheme_selectableItemBackground = 97;
@@ -27871,7 +27871,7 @@ namespace SeeNav.Droid
 			public const int PreferenceTheme_preferenceTheme = 12;
 			
 			// aapt resource value: 13
-			public const int PreferenceTheme_seekBarPreferenceStyle = 13;
+			public const int PreferenceTheme_SeeNavBarPreferenceStyle = 13;
 			
 			// aapt resource value: 14
 			public const int PreferenceTheme_switchPreferenceCompatStyle = 14;
@@ -28183,7 +28183,7 @@ namespace SeeNav.Droid
 			public const int SearchView_voiceIcon = 16;
 			
 			// aapt resource value: { 0x10100F2,0x1010136,0x7F030029,0x7F03028E,0x7F03032A,0x7F030340,0x7F03040D }
-			public static int[] SeekBarPreference = new int[] {
+			public static int[] SeeNavBarPreference = new int[] {
 					16842994,
 					16843062,
 					2130903081,
@@ -28193,25 +28193,25 @@ namespace SeeNav.Droid
 					2130904077};
 			
 			// aapt resource value: 2
-			public const int SeekBarPreference_adjustable = 2;
+			public const int SeeNavBarPreference_adjustable = 2;
 			
 			// aapt resource value: 0
-			public const int SeekBarPreference_android_layout = 0;
+			public const int SeeNavBarPreference_android_layout = 0;
 			
 			// aapt resource value: 1
-			public const int SeekBarPreference_android_max = 1;
+			public const int SeeNavBarPreference_android_max = 1;
 			
 			// aapt resource value: 3
-			public const int SeekBarPreference_min = 3;
+			public const int SeeNavBarPreference_min = 3;
 			
 			// aapt resource value: 4
-			public const int SeekBarPreference_seekBarIncrement = 4;
+			public const int SeeNavBarPreference_SeeNavBarIncrement = 4;
 			
 			// aapt resource value: 5
-			public const int SeekBarPreference_showSeekBarValue = 5;
+			public const int SeeNavBarPreference_showSeeNavBarValue = 5;
 			
 			// aapt resource value: 6
-			public const int SeekBarPreference_updatesContinuously = 6;
+			public const int SeeNavBarPreference_updatesContinuously = 6;
 			
 			// aapt resource value: { 0x7F0300F9,0x7F0300FA,0x7F0300FB,0x7F0300FC,0x7F0300FD,0x7F0300FE,0x7F0300FF,0x7F030333,0x7F030336,0x7F030369,0x7F03036A }
 			public static int[] ShapeableImageView = new int[] {

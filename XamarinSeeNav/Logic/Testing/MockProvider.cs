@@ -12,33 +12,33 @@ namespace LogicLibrary.Testing
 
     // previously in MockPlaces, which contained photos on azure
     /*
-    "https://storageaccountseekr9a43.blob.core.windows.net/seek-mocks/bkburger.jpg",
-                    "https://storageaccountseekr9a43.blob.core.windows.net/seek-mocks/bkentry.jpg" +
-                    "https://storageaccountseekr9a43.blob.core.windows.net/seek-mocks/bklogo.jpg",
+    "https://storageaccountSeeNavr9a43.blob.core.windows.net/SeeNav-mocks/bkburger.jpg",
+                    "https://storageaccountSeeNavr9a43.blob.core.windows.net/SeeNav-mocks/bkentry.jpg" +
+                    "https://storageaccountSeeNavr9a43.blob.core.windows.net/SeeNav-mocks/bklogo.jpg",
 
-    "https://storageaccountseekr9a43.blob.core.windows.net/seek-mocks/cnice.jpg",
-                    "https://storageaccountseekr9a43.blob.core.windows.net/seek-mocks/cstop.jpg",
-                    "https://storageaccountseekr9a43.blob.core.windows.net/seek-mocks/ctraffic.jpg"
+    "https://storageaccountSeeNavr9a43.blob.core.windows.net/SeeNav-mocks/cnice.jpg",
+                    "https://storageaccountSeeNavr9a43.blob.core.windows.net/SeeNav-mocks/cstop.jpg",
+                    "https://storageaccountSeeNavr9a43.blob.core.windows.net/SeeNav-mocks/ctraffic.jpg"
 
-    "https://storageaccountseekr9a43.blob.core.windows.net/seek-mocks/mcdmenu.jpg",
-                    "https://storageaccountseekr9a43.blob.core.windows.net/seek-mocks/mcdoutdoorsign.jpg"
+    "https://storageaccountSeeNavr9a43.blob.core.windows.net/SeeNav-mocks/mcdmenu.jpg",
+                    "https://storageaccountSeeNavr9a43.blob.core.windows.net/SeeNav-mocks/mcdoutdoorsign.jpg"
 
-    "https://storageaccountseekr9a43.blob.core.windows.net/seek-mocks/mbigthreeburgers.jpg",
-                    "https://storageaccountseekr9a43.blob.core.windows.net/seek-mocks/minside.png",
-                    "https://storageaccountseekr9a43.blob.core.windows.net/seek-mocks/mlogo.png",
-                    "https://storageaccountseekr9a43.blob.core.windows.net/seek-mocks/mvegan.jpg"
+    "https://storageaccountSeeNavr9a43.blob.core.windows.net/SeeNav-mocks/mbigthreeburgers.jpg",
+                    "https://storageaccountSeeNavr9a43.blob.core.windows.net/SeeNav-mocks/minside.png",
+                    "https://storageaccountSeeNavr9a43.blob.core.windows.net/SeeNav-mocks/mlogo.png",
+                    "https://storageaccountSeeNavr9a43.blob.core.windows.net/SeeNav-mocks/mvegan.jpg"
 
-    "https://storageaccountseekr9a43.blob.core.windows.net/seek-mocks/uavatar.png",
-                    "https://storageaccountseekr9a43.blob.core.windows.net/seek-mocks/uguitar.JPG",
-                    "https://storageaccountseekr9a43.blob.core.windows.net/seek-mocks/uphoto.JPG"
+    "https://storageaccountSeeNavr9a43.blob.core.windows.net/SeeNav-mocks/uavatar.png",
+                    "https://storageaccountSeeNavr9a43.blob.core.windows.net/SeeNav-mocks/uguitar.JPG",
+                    "https://storageaccountSeeNavr9a43.blob.core.windows.net/SeeNav-mocks/uphoto.JPG"
 
-    "https://storageaccountseekr9a43.blob.core.windows.net/seek-mocks/bkburger.jpg",
-                    "https://storageaccountseekr9a43.blob.core.windows.net/seek-mocks/bkentry.jpg" +
-                    "https://storageaccountseekr9a43.blob.core.windows.net/seek-mocks/bklogo.jpg",
+    "https://storageaccountSeeNavr9a43.blob.core.windows.net/SeeNav-mocks/bkburger.jpg",
+                    "https://storageaccountSeeNavr9a43.blob.core.windows.net/SeeNav-mocks/bkentry.jpg" +
+                    "https://storageaccountSeeNavr9a43.blob.core.windows.net/SeeNav-mocks/bklogo.jpg",
 
-    "https://storageaccountseekr9a43.blob.core.windows.net/seek-mocks/cnice.jpg",
-                    "https://storageaccountseekr9a43.blob.core.windows.net/seek-mocks/cstop.jpg",
-                    "https://storageaccountseekr9a43.blob.core.windows.net/seek-mocks/ctraffic.jpg"
+    "https://storageaccountSeeNavr9a43.blob.core.windows.net/SeeNav-mocks/cnice.jpg",
+                    "https://storageaccountSeeNavr9a43.blob.core.windows.net/SeeNav-mocks/cstop.jpg",
+                    "https://storageaccountSeeNavr9a43.blob.core.windows.net/SeeNav-mocks/ctraffic.jpg"
 
     */
     public class MockProvider : /*IRemote,*/ IProvider
