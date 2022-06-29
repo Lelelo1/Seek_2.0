@@ -33,5 +33,7 @@
 	<string>To display the direction of places in the camera</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>To search for places near you. To calculate which direction places are</string>
+	<key>XSAppIconAssets</key>
+	<string>Assets.xcassets/AppIcon.appiconset</string>
 </dict>
 </plist>
