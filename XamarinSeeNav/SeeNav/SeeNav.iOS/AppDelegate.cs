@@ -53,7 +53,7 @@ namespace SeeNav.iOS
         }
 
         [Export("applicationWillTerminate:")]
-        public void WillTerminate(UIApplication application) // should not have 'new' in it! also 'async' don't work 
+        override public void WillTerminate(UIApplication application) // should not have 'new' in it! also 'async' don't work 
         {
 
             var appExit = new AppExit("user");

@@ -252,7 +252,7 @@ namespace SeeNav.Visualization
                     {
                         cameraLayout.Children.Remove(view);
                     }
-                    catch (Exception e)
+                    catch (Exception)
                     {
                         //MainPage.Instance.DebugLabel.Text = "could not remove: " + e.Message;
                     }

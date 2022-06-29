@@ -40,7 +40,7 @@ namespace SeeNav.iOS.Services
             {
                 response = await search.StartAsync();
             } // // slow 'Zzzz' eg throws mkerror when not found Code=4: https://developer.apple.com/documentation/mapkit/mkerror/code/placemarknotfound
-            catch (Exception exc) // 'Zzz' does not throw, even though no places found (in both cases.. weird)
+            catch (Exception) // 'Zzz' does not throw, even though no places found (in both cases.. weird)
             {
                 //placemarkNotFound
                 return null;
@@ -147,7 +147,7 @@ namespace SeeNav.iOS.Services
         }
 
         [Export("completerDidUpdateResults:")]
-        public void DidUpdateResults(MKLocalSearchCompleter completer)
+        override public void DidUpdateResults(MKLocalSearchCompleter completer)
         {
             PossibleResults.SetResult(completer.Results.Select(a => a.Title).ToList());
         }

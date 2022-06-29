@@ -44,7 +44,7 @@ namespace LogicLibrary.Services
             //var osmplaces = JsonConvert.DeserializeObject<PhotonResponse>(json)?.GetOsmPlaces();
 
 
-            return null;//ToNearestUniquePlaces(userLocation, OsmPlace.ToPlaces(phrase, osmplaces));
+            //return null;//ToNearestUniquePlaces(userLocation, OsmPlace.ToPlaces(phrase, osmplaces));
         }
 
 

@@ -60,7 +60,7 @@ namespace SeeNav.Visualization.Support
             }
         }
 
-        DataTemplate _navigateSymbol;
+        DataTemplate _navigateSymbol = null;
         public DataTemplate NavigateSymbol
         {
             get
@@ -72,7 +72,7 @@ namespace SeeNav.Visualization.Support
                 return _navigateSymbol;
             }
         }
-
+        
         DataTemplate _distance;
 
         public DataTemplate GetDistance(MainViewModel main)

@@ -38,11 +38,12 @@ namespace SeeNav.Visualization
             ActiveReleaseGesture = !IsSelected; // press on
             Selection();
         }
+        /*
         public event Select OnSelect;
         public delegate void Select(Bubble visual, TaskCompletionSource<bool> animationCompletion, uint? animationMilliseconds);
-
-        public event Deselect OnDeselect;
-        public delegate void Deselect(Bubble visual, Quaternion toQ, TaskCompletionSource<bool> animationCompletion, uint? animationMilliseconds);
+        */
+        //public event Deselect OnDeselect;
+        //public delegate void Deselect(Bubble visual, Quaternion toQ, TaskCompletionSource<bool> animationCompletion, uint? animationMilliseconds);
 
         public bool ActiveReleaseGesture { get; set; } = true;
 

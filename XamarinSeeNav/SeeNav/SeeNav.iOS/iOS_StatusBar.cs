@@ -12,8 +12,6 @@ namespace SeeNav.iOS
     {
         public int GetHeight()
         {
-            WebKit.WKFindResult s;
-
             return (int)UIApplication.SharedApplication.StatusBarFrame.Height;
         }
     }
