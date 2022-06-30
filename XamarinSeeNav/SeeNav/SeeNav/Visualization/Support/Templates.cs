@@ -33,7 +33,7 @@ namespace SeeNav.Visualization.Support
         }
         */
 
-        Forms9Patch.Label Label { get; set; } = new Forms9Patch.Label() { HorizontalTextAlignment = TextAlignment.Center, VerticalTextAlignment = TextAlignment.Center, Lines = 2 };
+        Label Label { get; set; } = new Label() { HorizontalTextAlignment = TextAlignment.Center, VerticalTextAlignment = TextAlignment.Center, MaxLines = 2 };
         /* Reuse same the same content, so name label is the same -and animates more nicely */
         // properties of the controls can be overwritten in Small.xaml.cs 
         DataTemplate _title;
@@ -45,13 +45,6 @@ namespace SeeNav.Visualization.Support
                 {
                     _title = new DataTemplate(() =>
                     {
-                        /*
-                        var stackLayout = new StackLayout(); // needed to make word wrap work
-                        stackLayout.Children.Add(new Label() { Text = Visual.Place.Name, HorizontalTextAlignment = TextAlignment.Center, LineBreakMode = LineBreakMode.WordWrap, MaxLines = 2, VerticalTextAlignment = TextAlignment.Center });
-                        return stackLayout;
-                        */
-
-                        // var title = new Forms9Patch.Label() { Text = Visual.Place.Name, HorizontalTextAlignment = TextAlignment.Center, VerticalTextAlignment = TextAlignment.Center, Lines = 2};
                         Label.Text = Bubble.Place.Name;
                         return Label;
                     });
@@ -82,14 +75,14 @@ namespace SeeNav.Visualization.Support
                 _distance = new DataTemplate(() =>
                 {
 
-                    var distance = new Forms9Patch.Label()
+                    var distance = new Label()
                     {
                         Text = main.DistanceToString(Bubble.Place),
                         HorizontalTextAlignment = TextAlignment.Center,
                         FontSize = 10,
                         BindingContext = this,
-                        VerticalTextAlignment = TextAlignment.Center,
-                        AutoFit = Forms9Patch.AutoFit.Lines,
+                        VerticalTextAlignment = TextAlignment.Center//,
+                        //AutoFit = AutoFit.Lines,
                     };
 
                     Logic.DependencyBox.Get<LocationService>().Location.Subscribe((location, _) =>
@@ -106,14 +99,6 @@ namespace SeeNav.Visualization.Support
             }
             return _distance;
         }
-
-        //placed in mainviewmodel instead but should probably be in some converters to ui display utilility class
-        /*
-        public string DistanceString(Location userLocation)
-        {
-            return Main.DistanceLabel(Main.CalculateDistance(userLocation, Visual.Place.Location));
-        }
-        */
 
         // templates that are shared between large content's
 

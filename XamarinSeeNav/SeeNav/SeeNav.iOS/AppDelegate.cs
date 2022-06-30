@@ -48,7 +48,7 @@ namespace SeeNav.iOS
 
 
             LoadApplication(new App());
-            Forms9Patch.iOS.Settings.Initialize(this);
+            //Forms9Patch.iOS.Settings.Initialize(this);
             return base.FinishedLaunching(app, options);
         }
 

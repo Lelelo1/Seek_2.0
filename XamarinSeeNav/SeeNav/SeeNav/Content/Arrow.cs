@@ -43,7 +43,7 @@ namespace SeeNav.Content
 
         StackLayout Container { get; } = new StackLayout();
 
-        Forms9Patch.Label NameLabel { get; } = new Forms9Patch.Label()
+        Label NameLabel { get; } = new Label()
         {
             HorizontalOptions = LayoutOptions.Center,
             FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
@@ -60,7 +60,7 @@ namespace SeeNav.Content
             Margin = new Thickness(0, 80, 0, 0)
         };
 
-        Forms9Patch.Label DistanceLabel { get; } = new Forms9Patch.Label()
+        Label DistanceLabel { get; } = new Label()
         {
             FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label)),
             VerticalOptions = LayoutOptions.StartAndExpand,

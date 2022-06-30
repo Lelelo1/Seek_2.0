@@ -1,9 +1,7 @@
 ﻿using System;
 
 using Xamarin.Forms;
-using Forms9Patch;
 using AbsoluteLayout = Xamarin.Forms.AbsoluteLayout;
-using Label = Forms9Patch.Label;
 using ContentView = Xamarin.Forms.ContentView;
 
 namespace SeeNav.Visualization.Contents.Large

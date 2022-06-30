@@ -9,10 +9,7 @@
             x:Name="layout"
             Spacing="0"
             >
-            <!--
-                <Label Text="p-hus loooooooooooong is very" HorizontalTextAlignment="Center" LineBreakMode="WordWrap" MaxLines="2"/>
-                <Label Text="distance" HorizontalOptions="Center" />
-            -->
+
         </StackLayout>
         </AbsoluteLayout>
     </ContentView.Content>
