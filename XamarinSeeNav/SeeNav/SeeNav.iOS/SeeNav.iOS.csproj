@@ -36,7 +36,7 @@
     <WarningLevel>4</WarningLevel>
     <MtouchLink>None</MtouchLink>
     <MtouchArch>x86_64</MtouchArch>
-    <CodesignProvision></CodesignProvision>
+    <CodesignProvision>Seek distribution provisioning profile</CodesignProvision>
     <CodesignKey>Apple Distribution: Leo Wetterek (6ZVEHK4GJ7)</CodesignKey>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
