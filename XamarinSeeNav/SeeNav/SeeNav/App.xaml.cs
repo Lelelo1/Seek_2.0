@@ -25,7 +25,14 @@ namespace SeeNav
             Logic.Init(new FrameworkContext());
             Xamarin.Essentials.DeviceDisplay.KeepScreenOn = true;
             MainPage = new NavigationPage(ARPage.Instance);
-            
+
+            Xamarin.Essentials.Magnetometer.ReadingChanged += Magnetometer_ReadingChanged;
+            Xamarin.Essentials.Magnetometer.Start(Xamarin.Essentials.SensorSpeed.UI);
+        }
+
+        private void Magnetometer_ReadingChanged(object sender, Xamarin.Essentials.MagnetometerChangedEventArgs e)
+        {
+            Logic.Log(e.Reading.MagneticField.ToString());
         }
 
         protected override void OnStart()
@@ -57,5 +64,7 @@ namespace SeeNav
             Logic.DependencyBox.Get<AnalyticsService>().Track(new AppResume());
             
         }
+
+        
     }
 }

@@ -1,4 +1,5 @@
 ﻿
+
 using System;
 using System.Collections.Generic;
 using LogicLibrary.Models;
@@ -23,20 +24,6 @@ namespace LogicLibrary.ViewModels
 
             return Initializing.Task;
         }
-        /*
-        protected MainViewModel()
-        {
-            OrientationSensor.ReadingChanged += UpdateOrientation;
-            OrientationSensor.Start(SensorSpeed.UI);
-        }
-
-        public Observable<Quaternion> Orientation { get; } = new Observable<Quaternion>(Quaternion.Identity);
-
-        void UpdateOrientation(object sender, OrientationSensorChangedEventArgs e)
-        {
-            Orientation.Set(e.Reading.Orientation); // could set required change level needed for update here
-        }
-        */
 
         public Observable<Quaternion> Orientation { get; } = new Observable<Quaternion>(Quaternion.Identity);
 

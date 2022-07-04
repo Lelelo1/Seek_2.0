@@ -4,6 +4,10 @@ using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
+using LogicLibrary;
+using Xamarin.Forms;
+using System.Collections.Generic;
+using LogicLibrary.Native;
 
 namespace SeeNav.Droid
 {
@@ -16,6 +20,12 @@ namespace SeeNav.Droid
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+
+            Logic.SetLogger((string message) => System.Diagnostics.Debug.WriteLine(message));
+            Logic.SetThreading(Device.BeginInvokeOnMainThread, Device.InvokeOnMainThreadAsync);
+            Logic.SetNativeDependencies(GetNativeDependencies());
+
+
             LoadApplication(new App());
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
@@ -23,6 +33,22 @@ namespace SeeNav.Droid
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
+
+        static List<INative> GetNativeDependencies()
+        {
+
+            var nativeDependencies = new List<INative>()
+                {
+                    new Android_Mixpanel(),
+                    new Android_ProjectionAngle(),
+                    new Android_StatusBar(),
+
+                    // later to async get/fetch a user id
+                    new Android_Utilities()
+                };
+
+            return nativeDependencies;
         }
     }
 }
