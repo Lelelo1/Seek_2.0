@@ -1,18 +1,13 @@
 ﻿using System;
-using Xamarin.CommunityToolkit.UI.Views;
-using Xamarin.CommunityToolkit.Core;
-using Xamarin.Forms;
+using System.Collections.Generic;
+using LogicLibrary;
 using LogicLibrary.Native;
 using SeeNav.Controls;
-//using Xamarin.Essentials;
 using SeeNav.Display;
-using LogicLibrary;
-using System.Threading.Tasks;
-using LogicLibrary.Utils;
-using LogicLibrary.Models;
+using Xamarin.CommunityToolkit.Core;
+using Xamarin.CommunityToolkit.UI.Views;
 using Xamarin.Essentials;
-
-// It seems MediaElement in CommunityToolkit can't display image, source set to png
+using Xamarin.Forms;
 
 namespace SeeNav.Pages
 {
@@ -20,7 +15,7 @@ namespace SeeNav.Pages
     {
 
         // try embedd the video on android
-        
+
         // MediaSource.FromUri("https://storageaccountSeeNavr9a43.blob.core.windows.net/SeeNav-resources/AppPreview6.5.mp4")
         // ^ gets stuck in the video often
         MediaElement CreateVideoPlayer() => new MediaElement()
@@ -61,11 +56,12 @@ namespace SeeNav.Pages
 
             StartARWithPermissions = startARWithPermissions;
 
-            SetVideoPlayer(CreateVideoPlayer());
-
+            //SetVideoPlayer(CreateVideoPlayer());
+            
             var top = N.Get<IStatusBar>().GetHeight();
             var padding = layout.Margin;
             layout.Padding = new Thickness(padding.Left, top, padding.Right, padding.Bottom);
+            
 
             SetPermissionImage();
             SetPermissionLabel();
@@ -88,10 +84,10 @@ namespace SeeNav.Pages
             //SetVideoPlayer(CreateVideoPlayer());
         }
 
-        async void TryToPoceedToARPage ()
+        async void TryToPoceedToARPage()
         {
-            
-            if(await PermissionUtils.HasPermissions())
+
+            if (await PermissionUtils.HasPermissions())
             {
                 StartARWithPermissions();
                 await Navigation.PopAsync(true);
@@ -202,3 +198,4 @@ namespace SeeNav.Pages
 
     }
 }
+

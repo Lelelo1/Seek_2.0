@@ -58,7 +58,7 @@ namespace SeeNav.Pages
             instance = this;
             InitializeComponent();
             BackgroundColor = Xamarin.Forms.Color.Black;
-            SetLoadingContent();
+            //SetLoadingContent();
             Start();
         }
 

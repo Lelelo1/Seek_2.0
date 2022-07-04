@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="http://xamarin.com/schemas/2020/toolkit"
-    x:Class="SeeNav.Pages.PermissionsPage"
-    >
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="SeeNav.Pages.PermissionsPage">
     <NavigationPage.HasNavigationBar>
         <x:Boolean>false</x:Boolean>
     </NavigationPage.HasNavigationBar>
@@ -21,3 +20,4 @@
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
+
