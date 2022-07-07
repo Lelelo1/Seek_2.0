@@ -99,7 +99,7 @@ namespace LogicLibrary.ViewModels
             catch(Exception exc)
             {
                 Logic.Log(exc.Message);
-                Logic.FrameworkContext.ReportCrash(null, "When getting distance from user location and place location in meters");
+                Logic.FrameworkContext.ReportError(null, "When getting distance from user location and place location in meters");
             }
             return meters;
         }

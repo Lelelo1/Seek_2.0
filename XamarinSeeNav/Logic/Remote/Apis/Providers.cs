@@ -8,7 +8,7 @@ using LogicLibrary.Native;
 namespace LogicLibrary.Remote.Apis
 {
     
-    public interface IProvider
+    public interface IProvider : INative
     {
 
     }

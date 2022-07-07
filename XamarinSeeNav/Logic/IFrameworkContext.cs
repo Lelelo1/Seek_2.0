@@ -8,7 +8,7 @@ namespace LogicLibrary
 {
     public interface IFrameworkContext
     {
-        void ReportCrash(Exception exc, string message);
+        void ReportError(Exception exc, string message);
         Task<Location> GetLocationAsync();
 
         string GetDistanceMetric(double meters);

@@ -59,7 +59,7 @@ namespace LogicLibrary
 				initAnalyticsService,
 				LocationService.Init(), // permission required - should not accessed until started in 'MainViewModel'
 				MainViewModel.Init(),
-				SearchViewModel.Init(CovariantCast<AnalyticsService>(initAnalyticsService), CovariantCast<SearchService>(SearchService.Init())),
+				SearchViewModel.Init(CovariantCast<SearchService>(SearchService.Init())),
 				Projector.Init()
 			};
 

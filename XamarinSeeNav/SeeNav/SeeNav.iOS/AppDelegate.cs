@@ -91,12 +91,11 @@ namespace SeeNav.iOS
             // .. but it might not we needed..
             try
             {
-                var searchProvider = new iOS_PlacesService();// new MockProvider();
 
                 var nativeDependencies = new List<INative>()
                 {
                     new iOS_Mixpanel(),
-                    searchProvider,
+                    new iOS_PlacesService(),
                     new iOS_ProjectionAngle(),
                     new iOS_StatusBar()
                 };

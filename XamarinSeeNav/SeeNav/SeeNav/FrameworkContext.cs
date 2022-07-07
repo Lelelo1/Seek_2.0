@@ -85,7 +85,7 @@ namespace XamarinSeeNav
             return meters;
         }
 
-        public void ReportCrash(Exception exc, string message)
+        public void ReportError(Exception exc, string message)
         {
             Microsoft.AppCenter.Crashes.Crashes.TrackError(exc, Error.Properties(message));
         }

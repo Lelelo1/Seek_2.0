@@ -56,7 +56,12 @@ namespace SeeNav.Pages
 
             StartARWithPermissions = startARWithPermissions;
 
-            //SetVideoPlayer(CreateVideoPlayer());
+            if(Device.RuntimePlatform == Device.iOS)
+            {
+                // MediaElement video don't work on Android
+                SetVideoPlayer(CreateVideoPlayer());
+            }
+            
             
             var top = N.Get<IStatusBar>().GetHeight();
             var padding = layout.Margin;

@@ -17,19 +17,17 @@ namespace LogicLibrary.ViewModels
     {
 
         static TaskCompletionSource<IBase> Initializing { get; } = new TaskCompletionSource<IBase>();
-        public static async Task<IBase> Init(Task<AnalyticsService> initAnalyticsService, Task<SearchService> initSearchService)
+        public static async Task<IBase> Init(Task<SearchService> initSearchService)
         {
-            var provider = N.Get<IPlacesService>(); // new MockProvider();
-
-            Initializing.SetResult(new SearchViewModel(provider, await initAnalyticsService, await initSearchService));
+            var provider = N.Get<IProvider>();
+            Initializing.SetResult(new SearchViewModel(provider, await initSearchService));
             return await Initializing.Task;
         }
 
-        protected SearchViewModel(IProvider provider, AnalyticsService analyticsService, SearchService searchService)
+        protected SearchViewModel(IProvider provider, SearchService searchService)
         {
 
             Provider = provider;
-
 
             // blur view is shown when clearing out all text by nulling places
             CurrentInputText.Subscribe(ClearPlacesOnEmptySearchText);
@@ -46,7 +44,7 @@ namespace LogicLibrary.ViewModels
 
         public SearchService SearchService { get; }
 
-        public IProvider Provider { get; set; }
+        public IProvider Provider { get; } 
 
         public Observable<List<Place>> Places { get; } = new Observable<List<Place>>(null);
 
@@ -58,7 +56,19 @@ namespace LogicLibrary.ViewModels
 
         public Location CurrentLocation => Logic.DependencyBox.Get<LocationService>().Location.Value;
 
-        public double CrowsDistance => CurrentLocation == null ? 0 : Logic.FrameworkContext.MetersBetween(CurrentLocation, SearchLocation); 
+        public double CrowsDistance
+        {
+            get
+            {
+                if(CurrentLocation == null || SearchLocation == null)
+                {
+                    // user left app in less than a second or did not make search
+                    return 0;
+                }
+
+                return Logic.FrameworkContext.MetersBetween(CurrentLocation, SearchLocation);
+            }
+        } 
 
         // could be potenially be null, and be initialized when having tapped keyboard
         // is the sessions saved input text
@@ -137,12 +147,6 @@ namespace LogicLibrary.ViewModels
         {
             //Log.Line("inputText: " + inputText);
 
-            bool isSupportedProvider = Provider is MockProvider || Provider is IPlacesService;
-            if(!isSupportedProvider)
-            {
-                Logic.Log("you are trying to use provider in search view model that is not supported, currently only native places and mock is supported");
-                throw new NotSupportedException("you are trying to use provider in search view model that is not supported, currently only native places and mock is supported");
-            }
 
             if (Provider is MockProvider mock) // is local check (no interpretade json)
             {
@@ -169,17 +173,30 @@ namespace LogicLibrary.ViewModels
 
         // for analytics to track when navigation started
         Location SearchLocation { get; set; }
-
+        
         public async Task<List<Place>> Autocomplete(string phrase)
         {
-            return await SearchService.Suggestions(CurrentLocation, phrase);
-        }
+            var places = await SearchService.Suggestions(CurrentLocation, phrase);
 
+            if(places == null || places.Count == 0)
+            {
+                SearchLocation = CurrentLocation;
+            }
+
+            return places;
+        }
+        
         public async Task<List<string>> AppleAutocomplete(string phrase)
         {
             //return await SearchService.Suggestions(CurrentLocation, phrase);
             var nativePlaces = (IPlacesService)Provider;
             var suggestions = (await nativePlaces.Autocomplete(phrase, CurrentLocation, Radius, 15)).Distinct().ToList();
+
+            if (suggestions == null || suggestions.Count == 0)
+            {
+                SearchLocation = CurrentLocation;
+            }
+
             return suggestions;
         }
     }

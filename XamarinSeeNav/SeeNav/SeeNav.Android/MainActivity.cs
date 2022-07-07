@@ -8,6 +8,7 @@ using LogicLibrary;
 using Xamarin.Forms;
 using System.Collections.Generic;
 using LogicLibrary.Native;
+using LogicLibrary.Testing;
 
 namespace SeeNav.Droid
 {
@@ -43,7 +44,7 @@ namespace SeeNav.Droid
                     new Android_Mixpanel(),
                     new Android_ProjectionAngle(),
                     new Android_StatusBar(),
-
+                    new MockProvider(),
                     // later to async get/fetch a user id
                     new Android_Utilities()
                 };
