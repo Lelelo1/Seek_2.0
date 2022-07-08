@@ -82,6 +82,7 @@
     <Compile Include="Services\iOS_UtilitiesServies.cs" />
     <Compile Include="Controls\iOS_SearchBar.cs" />
     <Compile Include="Controls\Effects\iOS_TintImageEffect.cs" />
+    <Compile Include="iOS_Sensors.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
