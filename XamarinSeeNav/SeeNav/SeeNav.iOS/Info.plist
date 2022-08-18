@@ -15,7 +15,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>SeeNav</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.wetterek.seek</string>
+	<string>com.wetterek.development.seek</string>
 	<key>CFBundleVersion</key>
 	<string>13</string>
 	<key>UILaunchStoryboardName</key>
